@@ -2,37 +2,21 @@ import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import confetti from 'canvas-confetti';
 import { ChevronDown } from 'lucide-react';
-import type { ClassId, ThemeMode, ContrastRhythm } from './types';
-import { CLASE_0_SLIDES, CLASE_1_SLIDES } from './data/slidesData';
+import type { Presentation, ThemeMode, ContrastRhythm } from './types';
+import { getAllPresentations } from './data/presentations';
+import { usePresentationRouter } from './hooks/usePresentationRouter';
 
-// Slide Components Class 0
-import { Slide0Hero } from './components/slides/clase0/Slide0Hero';
-import { Slide0Equipment } from './components/slides/clase0/Slide0Equipment';
-import { Slide0AIStack } from './components/slides/clase0/Slide0AIStack';
-import { Slide0Accounts } from './components/slides/clase0/Slide0Accounts';
-import { Slide0Domains } from './components/slides/clase0/Slide0Domains';
-import { Slide0BusinessDNA } from './components/slides/clase0/Slide0BusinessDNA';
-import { Slide0InteractiveChecklist } from './components/slides/clase0/Slide0InteractiveChecklist';
-
-// Slide Components Class 1
-import { Slide1Hero } from './components/slides/clase1/Slide1Hero';
-import { Slide1Purpose } from './components/slides/clase1/Slide1Purpose';
-import { Slide1WebVsSocial } from './components/slides/clase1/Slide1WebVsSocial';
-import { Slide1ProfessionalWeb } from './components/slides/clase1/Slide1ProfessionalWeb';
-import { Slide1TrustAndConversion } from './components/slides/clase1/Slide1TrustAndConversion';
-import { Slide1Anatomy } from './components/slides/clase1/Slide1Anatomy';
-import { Slide1AILanguage } from './components/slides/clase1/Slide1AILanguage';
-import { Slide1Raffle } from './components/slides/clase1/Slide1Raffle';
-import { Slide1ProjectBrief } from './components/slides/clase1/Slide1ProjectBrief';
-
-// Presentation Tools
+// Presentation Tools & Modals
 import { Navbar } from './components/Navbar';
 import { ControlsBar } from './components/ControlsBar';
 import { PresenterModal } from './components/PresenterModal';
 import { OverviewGrid } from './components/OverviewGrid';
 import { BriefGeneratorModal } from './components/BriefGenerator/BriefGeneratorModal';
+import { SoftwarePlanModal } from './components/SoftwarePlan/SoftwarePlanModal';
 import { ShortcutsModal } from './components/ShortcutsModal';
 import { LaserPointer } from './components/LaserPointer';
+import { SlideRenderer } from './components/SlideRenderer';
+import { PresentationHub } from './components/PresentationHub';
 
 const THEMES_ORDER: ThemeMode[] = [
   'cyber-emerald',
@@ -43,14 +27,26 @@ const THEMES_ORDER: ThemeMode[] = [
 ];
 
 export function App() {
-  const [currentClass, setCurrentClass] = useState<ClassId>(0);
-  const [slideIndex, setSlideIndex] = useState<number>(0);
+  const presentations = getAllPresentations();
+  
+  // Custom Router with internal deep-linking (/ruta-web-ai, /ruta-software-ai, /hub)
+  const {
+    currentPresentation,
+    currentSectionIndex,
+    slideIndex,
+    isHub,
+    activeTool,
+    navigateTo,
+    navigateToSlide,
+    navigateToSection,
+    navigateToHub,
+  } = usePresentationRouter();
 
   // Theme, Contrast & Focus States
   const [currentTheme, setCurrentTheme] = useState<ThemeMode>('cyber-emerald');
   const [contrastRhythm, setContrastRhythm] = useState<ContrastRhythm>('alternating');
   const [autoCycle, setAutoCycle] = useState<boolean>(true);
-  const [isLaserActive, setIsLaserActive] = useState<boolean>(false);
+  const [isLaserActive, setIsLaserActive] = useState<boolean>(true);
   const [isWakingUp, setIsWakingUp] = useState<boolean>(false);
 
   // Presentation Mode: Hide top bar for immersive experience
@@ -61,14 +57,33 @@ export function App() {
   const [isPresenterOpen, setIsPresenterOpen] = useState(false);
   const [isOverviewOpen, setIsOverviewOpen] = useState(false);
   const [isBriefOpen, setIsBriefOpen] = useState(false);
+  const [isSoftwarePlanOpen, setIsSoftwarePlanOpen] = useState(false);
   const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
+  // Sync activeTool from URL
+  useEffect(() => {
+    if (activeTool === 'plan') {
+      setIsSoftwarePlanOpen(true);
+    } else if (activeTool === 'brief') {
+      setIsBriefOpen(true);
+    }
+  }, [activeTool]);
+
   const slideRef = useRef<HTMLDivElement>(null);
 
-  const currentSlides = currentClass === 0 ? CLASE_0_SLIDES : CLASE_1_SLIDES;
+  // Current active section and slides
+  const activeSection = currentPresentation.sections[currentSectionIndex] || currentPresentation.sections[0];
+  const currentSlides = activeSection.slides;
   const currentSlideData = currentSlides[slideIndex] || currentSlides[0];
-  const nextSlideData = currentSlides[slideIndex + 1];
+
+  // Next slide preview for speaker notes (handles cross-section transitions)
+  const nextSlideData =
+    slideIndex + 1 < currentSlides.length
+      ? currentSlides[slideIndex + 1]
+      : currentSectionIndex + 1 < currentPresentation.sections.length
+      ? currentPresentation.sections[currentSectionIndex + 1].slides[0]
+      : undefined;
 
   // Determine the canvas brightness mode for the current slide
   const getSlideCanvasClass = () => {
@@ -84,7 +99,8 @@ export function App() {
   // Synthesize energizing alert chime with Web Audio API
   const playWakeSound = () => {
     try {
-      const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const AudioContextClass = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+      const audioCtx = new AudioContextClass();
       const osc = audioCtx.createOscillator();
       const gain = audioCtx.createGain();
 
@@ -158,11 +174,11 @@ export function App() {
     }
 
     // Auto-cycle theme on slide advance if enabled
-    if (autoCycle) {
-      const nextTheme = THEMES_ORDER[(slideIndex + (currentClass * 3)) % THEMES_ORDER.length];
+    if (autoCycle && !isHub) {
+      const nextTheme = THEMES_ORDER[(slideIndex + (currentSectionIndex * 3)) % THEMES_ORDER.length];
       setCurrentTheme(nextTheme);
     }
-  }, [currentClass, slideIndex, autoCycle]);
+  }, [currentPresentation.id, currentSectionIndex, slideIndex, autoCycle, isHub]);
 
   // Fullscreen toggle
   const toggleFullscreen = () => {
@@ -179,31 +195,37 @@ export function App() {
 
   const handleNext = () => {
     if (slideIndex < currentSlides.length - 1) {
-      setSlideIndex((prev) => prev + 1);
-    } else if (currentClass === 0) {
-      // Transition from Class 0 to Class 1
-      setCurrentClass(1);
-      setSlideIndex(0);
+      navigateToSlide(slideIndex + 1);
+    } else if (currentSectionIndex < currentPresentation.sections.length - 1) {
+      // Transition to Next Section
+      navigateTo(currentPresentation.id, currentSectionIndex + 1, 0);
     }
   };
 
   const handlePrev = () => {
     if (slideIndex > 0) {
-      setSlideIndex((prev) => prev - 1);
-    } else if (currentClass === 1) {
-      setCurrentClass(0);
-      setSlideIndex(CLASE_0_SLIDES.length - 1);
+      navigateToSlide(slideIndex - 1);
+    } else if (currentSectionIndex > 0) {
+      // Transition to Previous Section
+      const prevSectionIndex = currentSectionIndex - 1;
+      const lastSlideIndex = currentPresentation.sections[prevSectionIndex].slides.length - 1;
+      navigateTo(currentPresentation.id, prevSectionIndex, lastSlideIndex);
     }
   };
 
-  const handleSelectClass = (c: ClassId) => {
-    setCurrentClass(c);
-    setSlideIndex(0);
+  const handleSelectPresentation = (presentation: Presentation, sectionIndex = 0) => {
+    navigateTo(presentation.id, sectionIndex, 0);
+  };
+
+  const handleSelectSection = (index: number) => {
+    if (index >= 0 && index < currentPresentation.sections.length) {
+      navigateToSection(index);
+    }
   };
 
   const handleJumpToSlide = (idx: number) => {
     if (idx >= 0 && idx < currentSlides.length) {
-      setSlideIndex(idx);
+      navigateToSlide(idx);
     }
   };
 
@@ -219,6 +241,7 @@ export function App() {
         setIsPresenterOpen(false);
         setIsOverviewOpen(false);
         setIsBriefOpen(false);
+        setIsSoftwarePlanOpen(false);
         setIsShortcutsOpen(false);
         return;
       }
@@ -253,15 +276,26 @@ export function App() {
       } else if (e.key.toLowerCase() === 'o') {
         e.preventDefault();
         setIsOverviewOpen((prev) => !prev);
-      } else if (e.key.toLowerCase() === 'b') {
+      } else if (e.key.toLowerCase() === 'b' || e.key.toLowerCase() === 's') {
         e.preventDefault();
-        setIsBriefOpen((prev) => !prev);
+        if (currentPresentation.hasSoftwarePlanGenerator) {
+          setIsSoftwarePlanOpen((prev) => !prev);
+        } else if (currentPresentation.hasBriefGenerator) {
+          setIsBriefOpen((prev) => !prev);
+        }
       } else if (e.key === '0') {
         e.preventDefault();
-        handleSelectClass(0);
+        handleSelectSection(0);
       } else if (e.key === '1') {
         e.preventDefault();
-        handleSelectClass(1);
+        if (currentPresentation.sections.length > 1) {
+          handleSelectSection(1);
+        }
+      } else if (e.key === '2') {
+        e.preventDefault();
+        if (currentPresentation.sections.length > 2) {
+          handleSelectSection(2);
+        }
       } else if (e.key === '?') {
         e.preventDefault();
         setIsShortcutsOpen((prev) => !prev);
@@ -270,54 +304,7 @@ export function App() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [slideIndex, currentClass, currentSlides.length, autoCycle]);
-
-  // Render current slide
-  const renderCurrentSlide = () => {
-    if (currentClass === 0) {
-      switch (slideIndex) {
-        case 0:
-          return <Slide0Hero onNext={handleNext} />;
-        case 1:
-          return <Slide0Equipment />;
-        case 2:
-          return <Slide0AIStack />;
-        case 3:
-          return <Slide0Accounts />;
-        case 4:
-          return <Slide0Domains />;
-        case 5:
-          return <Slide0BusinessDNA />;
-        case 6:
-          return <Slide0InteractiveChecklist onGoToClass1={() => handleSelectClass(1)} />;
-        default:
-          return <Slide0Hero onNext={handleNext} />;
-      }
-    } else {
-      switch (slideIndex) {
-        case 0:
-          return <Slide1Hero onNext={handleNext} />;
-        case 1:
-          return <Slide1Purpose />;
-        case 2:
-          return <Slide1WebVsSocial />;
-        case 3:
-          return <Slide1ProfessionalWeb />;
-        case 4:
-          return <Slide1TrustAndConversion />;
-        case 5:
-          return <Slide1Anatomy />;
-        case 6:
-          return <Slide1AILanguage />;
-        case 7:
-          return <Slide1Raffle onNext={handleNext} />;
-        case 8:
-          return <Slide1ProjectBrief onOpenBriefModal={() => setIsBriefOpen(true)} />;
-        default:
-          return <Slide1Hero onNext={handleNext} />;
-      }
-    }
-  };
+  }, [slideIndex, currentSectionIndex, currentSlides.length, currentPresentation, autoCycle, isHub]);
 
   const showNavbar = !isNavbarHidden || isHoveringTop;
 
@@ -350,18 +337,23 @@ export function App() {
       {/* Top Navigation Bar with Smooth Reveal on Hover */}
       <div
         onMouseLeave={() => isNavbarHidden && setIsHoveringTop(false)}
-        className={`${isNavbarHidden ? 'fixed top-0 left-0 right-0 z-40 transition-transform duration-300' : 'relative'} ${
+        className={`${isNavbarHidden ? 'fixed top-0 left-0 right-0 z-50 transition-transform duration-300' : 'relative z-50'} ${
           isNavbarHidden && !showNavbar ? '-translate-y-full pointer-events-none' : 'translate-y-0'
         }`}
       >
         <Navbar
-          currentClass={currentClass}
-          onSelectClass={handleSelectClass}
+          presentations={presentations}
+          currentPresentation={currentPresentation}
+          onSelectPresentation={handleSelectPresentation}
+          currentSectionIndex={currentSectionIndex}
+          onSelectSection={handleSelectSection}
           currentSlideIndex={slideIndex}
           totalSlides={currentSlides.length}
           onOpenOverview={() => setIsOverviewOpen(true)}
           onOpenPresenter={() => setIsPresenterOpen(true)}
           onOpenBrief={() => setIsBriefOpen(true)}
+          onOpenSoftwarePlan={() => setIsSoftwarePlanOpen(true)}
+          onOpenHub={navigateToHub}
           onOpenShortcuts={() => setIsShortcutsOpen(true)}
           isFullscreen={isFullscreen}
           onToggleFullscreen={toggleFullscreen}
@@ -379,7 +371,7 @@ export function App() {
         />
       </div>
 
-      {/* Main Slide Canvas */}
+      {/* Main Slide Canvas or Hub */}
       <main className={`flex-1 relative flex items-center justify-center overflow-hidden transition-all duration-300 ${
         isNavbarHidden ? 'p-2 sm:p-4' : 'p-2 sm:p-4 md:p-6'
       }`}>
@@ -387,20 +379,36 @@ export function App() {
           ref={slideRef}
           className={`w-full h-full max-w-7xl rounded-3xl shadow-2xl relative overflow-hidden backdrop-blur-2xl transition-all duration-500 border ${
             isNavbarHidden ? 'max-h-[96vh]' : 'max-h-[88vh]'
-          } ${getSlideCanvasClass()}`}
+          } ${isHub ? 'bg-slate-950/90 border-slate-800' : getSlideCanvasClass()}`}
         >
-          {renderCurrentSlide()}
+          {isHub ? (
+            <PresentationHub
+              presentations={presentations}
+              onSelectPresentation={(p, secIdx) => handleSelectPresentation(p, secIdx || 0)}
+              onCloseHub={() => navigateTo(currentPresentation.id, currentSectionIndex, slideIndex)}
+            />
+          ) : (
+            <SlideRenderer
+              slide={currentSlideData}
+              onNext={handleNext}
+              onSelectSection={handleSelectSection}
+              onOpenBrief={() => setIsBriefOpen(true)}
+              onOpenSoftwarePlan={() => setIsSoftwarePlanOpen(true)}
+            />
+          )}
         </div>
       </main>
 
-      {/* Floating Bottom Navigation */}
-      <ControlsBar
-        currentSlideIndex={slideIndex}
-        totalSlides={currentSlides.length}
-        onPrev={handlePrev}
-        onNext={handleNext}
-        onJumpToSlide={handleJumpToSlide}
-      />
+      {/* Floating Bottom Navigation (Only visible during slide presentations) */}
+      {!isHub && (
+        <ControlsBar
+          currentSlideIndex={slideIndex}
+          totalSlides={currentSlides.length}
+          onPrev={handlePrev}
+          onNext={handleNext}
+          onJumpToSlide={handleJumpToSlide}
+        />
+      )}
 
       {/* Modals & Tools */}
       <PresenterModal
@@ -419,10 +427,21 @@ export function App() {
         onSelectSlide={handleJumpToSlide}
       />
 
-      <BriefGeneratorModal
-        isOpen={isBriefOpen}
-        onClose={() => setIsBriefOpen(false)}
-      />
+      {/* Web Brief Generator Modal */}
+      {currentPresentation.hasBriefGenerator && (
+        <BriefGeneratorModal
+          isOpen={isBriefOpen}
+          onClose={() => setIsBriefOpen(false)}
+        />
+      )}
+
+      {/* Software Plan Generator Modal */}
+      {currentPresentation.hasSoftwarePlanGenerator && (
+        <SoftwarePlanModal
+          isOpen={isSoftwarePlanOpen}
+          onClose={() => setIsSoftwarePlanOpen(false)}
+        />
+      )}
 
       <ShortcutsModal
         isOpen={isShortcutsOpen}

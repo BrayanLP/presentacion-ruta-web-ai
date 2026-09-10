@@ -47,28 +47,28 @@ export const ControlsBar: React.FC<Props> = ({
   };
 
   return (
-    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-40 select-none">
-      <div className="glass-panel px-4 py-2 rounded-2xl border border-slate-700/80 shadow-2xl flex items-center gap-3 md:gap-4 bg-slate-950/80">
+    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 z-40 select-none">
+      <div className="glass-panel px-2.5 py-1 rounded-xl border border-slate-700/80 shadow-xl flex items-center gap-2 md:gap-2.5 bg-slate-950/90 backdrop-blur-md">
         {/* Previous Button */}
         <button
           onClick={onPrev}
           disabled={currentSlideIndex === 0}
-          className="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 disabled:opacity-30 disabled:hover:bg-slate-800 text-slate-200 hover:text-white transition-all"
+          className="p-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 disabled:opacity-30 disabled:hover:bg-slate-800 text-slate-200 hover:text-white transition-all active:scale-95"
           title="Diapositiva Anterior (←)"
         >
-          <ChevronLeft className="w-5 h-5" />
+          <ChevronLeft className="w-3.5 h-3.5" />
         </button>
 
-        {/* Slide Indicator Dots or Number */}
-        <div className="flex items-center gap-1.5 px-2">
+        {/* Slide Indicator Dots */}
+        <div className="flex items-center gap-1 px-1">
           {Array.from({ length: totalSlides }).map((_, idx) => (
             <button
               key={idx}
               onClick={() => onJumpToSlide(idx)}
               className={`transition-all rounded-full ${
                 idx === currentSlideIndex
-                  ? 'w-6 h-2 bg-brand-400 shadow-sm shadow-brand-500/50'
-                  : 'w-2 h-2 bg-slate-700 hover:bg-slate-500'
+                  ? 'w-4 h-1.5 bg-cyan-400 shadow-sm shadow-cyan-400/50'
+                  : 'w-1.5 h-1.5 bg-slate-700 hover:bg-slate-500'
               }`}
               title={`Ir a Diapositiva ${idx + 1}`}
             />
@@ -79,33 +79,33 @@ export const ControlsBar: React.FC<Props> = ({
         <button
           onClick={onNext}
           disabled={currentSlideIndex === totalSlides - 1}
-          className="p-2 rounded-xl bg-gradient-to-r from-brand-500 to-cyan-500 hover:from-brand-400 hover:to-cyan-400 disabled:opacity-30 disabled:from-slate-800 disabled:to-slate-800 text-slate-950 font-bold transition-all shadow-md shadow-brand-500/10"
+          className="p-1 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 disabled:opacity-30 disabled:from-slate-800 disabled:to-slate-800 text-slate-950 font-bold transition-all shadow-sm active:scale-95"
           title="Siguiente Diapositiva (→ / Espacio)"
         >
-          <ChevronRight className="w-5 h-5" />
+          <ChevronRight className="w-3.5 h-3.5" />
         </button>
 
-        <div className="h-4 w-px bg-slate-800 hidden sm:block" />
+        <div className="h-3 w-px bg-slate-800 hidden sm:block" />
 
-        {/* Live Presentation Timer */}
-        <div className="hidden sm:flex items-center gap-2 px-2 py-1 rounded-xl bg-slate-900/90 border border-slate-800 font-mono text-xs text-slate-300">
-          <Clock className="w-3.5 h-3.5 text-cyan-400" />
+        {/* Compact Presentation Timer */}
+        <div className="hidden sm:flex items-center gap-1.5 px-1.5 py-0.5 rounded-lg bg-slate-900/90 border border-slate-800 font-mono text-[11px] text-slate-300">
+          <Clock className="w-3 h-3 text-cyan-400" />
           <span className="font-semibold text-white">{formatTime(seconds)}</span>
 
           <button
             onClick={() => setIsRunning(!isRunning)}
-            className="p-1 hover:text-brand-400 text-slate-400 transition-colors"
+            className="p-0.5 hover:text-cyan-400 text-slate-400 transition-colors"
             title={isRunning ? 'Pausar Cronómetro' : 'Reanudar Cronómetro'}
           >
-            {isRunning ? <Pause className="w-3 h-3" /> : <Play className="w-3 h-3" />}
+            {isRunning ? <Pause className="w-2.5 h-2.5" /> : <Play className="w-2.5 h-2.5" />}
           </button>
 
           <button
             onClick={handleReset}
-            className="p-1 hover:text-red-400 text-slate-400 transition-colors"
+            className="p-0.5 hover:text-red-400 text-slate-400 transition-colors"
             title="Reiniciar Cronómetro"
           >
-            <RotateCcw className="w-3 h-3" />
+            <RotateCcw className="w-2.5 h-2.5" />
           </button>
         </div>
       </div>

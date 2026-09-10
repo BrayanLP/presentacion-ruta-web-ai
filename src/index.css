@@ -138,13 +138,20 @@ body {
   box-shadow: 0 12px 30px rgba(16, 185, 129, 0.18) !important;
 }
 
+.canvas-light-mode .bg-slate-950,
+.canvas-light-mode .bg-slate-950\/90,
+.canvas-light-mode .bg-slate-950\/80,
+.canvas-light-mode .bg-slate-950\/70,
+.canvas-light-mode .bg-slate-950\/60,
+.canvas-light-mode .bg-slate-950\/50,
+.canvas-light-mode .bg-slate-950\/40,
 .canvas-light-mode .bg-slate-900,
 .canvas-light-mode .bg-slate-900\/90,
 .canvas-light-mode .bg-slate-900\/80,
 .canvas-light-mode .bg-slate-900\/70,
 .canvas-light-mode .bg-slate-900\/60 {
   background-color: #f1f5f9 !important;
-  border-color: #e2e8f0 !important;
+  border-color: #cbd5e1 !important;
   color: #0f172a !important;
 }
 
@@ -158,8 +165,128 @@ body {
 
 .canvas-light-mode .border-slate-800,
 .canvas-light-mode .border-slate-800\/80,
-.canvas-light-mode .border-slate-800\/60 {
-  border-color: #e2e8f0 !important;
+.canvas-light-mode .border-slate-800\/60,
+.canvas-light-mode .border-slate-700,
+.canvas-light-mode .border-slate-700\/80 {
+  border-color: #cbd5e1 !important;
+}
+
+/* Accent Colors & Badges Contrast in Light Mode */
+.canvas-light-mode .text-cyan-400,
+.canvas-light-mode .text-cyan-300,
+.canvas-light-mode .text-cyan-200 {
+  color: #0284c7 !important;
+}
+
+.canvas-light-mode .text-emerald-400,
+.canvas-light-mode .text-emerald-300,
+.canvas-light-mode .text-emerald-200 {
+  color: #059669 !important;
+}
+
+.canvas-light-mode .text-brand-400,
+.canvas-light-mode .text-brand-300,
+.canvas-light-mode .text-brand-200 {
+  color: #0f766e !important;
+}
+
+.canvas-light-mode .text-violet-400,
+.canvas-light-mode .text-violet-300,
+.canvas-light-mode .text-violet-200 {
+  color: #7c3aed !important;
+}
+
+.canvas-light-mode .text-pink-400,
+.canvas-light-mode .text-pink-300,
+.canvas-light-mode .text-pink-200 {
+  color: #db2777 !important;
+}
+
+.canvas-light-mode .text-amber-400,
+.canvas-light-mode .text-amber-300 {
+  color: #d97706 !important;
+}
+
+.canvas-light-mode .bg-cyan-500\/20,
+.canvas-light-mode .bg-cyan-500\/15,
+.canvas-light-mode .bg-cyan-500\/10 {
+  background-color: #e0f2fe !important;
+  border-color: #7dd3fc !important;
+  color: #0369a1 !important;
+}
+
+.canvas-light-mode .bg-brand-500\/20,
+.canvas-light-mode .bg-brand-500\/15,
+.canvas-light-mode .bg-brand-500\/10 {
+  background-color: #ccfbf1 !important;
+  border-color: #5eead4 !important;
+  color: #0f766e !important;
+}
+
+.canvas-light-mode .bg-emerald-500\/20,
+.canvas-light-mode .bg-emerald-500\/15,
+.canvas-light-mode .bg-emerald-500\/10 {
+  background-color: #d1fae5 !important;
+  border-color: #6ee7b7 !important;
+  color: #047857 !important;
+}
+
+.canvas-light-mode .bg-violet-500\/20,
+.canvas-light-mode .bg-violet-500\/15,
+.canvas-light-mode .bg-violet-500\/10 {
+  background-color: #ede9fe !important;
+  border-color: #c4b5fd !important;
+  color: #6d28d9 !important;
+}
+
+.canvas-light-mode .bg-gradient-to-r.from-cyan-950\/40,
+.canvas-light-mode .bg-gradient-to-r.from-cyan-950\/30,
+.canvas-light-mode .bg-cyan-950\/20,
+.canvas-light-mode .bg-cyan-950\/30,
+.canvas-light-mode .bg-cyan-950\/40 {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+  border-color: #bae6fd !important;
+  color: #0369a1 !important;
+}
+
+/* Custom Highlight & Quote Components in Light Mode */
+.canvas-light-mode .idea-quote-box {
+  background-color: #f0f9ff !important;
+  border-color: #bae6fd !important;
+  color: #0369a1 !important;
+  box-shadow: inset 0 1px 2px rgba(2, 132, 199, 0.06) !important;
+}
+
+.canvas-light-mode .banner-highlight-box {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdf4 100%) !important;
+  border-color: #7dd3fc !important;
+  color: #0369a1 !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.08) !important;
+}
+
+.canvas-light-mode .banner-highlight-box span {
+  color: #0c4a6e !important;
+}
+
+.canvas-light-mode .tab-switcher-container {
+  background-color: #e2e8f0 !important;
+  border-color: #cbd5e1 !important;
+}
+
+.canvas-light-mode .tab-switcher-active {
+  background-color: #ffffff !important;
+  color: #0284c7 !important;
+  border-color: #7dd3fc !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08) !important;
+}
+
+.canvas-light-mode .tab-switcher-inactive {
+  color: #64748b !important;
+}
+
+.canvas-light-mode .tab-switcher-inactive:hover {
+  color: #0f172a !important;
+  background-color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .canvas-light-mode pre {
@@ -211,6 +338,37 @@ body {
   background-color: #fde68a !important;
 }
 
+.canvas-warm-mode .idea-quote-box {
+  background-color: #fffbeb !important;
+  border-color: #fde68a !important;
+  color: #92400e !important;
+}
+
+.canvas-warm-mode .banner-highlight-box {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fed7aa 100%) !important;
+  border-color: #fde68a !important;
+  color: #92400e !important;
+}
+
+.canvas-warm-mode .banner-highlight-box span {
+  color: #78350f !important;
+}
+
+.canvas-warm-mode .tab-switcher-container {
+  background-color: #fde68a !important;
+  border-color: #f59e0b !important;
+}
+
+.canvas-warm-mode .tab-switcher-active {
+  background-color: #ffffff !important;
+  color: #b45309 !important;
+  border-color: #f59e0b !important;
+}
+
+.canvas-warm-mode .tab-switcher-inactive {
+  color: #92400e !important;
+}
+
 /* COOL CANVAS (Ice Cyan / Ultra Alert Mint) */
 .canvas-cool-mode {
   background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 60%, #bae6fd 100%) !important;
@@ -253,6 +411,37 @@ body {
 
 .canvas-cool-mode .bg-slate-800 {
   background-color: #bae6fd !important;
+}
+
+.canvas-cool-mode .idea-quote-box {
+  background-color: #f0fdfa !important;
+  border-color: #99f6e4 !important;
+  color: #0f766e !important;
+}
+
+.canvas-cool-mode .banner-highlight-box {
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 50%, #e0f2fe 100%) !important;
+  border-color: #99f6e4 !important;
+  color: #0f766e !important;
+}
+
+.canvas-cool-mode .banner-highlight-box span {
+  color: #0c4a6e !important;
+}
+
+.canvas-cool-mode .tab-switcher-container {
+  background-color: #bae6fd !important;
+  border-color: #7dd3fc !important;
+}
+
+.canvas-cool-mode .tab-switcher-active {
+  background-color: #ffffff !important;
+  color: #0369a1 !important;
+  border-color: #7dd3fc !important;
+}
+
+.canvas-cool-mode .tab-switcher-inactive {
+  color: #0284c7 !important;
 }
 
 /* DARK CANVAS (Cyber Neon Glass) */

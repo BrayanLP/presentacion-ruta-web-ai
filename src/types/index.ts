@@ -1,12 +1,72 @@
-export type ClassId = 0 | 1;
+export type ClassId = number | string;
 
 export type ThemeMode = 'cyber-emerald' | 'synthwave-neon' | 'electric-cyan' | 'solar-flare' | 'aurora-matrix';
 
 export type ContrastRhythm = 'alternating' | 'all-light' | 'all-dark' | 'vibrant-warm';
 
+export type SlideLayoutType = 
+  | 'custom'
+  | 'hero'
+  | 'grid'
+  | 'split'
+  | 'comparison'
+  | 'timeline'
+  | 'quote'
+  | 'stats';
+
+export interface SlidePoint {
+  title?: string;
+  text: string;
+  icon?: string;
+  highlight?: boolean;
+}
+
+export interface SlideCard {
+  title: string;
+  desc: string;
+  icon?: string;
+  badge?: string;
+  color?: string;
+  list?: string[];
+  link?: string;
+}
+
+export interface SlideComparison {
+  leftTitle: string;
+  leftSubtitle?: string;
+  leftBadge?: string;
+  leftItems: string[];
+  rightTitle: string;
+  rightSubtitle?: string;
+  rightBadge?: string;
+  rightItems: string[];
+}
+
+export interface SlideStat {
+  value: string;
+  label: string;
+  subtext?: string;
+  color?: string;
+}
+
+export interface SlideTimelineStep {
+  step: string;
+  title: string;
+  desc: string;
+  badge?: string;
+  icon?: string;
+}
+
+export interface SlideCallout {
+  type: 'tip' | 'warning' | 'info' | 'gem';
+  title: string;
+  text: string;
+}
+
 export interface SlideData {
   id: string;
-  classId: ClassId;
+  classId?: number | string;
+  sectionId?: string;
   slideNumber: number;
   totalInClass: number;
   category: string;
@@ -19,6 +79,54 @@ export interface SlideData {
     questionsToAsk?: string[];
     liveActivity?: string;
   };
+  // Dynamic layout support
+  layout?: SlideLayoutType;
+  customComponentKey?: string;
+  badge?: string;
+  heroCta?: {
+    text: string;
+    action?: 'next' | 'brief' | 'external';
+    url?: string;
+  };
+  points?: SlidePoint[];
+  cards?: SlideCard[];
+  comparison?: SlideComparison;
+  quote?: {
+    text: string;
+    author?: string;
+    role?: string;
+  };
+  stats?: SlideStat[];
+  timeline?: SlideTimelineStep[];
+  codeSnippet?: {
+    language: string;
+    code: string;
+    title?: string;
+  };
+  callout?: SlideCallout;
+}
+
+export interface PresentationSection {
+  id: string;
+  title: string;
+  shortTitle: string;
+  badge?: string;
+  color?: 'emerald' | 'violet' | 'cyan' | 'amber' | 'pink' | 'blue';
+  description?: string;
+  slides: SlideData[];
+}
+
+export interface Presentation {
+  id: string;
+  title: string;
+  shortTitle: string;
+  subtitle: string;
+  badge?: string;
+  icon?: string;
+  description?: string;
+  hasBriefGenerator?: boolean;
+  hasSoftwarePlanGenerator?: boolean;
+  sections: PresentationSection[];
 }
 
 export interface ChecklistCategory {
@@ -48,4 +156,16 @@ export interface WebBriefData {
   whatsappNumber: string;
   differentiator: string;
   additionalNotes: string;
+}
+
+export interface SoftwarePlanData {
+  softwareName: string;
+  whatToCreate: string;
+  problemSolved: string;
+  targetUser: string;
+  keyFeatures: string;
+  currentSolution: string;
+  desiredImprovements: string;
+  databaseNeeds?: string;
+  mvpScope?: string;
 }
