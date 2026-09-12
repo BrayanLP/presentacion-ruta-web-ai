@@ -27,6 +27,12 @@ import { SlideSoftwareIdeaInteractive } from './slides/software/SlideSoftwareIde
 import { SlideSoftwareMVPSteps } from './slides/software/SlideSoftwareMVPSteps';
 import { SlideSoftwareFinalPlan } from './slides/software/SlideSoftwareFinalPlan';
 
+// Slide Components (Ruta Apps iOS)
+import { SlideIosIdeaInteractive } from './slides/ios/SlideIosIdeaInteractive';
+import { SlideIosChecklist } from './slides/ios/SlideIosChecklist';
+import { SlideIosExpenseCaseStudy } from './slides/ios/SlideIosExpenseCaseStudy';
+import { SlideIosBlueprintInteractive } from './slides/ios/SlideIosBlueprintInteractive';
+
 // Generic Slide for Dynamic Presentations
 import { GenericSlide } from './slides/GenericSlide';
 
@@ -36,6 +42,7 @@ interface Props {
   onSelectSection: (sectionIndex: number) => void;
   onOpenBrief?: () => void;
   onOpenSoftwarePlan?: () => void;
+  onOpenAppBlueprint?: () => void;
 }
 
 export const SlideRenderer: React.FC<Props> = ({
@@ -44,7 +51,10 @@ export const SlideRenderer: React.FC<Props> = ({
   onSelectSection,
   onOpenBrief,
   onOpenSoftwarePlan,
+  onOpenAppBlueprint,
 }) => {
+  const handleOpenTool = onOpenAppBlueprint || onOpenSoftwarePlan || onOpenBrief;
+
   // If slide has a specific custom component key, render it
   if (slide.customComponentKey) {
     switch (slide.customComponentKey) {
@@ -94,11 +104,21 @@ export const SlideRenderer: React.FC<Props> = ({
       case 'software-final-plan':
         return <SlideSoftwareFinalPlan onOpenPlanModal={onOpenSoftwarePlan || (() => {})} />;
 
+      // Ruta Apps iOS con IA
+      case 'ios-idea-interactive':
+        return <SlideIosIdeaInteractive onOpenBlueprintModal={onOpenAppBlueprint || (() => {})} />;
+      case 'ios-checklist':
+        return <SlideIosChecklist onGoToClass1={() => onSelectSection(1)} />;
+      case 'ios-expense-case-study':
+        return <SlideIosExpenseCaseStudy />;
+      case 'ios-blueprint-interactive':
+        return <SlideIosBlueprintInteractive onOpenBlueprintModal={onOpenAppBlueprint || (() => {})} />;
+
       default:
-        return <GenericSlide slide={slide} onNext={onNext} onOpenBrief={onOpenBrief || onOpenSoftwarePlan} />;
+        return <GenericSlide slide={slide} onNext={onNext} onOpenBrief={handleOpenTool} />;
     }
   }
 
   // Fallback to rich dynamic GenericSlide for all dynamic slides
-  return <GenericSlide slide={slide} onNext={onNext} onOpenBrief={onOpenBrief || onOpenSoftwarePlan} />;
+  return <GenericSlide slide={slide} onNext={onNext} onOpenBrief={handleOpenTool} />;
 };

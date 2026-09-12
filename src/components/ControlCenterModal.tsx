@@ -84,6 +84,7 @@ interface Props {
   onOpenPresenter: () => void;
   onOpenBrief: () => void;
   onOpenSoftwarePlan: () => void;
+  onOpenAppBlueprint?: () => void;
   onOpenHub: () => void;
   onOpenShortcuts: () => void;
   isFullscreen: boolean;
@@ -111,6 +112,7 @@ export const ControlCenterModal: React.FC<Props> = ({
   onOpenPresenter,
   onOpenBrief,
   onOpenSoftwarePlan,
+  onOpenAppBlueprint,
   onOpenHub,
   onOpenShortcuts,
   isFullscreen,
@@ -463,8 +465,8 @@ export const ControlCenterModal: React.FC<Props> = ({
           {/* TAB 3: HERRAMIENTAS & PANTALLA */}
           {activeTab === 'tools' && (
             <div className="space-y-4 animate-fadeIn">
-              {/* Plan Software / Brief Hero Action */}
-              {(currentPresentation.hasSoftwarePlanGenerator || currentPresentation.hasBriefGenerator) && (
+              {/* Plan Software / App Blueprint / Brief Hero Action */}
+              {(currentPresentation.hasSoftwarePlanGenerator || currentPresentation.hasAppBlueprintGenerator || currentPresentation.hasBriefGenerator) && (
                 <div className="p-4 rounded-2xl bg-gradient-to-r from-cyan-950/40 via-blue-950/30 to-indigo-950/40 border border-cyan-500/40 flex flex-wrap items-center justify-between gap-3 shadow-lg">
                   <div className="flex items-center gap-3">
                     <div className="p-2.5 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 shrink-0">
@@ -472,12 +474,16 @@ export const ControlCenterModal: React.FC<Props> = ({
                     </div>
                     <div>
                       <div className="text-xs font-bold text-white font-display">
-                        {currentPresentation.hasSoftwarePlanGenerator
+                        {currentPresentation.hasAppBlueprintGenerator
+                          ? '📱 Generador de APP BLUEPRINT'
+                          : currentPresentation.hasSoftwarePlanGenerator
                           ? '📋 Generador del Plan de mi Software'
                           : '📄 Generador de Brief Web'}
                       </div>
                       <div className="text-[11px] text-cyan-200/90 font-mono">
-                        {currentPresentation.hasSoftwarePlanGenerator
+                        {currentPresentation.hasAppBlueprintGenerator
+                          ? 'Plano de 9 elementos para iOS + Expo Router + Supabase'
+                          : currentPresentation.hasSoftwarePlanGenerator
                           ? 'Plantilla de 7 preguntas + Prompt listo para Antigravity IDE & Supabase'
                           : 'Generador de requerimientos para diseño y desarrollo web'}
                       </div>
@@ -486,13 +492,15 @@ export const ControlCenterModal: React.FC<Props> = ({
 
                   <button
                     onClick={() => {
-                      onClose();
-                      if (currentPresentation.hasSoftwarePlanGenerator) {
-                        onOpenSoftwarePlan();
-                      } else {
-                        onOpenBrief();
-                      }
-                    }}
+                    onClose();
+                    if (currentPresentation.hasAppBlueprintGenerator && onOpenAppBlueprint) {
+                      onOpenAppBlueprint();
+                    } else if (currentPresentation.hasSoftwarePlanGenerator) {
+                      onOpenSoftwarePlan();
+                    } else {
+                      onOpenBrief();
+                    }
+                  }}
                     className="px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white font-bold text-xs font-mono flex items-center gap-2 shadow-md shadow-cyan-500/25 transition-all hover:scale-105"
                   >
                     <FileText className="w-4 h-4" />

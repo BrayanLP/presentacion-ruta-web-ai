@@ -13,6 +13,7 @@ import { PresenterModal } from './components/PresenterModal';
 import { OverviewGrid } from './components/OverviewGrid';
 import { BriefGeneratorModal } from './components/BriefGenerator/BriefGeneratorModal';
 import { SoftwarePlanModal } from './components/SoftwarePlan/SoftwarePlanModal';
+import { AppBlueprintModal } from './components/AppBlueprint/AppBlueprintModal';
 import { ShortcutsModal } from './components/ShortcutsModal';
 import { LaserPointer } from './components/LaserPointer';
 import { SlideRenderer } from './components/SlideRenderer';
@@ -29,7 +30,7 @@ const THEMES_ORDER: ThemeMode[] = [
 export function App() {
   const presentations = getAllPresentations();
   
-  // Custom Router with internal deep-linking (/ruta-web-ai, /ruta-software-ai, /hub)
+  // Custom Router with internal deep-linking (/ruta-web-ai, /ruta-software-ai, /ruta-ios-ai, /hub)
   const {
     currentPresentation,
     currentSectionIndex,
@@ -58,6 +59,7 @@ export function App() {
   const [isOverviewOpen, setIsOverviewOpen] = useState(false);
   const [isBriefOpen, setIsBriefOpen] = useState(false);
   const [isSoftwarePlanOpen, setIsSoftwarePlanOpen] = useState(false);
+  const [isAppBlueprintOpen, setIsAppBlueprintOpen] = useState(false);
   const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -67,6 +69,8 @@ export function App() {
       setIsSoftwarePlanOpen(true);
     } else if (activeTool === 'brief') {
       setIsBriefOpen(true);
+    } else if (activeTool === 'blueprint') {
+      setIsAppBlueprintOpen(true);
     }
   }, [activeTool]);
 
@@ -353,6 +357,7 @@ export function App() {
           onOpenPresenter={() => setIsPresenterOpen(true)}
           onOpenBrief={() => setIsBriefOpen(true)}
           onOpenSoftwarePlan={() => setIsSoftwarePlanOpen(true)}
+          onOpenAppBlueprint={() => setIsAppBlueprintOpen(true)}
           onOpenHub={navigateToHub}
           onOpenShortcuts={() => setIsShortcutsOpen(true)}
           isFullscreen={isFullscreen}
@@ -394,6 +399,7 @@ export function App() {
               onSelectSection={handleSelectSection}
               onOpenBrief={() => setIsBriefOpen(true)}
               onOpenSoftwarePlan={() => setIsSoftwarePlanOpen(true)}
+              onOpenAppBlueprint={() => setIsAppBlueprintOpen(true)}
             />
           )}
         </div>
@@ -440,6 +446,14 @@ export function App() {
         <SoftwarePlanModal
           isOpen={isSoftwarePlanOpen}
           onClose={() => setIsSoftwarePlanOpen(false)}
+        />
+      )}
+
+      {/* App Blueprint Generator Modal */}
+      {currentPresentation.hasAppBlueprintGenerator && (
+        <AppBlueprintModal
+          isOpen={isAppBlueprintOpen}
+          onClose={() => setIsAppBlueprintOpen(false)}
         />
       )}
 

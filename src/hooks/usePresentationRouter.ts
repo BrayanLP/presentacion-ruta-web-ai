@@ -7,7 +7,7 @@ export interface RouteState {
   sectionIndex: number;
   slideIndex: number;
   isHub: boolean;
-  activeTool?: 'brief' | 'plan';
+  activeTool?: 'brief' | 'plan' | 'blueprint';
 }
 
 export function usePresentationRouter() {
@@ -39,7 +39,7 @@ export function usePresentationRouter() {
 
     let secIndex = 0;
     let slideIdx = 0;
-    let tool: 'brief' | 'plan' | undefined = undefined;
+    let tool: 'brief' | 'plan' | 'blueprint' | undefined = undefined;
 
     if (segments.length > 1) {
       const secondSegment = segments[1];
@@ -47,6 +47,8 @@ export function usePresentationRouter() {
         tool = 'brief';
       } else if (secondSegment === 'plan') {
         tool = 'plan';
+      } else if (secondSegment === 'blueprint') {
+        tool = 'blueprint';
       } else {
         // Try to match section id or index
         const foundSecIdx = pres.sections.findIndex(
@@ -70,6 +72,8 @@ export function usePresentationRouter() {
         tool = 'brief';
       } else if (thirdSegment === 'plan') {
         tool = 'plan';
+      } else if (thirdSegment === 'blueprint') {
+        tool = 'blueprint';
       } else {
         const parsedSlide = parseInt(thirdSegment, 10);
         if (!isNaN(parsedSlide) && parsedSlide >= 1) {
@@ -117,7 +121,7 @@ export function usePresentationRouter() {
 
   // Navigate helper
   const navigateTo = useCallback(
-    (presentationId: string, sectionIndex = 0, slideIndex = 0, tool?: 'brief' | 'plan') => {
+    (presentationId: string, sectionIndex = 0, slideIndex = 0, tool?: 'brief' | 'plan' | 'blueprint') => {
       const newRoute: RouteState = {
         presentationId,
         sectionIndex,

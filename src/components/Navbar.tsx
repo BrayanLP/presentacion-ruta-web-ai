@@ -17,6 +17,7 @@ interface Props {
   onOpenPresenter: () => void;
   onOpenBrief: () => void;
   onOpenSoftwarePlan: () => void;
+  onOpenAppBlueprint?: () => void;
   onOpenHub: () => void;
   onOpenShortcuts: () => void;
   isFullscreen: boolean;
@@ -46,6 +47,7 @@ export const Navbar: React.FC<Props> = ({
   onOpenPresenter,
   onOpenBrief,
   onOpenSoftwarePlan,
+  onOpenAppBlueprint,
   onOpenHub,
   onOpenShortcuts,
   isFullscreen,
@@ -136,6 +138,7 @@ export const Navbar: React.FC<Props> = ({
         onOpenPresenter={onOpenPresenter}
         onOpenBrief={onOpenBrief}
         onOpenSoftwarePlan={onOpenSoftwarePlan}
+        onOpenAppBlueprint={onOpenAppBlueprint}
         onOpenHub={onOpenHub}
         onOpenShortcuts={onOpenShortcuts}
         isFullscreen={isFullscreen}

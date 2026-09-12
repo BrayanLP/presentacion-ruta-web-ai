@@ -126,6 +126,7 @@ export interface Presentation {
   description?: string;
   hasBriefGenerator?: boolean;
   hasSoftwarePlanGenerator?: boolean;
+  hasAppBlueprintGenerator?: boolean;
   sections: PresentationSection[];
 }
 
@@ -168,4 +169,18 @@ export interface SoftwarePlanData {
   desiredImprovements: string;
   databaseNeeds?: string;
   mvpScope?: string;
+}
+
+export interface AppBlueprintData {
+  appName: string;
+  problemSolved: string;
+  targetUser: string;
+  valueProposition: string;
+  keyFeatures: string;
+  requiredScreens: string;
+  userFlow: string;
+  mvpScope: string;
+  futureScope: string;
+  supabaseNeeds?: string;
+  similarApps?: string;
 }

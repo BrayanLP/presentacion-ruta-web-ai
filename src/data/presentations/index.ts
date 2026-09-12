@@ -1,10 +1,12 @@
 import type { Presentation } from '../../types';
 import { RUTA_WEB_AI_PRESENTATION } from './rutaWebAi';
 import { RUTA_SOFTWARE_AI_PRESENTATION } from './rutaSoftwareAi';
+import { RUTA_IOS_AI_PRESENTATION } from './rutaIosAi';
 
 export const PRESENTATIONS_CATALOG: Presentation[] = [
   RUTA_WEB_AI_PRESENTATION,
-  RUTA_SOFTWARE_AI_PRESENTATION
+  RUTA_SOFTWARE_AI_PRESENTATION,
+  RUTA_IOS_AI_PRESENTATION
 ];
 
 export function getAllPresentations(): Presentation[] {
@@ -22,5 +24,6 @@ export function getDefaultPresentation(): Presentation {
 
 export { 
   RUTA_WEB_AI_PRESENTATION, 
-  RUTA_SOFTWARE_AI_PRESENTATION 
+  RUTA_SOFTWARE_AI_PRESENTATION,
+  RUTA_IOS_AI_PRESENTATION
 };

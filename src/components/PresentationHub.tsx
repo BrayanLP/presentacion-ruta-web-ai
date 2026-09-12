@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   Sparkles, Layers, ArrowRight, Check, Copy, 
-  FileText, Database, Globe, Play
+  Database, Globe, Play, Smartphone
 } from 'lucide-react';
 import type { Presentation } from '../types';
 
@@ -29,6 +29,36 @@ export const PresentationHub: React.FC<Props> = ({
   const totalSlides = (p: Presentation) =>
     p.sections.reduce((acc, s) => acc + s.slides.length, 0);
 
+  const getPresentationTheme = (id: string) => {
+    switch (id) {
+      case 'ruta-web-ai':
+        return {
+          icon: Globe,
+          badgeBg: 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300',
+          cardBg: 'bg-gradient-to-b from-emerald-950/30 via-slate-950/70 to-slate-950/90 border-emerald-500/40 hover:border-emerald-400 hover:shadow-2xl hover:shadow-emerald-500/15',
+          btnBg: 'bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400',
+          accentDot: 'bg-emerald-400'
+        };
+      case 'ruta-software-ai':
+        return {
+          icon: Database,
+          badgeBg: 'bg-cyan-500/20 border-cyan-500/40 text-cyan-300',
+          cardBg: 'bg-gradient-to-b from-cyan-950/30 via-slate-950/70 to-slate-950/90 border-cyan-500/40 hover:border-cyan-400 hover:shadow-2xl hover:shadow-cyan-500/15',
+          btnBg: 'bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500',
+          accentDot: 'bg-cyan-400'
+        };
+      case 'ruta-ios-ai':
+      default:
+        return {
+          icon: Smartphone,
+          badgeBg: 'bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-500/40 text-purple-300',
+          cardBg: 'bg-gradient-to-b from-purple-950/30 via-slate-950/70 to-slate-950/90 border-purple-500/40 hover:border-pink-400 hover:shadow-2xl hover:shadow-pink-500/15',
+          btnBg: 'bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500',
+          accentDot: 'bg-pink-400'
+        };
+    }
+  };
+
   return (
     <div className="h-full w-full flex flex-col p-6 sm:p-10 md:p-14 relative z-10 overflow-y-auto justify-between bg-slate-950/80 backdrop-blur-xl">
       {/* Top Header */}
@@ -52,43 +82,36 @@ export const PresentationHub: React.FC<Props> = ({
           Catálogo de Rutas con IA
         </h1>
         <p className="text-sm sm:text-lg text-slate-300 mt-2 max-w-3xl leading-relaxed">
-          Selecciona la ruta de formación que deseas impartir o navegar. Cada ruta cuenta con diapositivas interactivas, notas de expositor, herramientas de generación y URLs directas.
+          Selecciona la ruta de formación que deseas proyectar o navegar. Cada ruta cuenta con diapositivas interactivas, notas de expositor, herramientas de generación y URLs directas.
         </p>
       </div>
 
       {/* Grid of Presentations */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 my-auto py-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 my-auto py-6">
         {presentations.map((p) => {
-          const isWeb = p.id === 'ruta-web-ai';
           const slidesCount = totalSlides(p);
+          const theme = getPresentationTheme(p.id);
+          const Icon = theme.icon;
 
           return (
             <div
               key={p.id}
               onClick={() => onSelectPresentation(p, 0)}
-              className={`glass-card p-6 sm:p-8 rounded-3xl cursor-pointer transition-all border flex flex-col justify-between relative group hover:-translate-y-1.5 ${
-                isWeb
-                  ? 'bg-gradient-to-b from-emerald-950/30 via-slate-950/70 to-slate-950/90 border-emerald-500/40 hover:border-emerald-400 hover:shadow-2xl hover:shadow-emerald-500/15'
-                  : 'bg-gradient-to-b from-cyan-950/30 via-slate-950/70 to-slate-950/90 border-cyan-500/40 hover:border-cyan-400 hover:shadow-2xl hover:shadow-cyan-500/15'
-              }`}
+              className={`glass-card p-6 sm:p-7 rounded-3xl cursor-pointer transition-all border flex flex-col justify-between relative group hover:-translate-y-1.5 ${theme.cardBg}`}
             >
               <div>
                 {/* Header Card */}
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className={`p-3 rounded-2xl border flex items-center justify-center ${
-                      isWeb 
-                        ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300' 
-                        : 'bg-cyan-500/20 border-cyan-500/40 text-cyan-300'
-                    }`}>
-                      {isWeb ? <Globe className="w-6 h-6" /> : <Database className="w-6 h-6" />}
+                    <div className={`p-3 rounded-2xl border flex items-center justify-center ${theme.badgeBg}`}>
+                      <Icon className="w-6 h-6" />
                     </div>
                     <div>
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
                         {p.badge || '2 Clases'}
                       </span>
                       <div className="text-[11px] font-mono text-slate-400 mt-0.5">
-                        Ruta Interna: <code className="text-white font-bold">/{p.id}</code>
+                        Ruta: <code className="text-white font-bold">/{p.id}</code>
                       </div>
                     </div>
                   </div>
@@ -113,19 +136,19 @@ export const PresentationHub: React.FC<Props> = ({
                 </div>
 
                 {/* Title & Description */}
-                <h2 className="text-2xl sm:text-3xl font-black text-white font-display group-hover:text-cyan-300 transition-colors">
+                <h2 className="text-xl sm:text-2xl font-black text-white font-display group-hover:text-cyan-300 transition-colors">
                   {p.title}
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                <p className="text-xs text-slate-300 mt-2 leading-relaxed">
                   {p.subtitle}
                 </p>
 
                 {/* Modules / Sections List */}
-                <div className="mt-5 space-y-2">
-                  <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider font-semibold">
+                <div className="mt-4 space-y-2">
+                  <div className="text-[10px] font-mono text-slate-400 uppercase tracking-wider font-semibold">
                     Módulos & Clases Incluidas:
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <div className="space-y-1.5">
                     {p.sections.map((sec, sIdx) => (
                       <button
                         key={sec.id}
@@ -133,15 +156,15 @@ export const PresentationHub: React.FC<Props> = ({
                           e.stopPropagation();
                           onSelectPresentation(p, sIdx);
                         }}
-                        className="p-2.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-800 text-left transition-colors flex items-center justify-between group/sec"
+                        className="w-full p-2 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-800 text-left transition-colors flex items-center justify-between group/sec"
                       >
-                        <div className="flex items-center gap-2">
-                          <span className="w-2 h-2 rounded-full bg-cyan-400 group-hover/sec:scale-125 transition-transform" />
-                          <span className="text-xs font-bold text-white group-hover/sec:text-cyan-300 transition-colors">
+                        <div className="flex items-center gap-2 truncate">
+                          <span className={`w-2 h-2 rounded-full ${theme.accentDot} group-hover/sec:scale-125 transition-transform shrink-0`} />
+                          <span className="text-xs font-bold text-white group-hover/sec:text-cyan-300 transition-colors truncate">
                             {sec.shortTitle || sec.title}
                           </span>
                         </div>
-                        <span className="text-[10px] font-mono text-slate-400">
+                        <span className="text-[10px] font-mono text-slate-400 shrink-0 ml-2">
                           {sec.slides.length} slides
                         </span>
                       </button>
@@ -151,25 +174,30 @@ export const PresentationHub: React.FC<Props> = ({
               </div>
 
               {/* Card Footer */}
-              <div className="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                <div className="flex items-center gap-2 text-xs font-mono text-slate-400">
-                  <Layers className="w-4 h-4 text-cyan-400" />
-                  <span>{slidesCount} diapositivas interactivas</span>
+              <div className="mt-5 pt-3 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2">
+                <div className="flex items-center gap-1.5 text-[11px] font-mono text-slate-400">
+                  <Layers className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>{slidesCount} diapositivas</span>
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1.5">
                   {p.hasBriefGenerator && (
-                    <span className="px-2 py-1 rounded-lg bg-slate-900 border border-slate-800 text-[10px] font-mono text-brand-300 flex items-center gap-1">
-                      <FileText className="w-3 h-3" /> Generador Brief
+                    <span className="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-[9px] font-mono text-brand-300">
+                      Brief Web
                     </span>
                   )}
                   {p.hasSoftwarePlanGenerator && (
-                    <span className="px-2 py-1 rounded-lg bg-slate-900 border border-slate-800 text-[10px] font-mono text-cyan-300 flex items-center gap-1">
-                      <Sparkles className="w-3 h-3" /> Plan Software
+                    <span className="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-[9px] font-mono text-cyan-300">
+                      Plan SaaS
+                    </span>
+                  )}
+                  {p.hasAppBlueprintGenerator && (
+                    <span className="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-[9px] font-mono text-purple-300">
+                      App Blueprint
                     </span>
                   )}
 
-                  <span className="px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 group-hover:from-cyan-400 group-hover:to-blue-500 text-slate-950 font-bold text-xs font-mono flex items-center gap-1.5 shadow-md shadow-cyan-500/20 transition-all">
+                  <span className={`px-3 py-1.5 rounded-xl ${theme.btnBg} text-slate-950 font-bold text-xs font-mono flex items-center gap-1 shadow-md transition-all`}>
                     <Play className="w-3 h-3 fill-current" />
                     <span>Proyectar</span>
                   </span>
@@ -184,10 +212,10 @@ export const PresentationHub: React.FC<Props> = ({
       <div className="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-slate-400">
         <div className="flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-cyan-400" />
-          <span>Rutas URL directas habilitadas: <code className="text-white font-bold">/ruta-web-ai</code> y <code className="text-white font-bold">/ruta-software-ai</code></span>
+          <span>Rutas URL directas habilitadas: <code className="text-white font-bold">/ruta-web-ai</code>, <code className="text-white font-bold">/ruta-software-ai</code> y <code className="text-white font-bold">/ruta-ios-ai</code></span>
         </div>
         <div className="text-slate-500">
-          Usa los botones de navegación o las flechas del teclado para proyectar
+          Navega entre presentaciones y diapositivas con teclado o clic
         </div>
       </div>
     </div>
