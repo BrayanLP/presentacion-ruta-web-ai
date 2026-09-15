@@ -87,6 +87,8 @@ export const BriefGeneratorModal: React.FC<Props> = ({ isOpen, onClose }) => {
   useEffect(() => {
     try {
       localStorage.setItem('ruta_web_brief_data', JSON.stringify(brief));
+      window.dispatchEvent(new CustomEvent('ruta_web_brief_updated', { detail: brief }));
+      window.dispatchEvent(new Event('storage'));
     } catch (e) {
       console.error(e);
     }
@@ -105,18 +107,20 @@ export const BriefGeneratorModal: React.FC<Props> = ({ isOpen, onClose }) => {
     }
   };
 
-  // Generate the Master Antigravity AI Prompt
+  // Generate the Master Antigravity AI Prompt (Fused with Class 2 Agents & Skills)
   const generatePrompt = () => {
-    return `Actúa como un equipo de élite compuesto por un Agente Arquitecto Frontend Senior, un Diseñador UI/UX y un Especialista en SEO & GEO (Generative Engine Optimization / Posicionamiento en Motores de IA y Google).
+    return `Actúa como un Equipo de Élite de Desarrollo Web con IA orquestado en Antigravity IDE, compuesto por:
+1. 🏗️ Web Architect (Skill: Web Design & Performance) -> Arquitectura limpia y modular con React / Next.js.
+2. 🎨 UI/UX Designer (Skill: Web Design & Branding) -> Estética moderna, paletas HSL, glassmorphism y micro-interacciones.
+3. 💻 Web Developer (Skill: Landing Page) -> Componentes TypeScript, responsive mobile-first y botón directo a WhatsApp.
+4. ✍️ Copywriter (Skill: Copywriting) -> Fórmulas persuasivas PAS y AIDA con titulares magnéticos.
+5. 🔍 SEO Specialist (Skill: SEO) -> Meta tags dinámicas, OpenGraph y jerarquía semántica H1/H2/H3.
+6. 🤖 GEO Specialist (Skill: GEO) -> Datos estructurados Schema.org JSON-LD (LocalBusiness, FAQPage) para ChatGPT, Perplexity y Gemini.
+7. 📝 Content Creator (Skill: Blog) -> Preguntas frecuentes de alta conversión y testimonios creíbles.
+8. 🛡️ Auditor (Skill: Audit & Accessibility) -> Validación WCAG AA, contraste y rendimiento Lighthouse.
+9. 🚀 Launch Manager (Skill: Launch) -> Configuración para despliegue en Vercel con certificado SSL.
 
-Construye una aplicación web moderna, interactiva y de alta conversión utilizando:
-- Next.js (App Router, TypeScript)
-- GSAP (para coreografías de animación fluidas, ScrollTrigger y microinteracciones de nivel premium)
-- React Hook Form (para gestión y validación ultrarrápida de formularios sin renders innecesarios)
-- Estrategia SEO & GEO (Schema JSON-LD estructurado, metadatos enriquecidos y optimización para ChatGPT Search, Perplexity y Google)
-- Tailwind CSS y Lucide Icons
-
-📌 [INFORMACIÓN DEL NEGOCIO]
+👑 [DIRECTIVA DEL CEO — BRIEF DE NEGOCIO ESTRUCTURADO EN CLASE 1]
 - Nombre Comercial: "${brief.businessName || 'Mi Negocio'}"
 - Industria / Nicho: ${brief.industry || 'Servicios Profesionales'}
 - Propuesta de Valor / Eslogan: "${brief.tagline || 'Soluciones de alto impacto'}"
@@ -130,37 +134,26 @@ Construye una aplicación web moderna, interactiva y de alta conversión utiliza
 3. ${brief.service3 || 'Servicio Principal 3'}
 
 🌐 [ESTRATEGIA SEO & GEO (Generative Engine Optimization)]
-- Schema.org JSON-LD: Inyectar datos estructurados (LocalBusiness, Organization, FAQPage, Service) para que los motores de IA (ChatGPT Search, Perplexity, Gemini, Google SGE) citen y recomienden el negocio con alta confianza.
-- Metadata API de Next.js: Configurar title dinámico, description atractiva con palabras clave de alta intención, OpenGraph para redes sociales y Twitter Cards.
-- Geo-Targeting Local: Optimizar copys y metadatos geográficos orientados a la ubicación del público (${brief.targetAudience || 'local'}).
+- Schema.org JSON-LD: Inyectar datos estructurados (LocalBusiness, Organization, FAQPage, Service) para que los motores de IA (ChatGPT Search, Perplexity, Gemini, Google) citen y recomienden el negocio con alta confianza.
+- Metadata API: Configurar title dinámico, description con palabras clave de alta intención, OpenGraph para WhatsApp y Twitter Cards.
 - Estructura Semántica: Único <h1> de alto impacto, <h2> por sección temática y contenido redactado para respuestas directas a motores de IA.
-- Archivos de Indexación: Generar app/sitemap.ts y app/robots.ts listos para producción.
 
-🎨 [IDENTIDAD VISUAL & ANIMACIONES CON GSAP]
+🎨 [IDENTIDAD VISUAL & ESTÉTICA MODERNA]
 - Paleta de Colores: ${brief.brandColors}
 - Modo: Dark Mode moderno con acentos vibrantes, glassmorphism sutil y bordes refinados.
 - Tipografía recomendada: Outfit o Inter.
-- Animaciones GSAP: Entrada secuencial con timelines suaves (Hero elements fade-in & stagger), transiciones de scroll y hover magnético en botones interactivos.
 
-📋 [FORMULARIOS & CONVERSIÓN CON REACT HOOK FORM]
-- Implementar formulario de cotización/contacto con React Hook Form validando:
-  * Nombre completo (requerido)
-  * Teléfono / WhatsApp (validación numérica y formato)
-  * Servicio de interés (selector dinámico)
-  * Mensaje o necesidad específica
+📲 [CANAL DE CONVERSIÓN DIRECTO]
 - Botón Flotante de WhatsApp configurado a: ${brief.whatsappNumber || '+51 999 000 000'} con mensaje predeterminado: "Hola ${brief.businessName || 'equipo'}, estuve revisando su página web y quiero cotizar sus servicios."
 
-📐 [ARQUITECTURA DE COMPONENTES NEXT.JS]
-1. app/layout.tsx (Fuentes optimizadas, metadatos SEO/GEO globales, Schema JSON-LD y diseño base).
-2. app/sitemap.ts y app/robots.ts (Indexación y rastreo SEO).
-3. components/Navbar.tsx (Header sticky con logo animado y botón CTA directo).
-4. components/Hero.tsx (Titular magnético, subtítulo con dolor/promesa, prueba social y timelines GSAP).
-5. components/Services.tsx (Grid de tarjetas de servicios con microinteracciones).
-6. components/About.tsx (Storytelling humano, métricas de confianza y credenciales).
-7. components/ContactForm.tsx (Formulario interactivo potenciado por React Hook Form).
-8. components/Faq.tsx (Acordeones interactivos con Schema FAQPage para SEO/GEO).
-9. components/WhatsAppButton.tsx (Botón flotante con pulso animado).
-10. components/Footer.tsx (Enlaces, datos de contacto locales, NAP y copyright).
+📐 [ARQUITECTURA DE COMPONENTES A GENERAR]
+1. Navbar.tsx (Header sticky con logo y botón CTA directo).
+2. HeroSection.tsx (Titular magnético, subtítulo con dolor/promesa, prueba social y botón WhatsApp).
+3. ServicesGrid.tsx (Grid de tarjetas de servicios con microinteracciones y beneficios).
+4. AboutUs.tsx (Storytelling humano, métricas de confianza y credenciales).
+5. FaqAccordion.tsx (Acordeones interactivos con Schema FAQPage para SEO/GEO).
+6. ContactWhatsapp.tsx (Bloque de contacto directo y botón flotante con pulso animado).
+7. Footer.tsx (Enlaces, datos de contacto locales y copyright).
 
 Por favor genera el código limpio, modular, tipado con TypeScript, responsivo para celulares y listo para producción sin placeholders ni datos ficticios incompletos.`;
   };

@@ -239,6 +239,125 @@ body {
   color: #6d28d9 !important;
 }
 
+.canvas-light-mode .bg-purple-500\/25,
+.canvas-light-mode .bg-purple-500\/20,
+.canvas-light-mode .bg-purple-500\/15,
+.canvas-light-mode .bg-purple-500\/10 {
+  background-color: #f3e8ff !important;
+  border-color: #d8b4fe !important;
+  color: #6b21a8 !important;
+}
+
+.canvas-light-mode .text-purple-400,
+.canvas-light-mode .text-purple-300,
+.canvas-light-mode .text-purple-200 {
+  color: #7e22ce !important;
+}
+
+.canvas-light-mode .bg-purple-950\/40,
+.canvas-light-mode .bg-purple-950\/30,
+.canvas-light-mode .bg-purple-950\/20 {
+  background-color: #faf5ff !important;
+  border-color: #e9d5ff !important;
+  color: #581c87 !important;
+}
+
+.canvas-light-mode .bg-amber-500\/25,
+.canvas-light-mode .bg-amber-500\/20,
+.canvas-light-mode .bg-amber-500\/15,
+.canvas-light-mode .bg-amber-500\/10 {
+  background-color: #fef3c7 !important;
+  border-color: #fde68a !important;
+  color: #92400e !important;
+}
+
+.canvas-light-mode .bg-amber-950\/40,
+.canvas-light-mode .bg-amber-950\/30,
+.canvas-light-mode .bg-amber-950\/20 {
+  background-color: #fffbeb !important;
+  border-color: #fde68a !important;
+  color: #78350f !important;
+}
+
+.canvas-light-mode .bg-red-500\/25,
+.canvas-light-mode .bg-red-500\/20,
+.canvas-light-mode .bg-red-500\/15,
+.canvas-light-mode .bg-red-500\/10 {
+  background-color: #fee2e2 !important;
+  border-color: #fca5a5 !important;
+  color: #991b1b !important;
+}
+
+.canvas-light-mode .bg-red-950\/40,
+.canvas-light-mode .bg-red-950\/30,
+.canvas-light-mode .bg-red-950\/20 {
+  background-color: #fef2f2 !important;
+  border-color: #fecaca !important;
+  color: #991b1b !important;
+}
+
+.canvas-light-mode .bg-emerald-950\/40,
+.canvas-light-mode .bg-emerald-950\/30,
+.canvas-light-mode .bg-emerald-950\/20 {
+  background-color: #f0fdf4 !important;
+  border-color: #bbf7d0 !important;
+  color: #14532d !important;
+}
+
+/* For cards with custom gradients in light mode */
+.canvas-light-mode .glass-card.bg-gradient-to-b {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+}
+
+.canvas-light-mode .text-rose-300,
+.canvas-light-mode .text-rose-400 {
+  color: #e11d48 !important;
+}
+
+/* Code mockup and terminal boxes in light mode */
+.canvas-light-mode .bg-\[\#080d1a\],
+.canvas-light-mode .bg-\[\#090e1c\],
+.canvas-light-mode .bg-\[\#060a14\],
+.canvas-light-mode .bg-\[\#080c16\] {
+  background-color: #0b1120 !important;
+  border-color: #1e293b !important;
+  color: #f1f5f9 !important;
+}
+
+.canvas-light-mode .bg-\[\#160608\] {
+  background-color: #ffffff !important;
+  border-color: #fca5a5 !important;
+}
+
+.canvas-light-mode .bg-\[\#160608\] p,
+.canvas-light-mode .bg-\[\#160608\] span {
+  color: #991b1b !important;
+}
+
+.canvas-light-mode .bg-\[\#06140d\] {
+  background-color: #ffffff !important;
+  border-color: #86efac !important;
+}
+
+.canvas-light-mode .bg-\[\#06140d\] p,
+.canvas-light-mode .bg-\[\#06140d\] span {
+  color: #14532d !important;
+}
+
+.canvas-light-mode .bg-\[\#080d1a\] pre,
+.canvas-light-mode .bg-\[\#090e1c\] pre,
+.canvas-light-mode .bg-\[\#060a14\] pre {
+  color: #38bdf8 !important;
+}
+
+.canvas-light-mode .bg-black\/40 {
+  background-color: rgba(15, 23, 42, 0.04) !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
 .canvas-light-mode .bg-gradient-to-r.from-cyan-950\/40,
 .canvas-light-mode .bg-gradient-to-r.from-cyan-950\/30,
 .canvas-light-mode .bg-cyan-950\/20,

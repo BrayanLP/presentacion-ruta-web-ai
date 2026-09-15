@@ -21,6 +21,16 @@ import { Slide1AILanguage } from './slides/clase1/Slide1AILanguage';
 import { Slide1Raffle } from './slides/clase1/Slide1Raffle';
 import { Slide1ProjectBrief } from './slides/clase1/Slide1ProjectBrief';
 
+// Slide Components Class 2 (Ruta Web)
+import { Slide2Hero } from './slides/clase2/Slide2Hero';
+import { Slide2OfficeAntigravity } from './slides/clase2/Slide2OfficeAntigravity';
+import { Slide2AgentsKit } from './slides/clase2/Slide2AgentsKit';
+import { Slide2SkillsKit } from './slides/clase2/Slide2SkillsKit';
+import { Slide2DirectingAgents } from './slides/clase2/Slide2DirectingAgents';
+import { Slide2CollaborationWorkflow } from './slides/clase2/Slide2CollaborationWorkflow';
+import { Slide2MistakesToAvoid } from './slides/clase2/Slide2MistakesToAvoid';
+import { Slide2AgentKitStation } from './slides/clase2/Slide2AgentKitStation';
+
 // Slide Components (Ruta Software)
 import { SlideSoftwareChecklist } from './slides/software/SlideSoftwareChecklist';
 import { SlideSoftwareIdeaInteractive } from './slides/software/SlideSoftwareIdeaInteractive';
@@ -94,6 +104,24 @@ export const SlideRenderer: React.FC<Props> = ({
       case 'clase1-projectbrief':
         return <Slide1ProjectBrief onOpenBriefModal={onOpenBrief || (() => {})} />;
 
+      // Ruta Web - Clase 2 (Tu Equipo de IA)
+      case 'clase2-hero':
+        return <Slide2Hero onNext={onNext} />;
+      case 'clase2-office':
+        return <Slide2OfficeAntigravity />;
+      case 'clase2-agents':
+        return <Slide2AgentsKit onOpenBriefModal={onOpenBrief || (() => {})} />;
+      case 'clase2-skills':
+        return <Slide2SkillsKit />;
+      case 'clase2-directing':
+        return <Slide2DirectingAgents />;
+      case 'clase2-collaboration':
+        return <Slide2CollaborationWorkflow />;
+      case 'clase2-mistakes':
+        return <Slide2MistakesToAvoid />;
+      case 'clase2-kit-station':
+        return <Slide2AgentKitStation onOpenBriefModal={onOpenBrief || (() => {})} />;
+
       // Ruta Software con IA
       case 'software-idea-interactive':
         return <SlideSoftwareIdeaInteractive onOpenPlanModal={onOpenSoftwarePlan || (() => {})} />;
@@ -122,3 +150,4 @@ export const SlideRenderer: React.FC<Props> = ({
   // Fallback to rich dynamic GenericSlide for all dynamic slides
   return <GenericSlide slide={slide} onNext={onNext} onOpenBrief={handleOpenTool} />;
 };
+

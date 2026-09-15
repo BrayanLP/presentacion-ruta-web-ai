@@ -1,5 +1,5 @@
 import type { Presentation } from '../../types';
-import { CLASE_0_SLIDES, CLASE_1_SLIDES } from '../slidesData';
+import { CLASE_0_SLIDES, CLASE_1_SLIDES, CLASE_2_SLIDES } from '../slidesData';
 
 // Enrich slides with customComponentKey so the SlideRenderer knows which custom interactive component to render
 const enrichedClase0Slides = CLASE_0_SLIDES.map((slide, idx) => {
@@ -38,14 +38,32 @@ const enrichedClase1Slides = CLASE_1_SLIDES.map((slide, idx) => {
   };
 });
 
+const enrichedClase2Slides = CLASE_2_SLIDES.map((slide, idx) => {
+  const keys = [
+    'clase2-hero',
+    'clase2-office',
+    'clase2-agents',
+    'clase2-skills',
+    'clase2-directing',
+    'clase2-collaboration',
+    'clase2-mistakes',
+    'clase2-kit-station'
+  ];
+  return {
+    ...slide,
+    layout: 'custom' as const,
+    customComponentKey: keys[idx] || 'clase2-hero'
+  };
+});
+
 export const RUTA_WEB_AI_PRESENTATION: Presentation = {
   id: 'ruta-web-ai',
   title: 'Ruta Web con IA',
   shortTitle: 'Ruta Web con IA',
   subtitle: 'De Cero a tu Primera Web Profesional e Inteligente',
-  badge: '2 Clases Prácticas',
+  badge: '3 Clases Prácticas',
   icon: 'Sparkles',
-  description: 'Masterclass interactiva de 2 clases para preparar tu entorno de desarrollo y estructurar la estrategia de conversión de tu web con IA.',
+  description: 'Masterclass completa de 3 clases para preparar tu entorno, estructurar tu estrategia de conversión y dirigir a tu equipo de agentes con el Kit de Skills en Antigravity.',
   hasBriefGenerator: true,
   sections: [
     {
@@ -65,6 +83,16 @@ export const RUTA_WEB_AI_PRESENTATION: Presentation = {
       color: 'violet',
       description: 'Propósito web, conversión vs redes, arquitectura, ruleta de sorteo y generador de brief maestro.',
       slides: enrichedClase1Slides
+    },
+    {
+      id: 'clase-2',
+      title: 'Clase 2: Tu Equipo de IA (Agentes & Skills)',
+      shortTitle: 'Clase 2: Equipo de IA',
+      badge: 'Agentes & Skills',
+      color: 'cyan',
+      description: 'Antigravity como oficina virtual, Kit de 9 Agentes, 11 Skills, dirección como CEO y estación de orquestación.',
+      slides: enrichedClase2Slides
     }
   ]
 };
+

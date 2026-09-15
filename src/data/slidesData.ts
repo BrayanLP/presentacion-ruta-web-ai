@@ -342,3 +342,180 @@ export const CLASE_1_SLIDES: SlideData[] = [
     }
   }
 ];
+
+export const CLASE_2_SLIDES: SlideData[] = [
+  {
+    id: 'c2-s1',
+    classId: 2,
+    slideNumber: 1,
+    totalInClass: 8,
+    category: '🤖 CLASE 2 — TU EQUIPO DE IA',
+    title: 'No vas a Programar. Vas a Dirigir.',
+    subtitle: 'De programador solitario a CEO de tu propio equipo de agentes de Inteligencia Artificial',
+    durationMinutes: 5,
+    speakerNotes: {
+      goal: 'Romper la barrera del miedo técnico: hoy nadie se atasca con sintaxis. Tu rol es ser CEO y dirigir con visión.',
+      talkingPoints: [
+        'El viejo paradigma: Aprender HTML, CSS, JavaScript por 6 meses para hacer una landing page.',
+        'El nuevo paradigma: Tú eres el CEO, los agentes son tu equipo multidisciplinario y Antigravity es tu oficina.',
+        'Tú defines qué se hace, con qué calidad y hacia dónde va el negocio; tus agentes ejecutan con precisión quirúrgica.'
+      ],
+      questionsToAsk: [
+        '¿Quién pensaba que hoy tendríamos que memorizar etiquetas de código?',
+        '¿Cómo cambia tu perspectiva al verte como el Director de un equipo de 9 especialistas?'
+      ],
+      liveActivity: 'Pedir a todos que adopten la postura de CEO y preparen su Brief de la Clase 1.'
+    }
+  },
+  {
+    id: 'c2-s2',
+    classId: 2,
+    slideNumber: 2,
+    totalInClass: 8,
+    category: '🏢 TU OFICINA VIRTUAL',
+    title: 'Antigravity: La Central de Operaciones',
+    subtitle: 'El entorno de desarrollo agentic donde la IA no solo sugiere, sino que construye y ejecuta',
+    durationMinutes: 8,
+    speakerNotes: {
+      goal: 'Presentar Antigravity no como un simple editor de texto, sino como el centro de mando agentic.',
+      talkingPoints: [
+        'Diferencia clave: Un chatbot web solo te da fragmentos de texto; Antigravity crea carpetas, ejecuta servidores locales, auto-corrige errores de compilación y prueba en el navegador.',
+        'La interfaz se divide en 4 áreas vitales: Panel de Agentes (Chat/Prompting), Editor de Código en Vivo, Terminal/Servidor Local y Explorador de Archivos.',
+        'La magia de la sincronización en tiempo real.'
+      ],
+      questionsToAsk: [
+        '¿Todos tienen ya abierto Antigravity en sus pantallas?'
+      ],
+      liveActivity: 'Hacer un recorrido visual rápido señalando cada panel clave de Antigravity.'
+    }
+  },
+  {
+    id: 'c2-s3',
+    classId: 2,
+    slideNumber: 3,
+    totalInClass: 8,
+    category: '🧰 KIT DE AGENTES WEB',
+    title: 'Tus 9 Agentes Especializados',
+    subtitle: 'El alumno no tiene que crearlos: vienen listos para actuar en cada fase del proyecto',
+    durationMinutes: 12,
+    speakerNotes: {
+      goal: 'Explicar los 9 perfiles del Kit de Agentes: qué hace cada uno, cuándo activarlo y cómo invocarlo.',
+      talkingPoints: [
+        '1. Web Architect: Estructura de carpetas, stack técnico y arquitectura limpia.',
+        '2. UI/UX Designer: Estética premium, paletas HSL, contraste, jerarquía y espaciados.',
+        '3. Web Developer: Código React/Vite/Next, componentes interactivos y lógica sin bugs.',
+        '4. Copywriter: Titulares magnéticos con fórmulas PAS/AIDA y CTAs que convierten.',
+        '5. SEO Specialist: Metaetiquetas, OpenGraph, sitemap y Core Web Vitals.',
+        '6. GEO Specialist: Schema.org JSON-LD para ser citado por ChatGPT, Gemini y Perplexity.',
+        '7. Content Creator: FAQs, testimonios creíbles y artículos de autoridad.',
+        '8. Auditor: Accesibilidad (WCAG), enlaces rotos, responsive y rendimiento.',
+        '9. Launch Manager: Repositorio GitHub, deploy en Vercel y dominio en 60 segundos.'
+      ],
+      liveActivity: 'Hacer clic en cada ficha de agente en pantalla para ver sus funciones y prompt de activación.'
+    }
+  },
+  {
+    id: 'c2-s4',
+    classId: 2,
+    slideNumber: 4,
+    totalInClass: 8,
+    category: '🧠 KIT DE SKILLS',
+    title: '11 Skills: Los Superpoderes Preinstalados',
+    subtitle: 'Reglas y conocimientos expertos empaquetados que tus agentes aplican al instante',
+    durationMinutes: 10,
+    speakerNotes: {
+      goal: 'Enseñar el concepto de Skill: conocimiento especializado inyectado que garantiza calidad estándar de agencia.',
+      talkingPoints: [
+        'Un agente sin skill es como un pasante brillante pero sin manual de procedimientos.',
+        'Un agente con skill tiene el estándar exacto de una agencia top: sabe qué colores usar, cómo evitar diseños genéricos y cómo estructurar una landing de alta conversión.',
+        'Los 11 Skills del Kit: Web Design, Landing Page, Copywriting, SEO, GEO, Blog, Branding, Accessibility, Performance, Audit, Launch.'
+      ],
+      questionsToAsk: [
+        '¿Por qué creen que es mejor darle un Skill preparado a la IA antes que intentar explicarle todo desde cero en cada prompt?'
+      ]
+    }
+  },
+  {
+    id: 'c2-s5',
+    classId: 2,
+    slideNumber: 5,
+    totalInClass: 8,
+    category: '👑 MENTALIDAD DE CEO',
+    title: 'Cómo Dirigir a tu Equipo con Maestría',
+    subtitle: 'Instrucciones precisas, auditoría en vivo y ajustes quirúrgicos sin romper nada',
+    durationMinutes: 10,
+    speakerNotes: {
+      goal: 'Entrenar al alumno en la comunicación de alto rendimiento con agentes.',
+      talkingPoints: [
+        '1. La Fórmula del Prompt Maestro: [Rol del Agente] + [Skill a activar] + [Contexto del Brief] + [Tarea exacta] + [Restricciones].',
+        '2. Cómo Auditar: Mirar siempre el navegador en vivo, probar botones y revisar contra el Brief.',
+        '3. Ajustes Quirúrgicos: Nunca decir "cámbialo todo"; decir "En la sección de Servicios, aumenta el tamaño del titular a 32px y cambia el botón de color cyan a violeta".'
+      ],
+      liveActivity: 'Analizar en vivo la comparativa entre "Mal Prompt" vs "Prompt de CEO".'
+    }
+  },
+  {
+    id: 'c2-s6',
+    classId: 2,
+    slideNumber: 6,
+    totalInClass: 8,
+    category: '🔄 WORKFLOW DE COLABORACIÓN',
+    title: 'La Cadena de Producción Multi-Agente',
+    subtitle: 'El flujo paso a paso donde cada agente toma el testigo y construye sobre lo anterior',
+    durationMinutes: 10,
+    speakerNotes: {
+      goal: 'Mostrar la coreografía perfecta de una web creada en 6 pasos coordinados.',
+      talkingPoints: [
+        'Fase 1: Architect sienta las bases técnicas del proyecto.',
+        'Fase 2: Copywriter + Designer crean el contenido persuasivo y el look visual con la Skill de Landing Page.',
+        'Fase 3: Developer ensambla los componentes interactivos.',
+        'Fase 4: GEO & SEO inyectan Schema JSON-LD y metadatos.',
+        'Fase 5: Auditor corre el escaneo 360° de calidad.',
+        'Fase 6: Launch Manager conecta Vercel y publica al mundo.'
+      ]
+    }
+  },
+  {
+    id: 'c2-s7',
+    classId: 2,
+    slideNumber: 7,
+    totalInClass: 8,
+    category: '⚠️ PREVENCIÓN DE ERRORES',
+    title: '5 Errores Comunes y Cómo Evitarlos',
+    subtitle: 'Los tropiezos que cometen los principiantes y las reglas de oro para blindar tu proyecto',
+    durationMinutes: 8,
+    speakerNotes: {
+      goal: 'Prevenir frustraciones comunes y fijar buenas prácticas de trabajo ágil.',
+      talkingPoints: [
+        'Error 1: Intentar codificar a mano cuando un agente lo resuelve en 2 segundos.',
+        'Error 2: El "Mega Prompt" saturado. Es mejor avanzar paso a paso por componentes.',
+        'Error 3: Olvidar revisar la versión móvil.',
+        'Error 4: No incluir datos estructurados para GEO (la IA no te encontrará si no los pones).',
+        'Error 5: No usar el Kit de Skills prefabricado.'
+      ],
+      questionsToAsk: [
+        '¿Cuál de estos errores creen que es el más tentador al inicio?'
+      ]
+    }
+  },
+  {
+    id: 'c2-s8',
+    classId: 2,
+    slideNumber: 8,
+    totalInClass: 8,
+    category: '🚀 ESTACIÓN INTERACTIVA',
+    title: 'Tu Kit de Agentes & Skills Listo para Usar',
+    subtitle: 'Explora, combina cualquier Agente + Skill, genera los prompts de orquestación y llévate el Kit',
+    durationMinutes: 15,
+    speakerNotes: {
+      goal: 'Entregar el Kit interactivo completo a los alumnos para que puedan copiar, probar y exportar sus agentes.',
+      talkingPoints: [
+        'Aquí tienen su arsenal completo listo para copiar y pegar en Antigravity.',
+        'Pueden seleccionar cualquier Agente, acoplarle un Skill y ver cómo se genera el prompt maestro.',
+        'Todo el kit está documentado y listo para acelerar sus proyectos 10x.'
+      ],
+      liveActivity: 'Probar una combinación de Agente Web Developer + Skill Landing Page y copiar el prompt generado.'
+    }
+  }
+];
+
