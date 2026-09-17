@@ -139,6 +139,7 @@ body {
 }
 
 .canvas-light-mode .bg-slate-950,
+.canvas-light-mode .bg-slate-950\/95,
 .canvas-light-mode .bg-slate-950\/90,
 .canvas-light-mode .bg-slate-950\/80,
 .canvas-light-mode .bg-slate-950\/70,
@@ -178,6 +179,11 @@ body {
   color: #0284c7 !important;
 }
 
+.canvas-light-mode .text-teal-400,
+.canvas-light-mode .text-teal-300 {
+  color: #0f766e !important;
+}
+
 .canvas-light-mode .text-emerald-400,
 .canvas-light-mode .text-emerald-300,
 .canvas-light-mode .text-emerald-200 {
@@ -207,6 +213,7 @@ body {
   color: #d97706 !important;
 }
 
+.canvas-light-mode .bg-cyan-500\/25,
 .canvas-light-mode .bg-cyan-500\/20,
 .canvas-light-mode .bg-cyan-500\/15,
 .canvas-light-mode .bg-cyan-500\/10 {
@@ -223,6 +230,7 @@ body {
   color: #0f766e !important;
 }
 
+.canvas-light-mode .bg-emerald-500\/25,
 .canvas-light-mode .bg-emerald-500\/20,
 .canvas-light-mode .bg-emerald-500\/15,
 .canvas-light-mode .bg-emerald-500\/10 {
@@ -231,6 +239,7 @@ body {
   color: #047857 !important;
 }
 
+.canvas-light-mode .bg-violet-500\/25,
 .canvas-light-mode .bg-violet-500\/20,
 .canvas-light-mode .bg-violet-500\/15,
 .canvas-light-mode .bg-violet-500\/10 {

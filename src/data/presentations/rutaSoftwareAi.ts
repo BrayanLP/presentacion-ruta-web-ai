@@ -415,14 +415,213 @@ export const CLASE_1_SOFTWARE_SLIDES: SlideData[] = [
   }
 ];
 
+export const CLASE_2_SOFTWARE_SLIDES: SlideData[] = [
+  {
+    id: 's2-s1',
+    sectionId: 'clase-2-software',
+    slideNumber: 1,
+    totalInClass: 5,
+    category: '🤖 CLASE 2 — CONOCE A TU EQUIPO DE IA',
+    title: 'Tu Equipo de Desarrollo Inteligente',
+    subtitle: 'Presentamos a los agentes especializados que construirán tu software',
+    durationMinutes: 5,
+    layout: 'hero',
+    badge: 'EQUIPO AGENTIC',
+    heroCta: {
+      text: 'Conocer al Equipo'
+    },
+    stats: [
+      { value: '9', label: 'Agentes Especializados', subtext: 'Cubren todo el ciclo de desarrollo' },
+      { value: '100%', label: 'Autonomía', subtext: 'Trabajan en paralelo' },
+      { value: 'Skills', label: 'Habilidades Preconfiguradas', subtext: 'Entregadas y listas para usar' }
+    ],
+    speakerNotes: {
+      goal: 'Presentar al equipo de agentes de IA y preparar a los alumnos para delegar tareas.',
+      talkingPoints: [
+        'No vas a programar solo. Tienes un equipo completo a tu disposición.',
+        'Cada agente tiene un rol específico, igual que en una empresa de software real.'
+      ]
+    }
+  },
+  {
+    id: 's2-s2',
+    sectionId: 'clase-2-software',
+    slideNumber: 2,
+    totalInClass: 5,
+    category: '👥 LOS AGENTES',
+    title: 'El Equipo: Roles y Responsabilidades',
+    subtitle: 'Cada agente tiene una misión clara en la creación de tu software',
+    durationMinutes: 15,
+    layout: 'grid',
+    cards: [
+      {
+        title: '👔 Product Manager',
+        desc: 'Convierte tu idea abstracta en funcionalidades concretas y accionables.',
+        badge: 'Estrategia',
+        list: ['Define el alcance', 'Prioriza tareas']
+      },
+      {
+        title: '🎨 UX/UI Designer',
+        desc: 'Diseña las pantallas y la experiencia de usuario.',
+        badge: 'Diseño',
+        list: ['Wireframes', 'Sistemas de diseño']
+      },
+      {
+        title: '📐 Software Architect',
+        desc: 'Organiza el proyecto y define la estructura técnica.',
+        badge: 'Arquitectura',
+        list: ['Selección de stack', 'Estructura de carpetas']
+      },
+      {
+        title: '👨‍💻 Developer',
+        desc: 'Construye el software escribiendo el código necesario.',
+        badge: 'Desarrollo',
+        list: ['Frontend', 'Backend', 'Integraciones']
+      },
+      {
+        title: '🗄️ Database Specialist',
+        desc: 'Define la información que necesita el sistema (esquemas y relaciones).',
+        badge: 'Datos',
+        list: ['Modelado de datos', 'Optimización']
+      },
+      {
+        title: '⚡ Supabase Specialist',
+        desc: 'Gestiona usuarios, seguridad RLS y datos directamente en Supabase.',
+        badge: 'Backend/Supabase',
+        list: ['Auth', 'Políticas RLS', 'Edge Functions']
+      },
+      {
+        title: '🛡️ Security Agent',
+        desc: 'Revisa permisos, vulnerabilidades y seguridad del proyecto.',
+        badge: 'Seguridad',
+        list: ['Auditoría', 'Mejores prácticas']
+      },
+      {
+        title: '🔍 QA Agent & Code Reviewer',
+        desc: 'Busca errores, prueba flujos y revisa la calidad del código generado.',
+        badge: 'Calidad',
+        list: ['Testing automatizado', 'Revisión de PRs']
+      }
+    ],
+    speakerNotes: {
+      goal: 'Detallar las responsabilidades de cada agente.',
+      talkingPoints: [
+        'Entender a quién pedirle qué cosa es la clave del éxito.',
+        'El Architect organiza, el Developer ejecuta, el QA revisa.'
+      ]
+    }
+  },
+  {
+    id: 's2-s3',
+    sectionId: 'clase-2-software',
+    slideNumber: 3,
+    totalInClass: 5,
+    category: '🧠 SKILLS',
+    title: 'Superpoderes Preconfigurados: Skills',
+    subtitle: 'Te entregamos las habilidades (Skills) listas para que tus agentes actúen como expertos',
+    durationMinutes: 10,
+    layout: 'comparison',
+    comparison: {
+      leftTitle: 'Agente sin Skills (Básico)',
+      leftSubtitle: 'Respuestas genéricas',
+      leftBadge: 'Ineficiente',
+      leftItems: [
+        'Requiere prompts muy largos y detallados.',
+        'Puede cometer errores de contexto o usar versiones antiguas.',
+        'No conoce tu base de datos ni tu arquitectura específica.'
+      ],
+      rightTitle: 'Agente con Skills (Experto)',
+      rightSubtitle: 'Contexto total y metodologías predefinidas',
+      rightBadge: 'Alto Rendimiento',
+      rightItems: [
+        'Ejecuta flujos complejos con un solo comando (ej. /crear-tabla).',
+        'Sigue estándares de código modernos y seguros.',
+        'La carpeta .agents se coloca en tu proyecto y los agentes la leen automáticamente.'
+      ]
+    },
+    speakerNotes: {
+      goal: 'Explicar qué son los Skills y cómo potencian a los agentes.',
+      talkingPoints: [
+        'Los Skills son como el "manual de operaciones" que le damos a cada empleado.',
+        'Solo debes pegar la carpeta .agents en la raíz de tu proyecto y los agentes aprenderán todo al instante.'
+      ]
+    }
+  },
+  {
+    id: 's2-s4',
+    sectionId: 'clase-2-software',
+    slideNumber: 4,
+    totalInClass: 5,
+    category: '🎓 EL FLUJO DE TRABAJO',
+    title: 'Cómo Trabajar con tu Equipo IA',
+    subtitle: 'El proceso exacto para delegar tareas y revisar resultados',
+    durationMinutes: 10,
+    layout: 'grid',
+    cards: [
+      {
+        title: '1. Qué agente utilizar',
+        desc: 'Identifica quién es el experto adecuado para la tarea (Ej: Diseño vs Datos).',
+        badge: 'Paso 1',
+        list: []
+      },
+      {
+        title: '2. Cuándo utilizarlo',
+        desc: 'Sigue el orden lógico: primero Arquitectura, luego Base de Datos, luego Desarrollo.',
+        badge: 'Paso 2',
+        list: []
+      },
+      {
+        title: '3. Qué pedirle',
+        desc: 'Usa instrucciones claras, proporciona contexto y apóyate en los Skills entregados.',
+        badge: 'Paso 3',
+        list: []
+      },
+      {
+        title: '4. Cómo revisar el resultado',
+        desc: 'Pide al QA Agent o Code Reviewer que valide el trabajo antes de aceptarlo.',
+        badge: 'Paso 4',
+        list: []
+      }
+    ],
+    speakerNotes: {
+      goal: 'Enseñar la mecánica diaria de trabajo con agentes.',
+      talkingPoints: [
+        'Saber delegar es más importante que saber escribir código.',
+        'Nunca asumas que el código es perfecto a la primera; usa a tu equipo de revisión.'
+      ]
+    }
+  },
+  {
+    id: 's2-s5',
+    sectionId: 'clase-2-software',
+    slideNumber: 5,
+    totalInClass: 5,
+    category: '🚀 EL PROMPT MAESTRO',
+    title: 'Fusión: Tu Idea + Tu Equipo IA',
+    subtitle: 'El momento de la verdad: entregamos a Antigravity tu Plan de Software con instrucciones precisas para tus agentes',
+    durationMinutes: 15,
+    layout: 'custom',
+    customComponentKey: 'software-final-plan',
+    speakerNotes: {
+      goal: 'Generar el Prompt Maestro que consolida la idea del alumno (Clase 1) con la asignación de roles a los agentes (Clase 2).',
+      talkingPoints: [
+        'Aquí unimos todo lo aprendido.',
+        'Tomamos el plan estructurado de tu software y le añadimos la "magia": quién va a hacer qué.',
+        'Le diremos al Product Manager que dirija, al Architect que cree las carpetas, y al Developer que programe.'
+      ],
+      liveActivity: 'Abrir el Generador de Prompt Maestro y mostrar cómo incluye instrucciones específicas para los agentes y skills.'
+    }
+  }
+];
+
 export const RUTA_SOFTWARE_AI_PRESENTATION: Presentation = {
   id: 'ruta-software-ai',
   title: 'Ruta Software con IA',
   shortTitle: 'Ruta Software con IA',
   subtitle: 'De tu Idea de Negocio a tu Primer Software & SaaS con Agentes y Supabase',
-  badge: '2 Clases Prácticas',
+  badge: '3 Clases Prácticas',
   icon: 'Layers',
-  description: 'Masterclass práctica de 2 clases para preparar tu entorno de desarrollo (Antigravity, GitHub, Vercel, Supabase) y estructurar el MVP y Plan Maestro de tu software con agentes de IA.',
+  description: 'Masterclass práctica de 3 clases para preparar tu entorno, estructurar el MVP, y conocer a tu equipo de agentes de IA para construir tu software.',
   hasBriefGenerator: false,
   hasSoftwarePlanGenerator: true,
   sections: [
@@ -443,6 +642,15 @@ export const RUTA_SOFTWARE_AI_PRESENTATION: Presentation = {
       color: 'violet',
       description: 'Metodología en 8 pasos con agentes de IA, arquitectura en 3 capas, priorización y Generador del Plan de tu Software.',
       slides: CLASE_1_SOFTWARE_SLIDES
+    },
+    {
+      id: 'clase-2-software',
+      title: 'Clase 2: Conoce a tu Equipo de IA',
+      shortTitle: 'Clase 2: Equipo IA',
+      badge: 'Agentes & Skills',
+      color: 'emerald',
+      description: 'Presentación del equipo de agentes (Product Manager, Architect, Developer, etc.), entrega de Skills y flujo de trabajo para construir el software.',
+      slides: CLASE_2_SOFTWARE_SLIDES
     }
   ]
 };

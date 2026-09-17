@@ -141,7 +141,15 @@ Objetivo: Construir la plataforma para gimnasios & centros fitness:
 1. /recepcion/acceso-qr: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /socio/mi-carnet: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /clases/agenda: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/cobranzas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/cobranzas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -231,7 +239,15 @@ Objetivo: Construir la plataforma para ópticas & salud visual:
 1. /optometria/refraccion: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /taller/ordenes-kanban: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /catalogo/monturas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/ventas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/ventas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -321,7 +337,15 @@ Objetivo: Construir la plataforma para fisioterapia & rehabilitación:
 1. /paciente/[id]/evaluacion: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /ejercicios/biblioteca: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /agenda/box-terapia: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/sesiones: Panel de administración con métricas clave y cierre diario.`
+4. /admin/sesiones: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -411,7 +435,15 @@ Objetivo: Construir la plataforma para laboratorios clínicos & análisis:
 1. /resultados/[codigoSeguro]: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /laboratorio/ingreso-valores: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /recepcion/toma-muestras: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/analisis: Panel de administración con métricas clave y cierre diario.`
+4. /admin/analisis: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -501,7 +533,15 @@ Objetivo: Construir la plataforma para psicología & salud mental:
 1. /paciente/[id]/notas-clinicas: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /test/evaluacion-ansiedad: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /videoconsulta/[salaId]: Módulo de seguimiento y actualización de estados con alertas.
-4. /agenda/citas: Panel de administración con métricas clave y cierre diario.`
+4. /agenda/citas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -591,7 +631,15 @@ Objetivo: Construir la plataforma para clínicas odontológicas & dentistas:
 1. /odontograma/[pacienteId]: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /presupuestos/crear: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /agenda/sillones-dentales: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/caja: Panel de administración con métricas clave y cierre diario.`
+4. /admin/caja: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -681,7 +729,15 @@ Objetivo: Construir la plataforma para centros de nutrición & dietética:
 1. /pacientes/[id]/evaluacion: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /planes/crear-dieta: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /paciente/mi-menu: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/agenda: Panel de administración con métricas clave y cierre diario.`
+4. /admin/agenda: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -771,7 +827,15 @@ Objetivo: Construir la plataforma para estudios de yoga & pilates:
 1. /estudio/reserva: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /mi-perfil/creditos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /admin/horarios: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/alumnos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/alumnos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -861,7 +925,15 @@ Objetivo: Construir la plataforma para spa & centros de estética y masajes:
 1. /spa/agenda-cabinas: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /cliente/paquetes-sesiones: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /consentimiento/[id]: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/terapeutas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/terapeutas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -951,7 +1023,15 @@ Objetivo: Construir la plataforma para farmacias & boticas de barrio:
 1. /pos/mostrador: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /inventario/lotes-vencimiento: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /recetas-retenidas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/reportes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/reportes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1041,7 +1121,15 @@ Objetivo: Construir la plataforma para clínicas pediátricas & control infantil
 1. /paciente/[id]/percentiles: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /calculadora-dosis: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /carnet-vacunacion: Módulo de seguimiento y actualización de estados con alertas.
-4. /portal-padres: Panel de administración con métricas clave y cierre diario.`
+4. /portal-padres: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1131,7 +1219,15 @@ Objetivo: Construir la plataforma para centros dermatológicos & cuidado de piel
 1. /paciente/[id]/mapa-corporal: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /comparador-fotos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /skincare/receta: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/citas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/citas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1213,7 +1309,15 @@ Objetivo: Construir la plataforma para centros de podología & cuidado del pie:
 1. /paciente/[id]/ficha-pie: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /pie-diabetico/protocolo: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /agenda/profilaxis: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/tratamientos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/tratamientos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1295,7 +1399,15 @@ Objetivo: Construir la plataforma para centros de quiropráctica & alineación:
 1. /paciente/[id]/columna: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /radiografias/visor: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /paquetes/ajustes: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/pacientes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/pacientes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1385,7 +1497,15 @@ Objetivo: Construir la plataforma para fonoaudiología & terapia del lenguaje:
 1. /evaluacion-fonetica: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /audios/[pacienteId]: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /actividades-casa: Módulo de seguimiento y actualización de estados con alertas.
-4. /informe-evolucion: Panel de administración con métricas clave y cierre diario.`
+4. /informe-evolucion: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1475,7 +1595,15 @@ Objetivo: Construir la plataforma para centros de vacunación & inmunizaciones:
 1. /vacunacion/registro: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /cadena-frio/temperaturas: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /certificados/emitir: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/stock-biologicos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/stock-biologicos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1565,7 +1693,15 @@ Objetivo: Construir la plataforma para terapia ocupacional & estimulación:
 1. /evaluacion/perfil-sensorial: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /hitos/progreso: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /guias/colegio: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/terapeutas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/terapeutas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1647,7 +1783,15 @@ Objetivo: Construir la plataforma para consultorios de ginecología & maternidad
 1. /embarazo/carnet-prenatal: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /ecografias/galeria: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /controles/agenda: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/pacientes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/pacientes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1737,7 +1881,15 @@ Objetivo: Construir la plataforma para restobares & bares:
 1. /mesas/mapa-vivo: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /barra/pantalla-tragos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cocina/pantalla-pedidos: Módulo de seguimiento y actualización de estados con alertas.
-4. /cuenta/dividir-pago: Panel de administración con métricas clave y cierre diario.`
+4. /cuenta/dividir-pago: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1827,7 +1979,15 @@ Objetivo: Construir la plataforma para cafeterías de especialidad:
 1. /pos/caja-rapida: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /comandas/barista: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /fidelidad/puntos: Módulo de seguimiento y actualización de estados con alertas.
-4. /inventario/granos-cafe: Panel de administración con métricas clave y cierre diario.`
+4. /inventario/granos-cafe: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1909,7 +2069,15 @@ Objetivo: Construir la plataforma para panaderías & pastelerías:
 1. /produccion/horneadas: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /tortas/pedidos-personalizados: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /insumos/recetas-costos: Módulo de seguimiento y actualización de estados con alertas.
-4. /pos/mostrador: Panel de administración con métricas clave y cierre diario.`
+4. /pos/mostrador: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -1991,7 +2159,15 @@ Objetivo: Construir la plataforma para pizzerías & comida rápida:
 1. /crear-pizza/mitades: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /cocina/kds-pantalla: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /delivery/despacho-motorizados: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/caja: Panel de administración con métricas clave y cierre diario.`
+4. /admin/caja: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2073,7 +2249,15 @@ Objetivo: Construir la plataforma para carnicerías & cortes especiales:
 1. /pos/mostrador-peso: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /desposte/rendimiento: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /inventario/cortes-frios: Módulo de seguimiento y actualización de estados con alertas.
-4. /mayoristas/pedidos: Panel de administración con métricas clave y cierre diario.`
+4. /mayoristas/pedidos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2163,7 +2347,15 @@ Objetivo: Construir la plataforma para cevicherías & marisquerías:
 1. /mesas/salon: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /cocina/comandas-marinas: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pesca-del-dia/ajuste-precios: Módulo de seguimiento y actualización de estados con alertas.
-4. /caja/arqueo: Panel de administración con métricas clave y cierre diario.`
+4. /caja/arqueo: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2245,7 +2437,15 @@ Objetivo: Construir la plataforma para pollerías & brasas:
 1. /horno/control-pollos: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /delivery/mapa-motorizados: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/mostrador: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/reportes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/reportes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2327,7 +2527,15 @@ Objetivo: Construir la plataforma para heladerías artesanales:
 1. /pos/sabores-toppings: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /cubetas/rotacion-stock: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /delivery/potes-litro: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/ventas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/ventas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2409,7 +2617,15 @@ Objetivo: Construir la plataforma para food trucks & puestos móviles:
 1. /pos/express-touch: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /pedidos/aviso-cliente: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cierre/arqueo-turno: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/menu: Panel de administración con métricas clave y cierre diario.`
+4. /admin/menu: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2491,7 +2707,15 @@ Objetivo: Construir la plataforma para cervecerías artesanales & taprooms:
 1. /taproom/pizarra-taps: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /barriles/monitoreo-litros: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/pintas-growlers: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/lotes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/lotes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2573,7 +2797,15 @@ Objetivo: Construir la plataforma para servicios de catering & banquetes:
 1. /cotizador/por-comensal: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /checklist/menaje-almacen: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cronograma/servicio-evento: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/contratos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/contratos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2655,7 +2887,15 @@ Objetivo: Construir la plataforma para restaurantes de sushi & comida nikkei:
 1. /sushibar/pantalla-itamae: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /mesas/comandas-makis: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /promos/all-you-can-eat: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/caja: Panel de administración con métricas clave y cierre diario.`
+4. /admin/caja: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2737,7 +2977,15 @@ Objetivo: Construir la plataforma para dark kitchens & cocinas virtuales:
 1. /cocina/kds-multimarca: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /pedidos/consolidado-apps: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /almacen/insumos-compartidos: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/metricas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/metricas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2819,7 +3067,15 @@ Objetivo: Construir la plataforma para sandwicherías & juguerías:
 1. /pos/combo-sandwich-jugo: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /cocina/plancha-sandwichera: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /barra/jugueria: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/ventas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/ventas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2901,7 +3157,15 @@ Objetivo: Construir la plataforma para churrasquerías & parrilladas:
 1. /parrilla/comandas-terminos: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /mesas/pedidos-cortes: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /caja/facturacion: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/stock-carnes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/stock-carnes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -2983,7 +3247,15 @@ Objetivo: Construir la plataforma para pescaderías & mariscos frescos:
 1. /pos/balanza-pescados: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /almacen/pescado-fresco: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /despacho/fileteado: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/proveedores: Panel de administración con métricas clave y cierre diario.`
+4. /admin/proveedores: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3065,7 +3337,15 @@ Objetivo: Construir la plataforma para tiendas de té, tisanas & bubble tea:
 1. /pos/personalizador-bebida: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /barra/pantalla-preparacion: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /fidelidad/tarjeta-sellos: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/stock: Panel de administración con métricas clave y cierre diario.`
+4. /admin/stock: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3147,7 +3427,15 @@ Objetivo: Construir la plataforma para comedores corporativos & viandas:
 1. /empleado/elegir-menu-semanal: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /comedor/lector-fotocheck: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cocina/conteos-platos: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/facturacion-empresas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/facturacion-empresas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3237,7 +3525,15 @@ Objetivo: Construir la plataforma para perfumerías & fragancias:
 1. /catalogo/familias-olfativas: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /perfume/[id]/piramide: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/decants-fraccionados: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/inventario: Panel de administración con métricas clave y cierre diario.`
+4. /admin/inventario: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3319,7 +3615,15 @@ Objetivo: Construir la plataforma para boutiques de ropa & tiendas de moda:
 1. /catalogo/temporada: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /pos/mostrador-tallas: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /inventario/matriz-sku: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/ventas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/ventas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3401,7 +3705,15 @@ Objetivo: Construir la plataforma para concesionarias de autos seminuevos:
 1. /catalogo/autos: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /vehiculo/[id]/simulador: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /test-drive/agendar: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/leads: Panel de administración con métricas clave y cierre diario.`
+4. /admin/leads: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3483,7 +3795,15 @@ Objetivo: Construir la plataforma para viveros & paisajismo botánico:
 1. /catalogo/plantas: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /planta/[id]/cuidados-qr: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /paisajismo/cotizador: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/stock: Panel de administración con métricas clave y cierre diario.`
+4. /admin/stock: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3565,7 +3885,15 @@ Objetivo: Construir la plataforma para tiendas de suplementos deportivos:
 1. /test-objetivo/asesor: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /catalogo/suplementos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /combos/packs-ahorro: Módulo de seguimiento y actualización de estados con alertas.
-4. /pos/mostrador: Panel de administración con métricas clave y cierre diario.`
+4. /pos/mostrador: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3647,7 +3975,15 @@ Objetivo: Construir la plataforma para ferreterías & materiales de construcció
 1. /pos/venta-fraccionada: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /buscador/por-medidas-roscas: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cotizaciones/obras: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/stock-minimo: Panel de administración con métricas clave y cierre diario.`
+4. /admin/stock-minimo: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3729,7 +4065,15 @@ Objetivo: Construir la plataforma para zapaterías & calzado:
 1. /vendedor/consultar-talla-rapida: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /catalogo/estilos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/caja: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/inventario-pares: Panel de administración con métricas clave y cierre diario.`
+4. /admin/inventario-pares: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3811,7 +4155,15 @@ Objetivo: Construir la plataforma para joyerías & relojerías:
 1. /catalogo/joyas-finas: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /certificados/verificador-qr: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /taller/reparaciones-joyas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/caja: Panel de administración con métricas clave y cierre diario.`
+4. /admin/caja: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3893,7 +4245,15 @@ Objetivo: Construir la plataforma para librerías & papelerías:
 1. /buscador/isbn-autor: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /listas-utiles/cotizador-rapido: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/mostrador: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/editoriales: Panel de administración con métricas clave y cierre diario.`
+4. /admin/editoriales: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -3975,7 +4335,15 @@ Objetivo: Construir la plataforma para tiendas de mascotas & pet shops:
 1. /pos/granel-bolsas: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /mascotas/recordatorio-comida: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /catalogo/accesorios: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/proveedores: Panel de administración con métricas clave y cierre diario.`
+4. /admin/proveedores: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4057,7 +4425,15 @@ Objetivo: Construir la plataforma para tiendas de repuestos de motos & bicis:
 1. /buscador/por-marca-modelo-ano: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /pos/mostrador-motos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /inventario/codigos-oem: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/compras: Panel de administración con métricas clave y cierre diario.`
+4. /admin/compras: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4139,7 +4515,15 @@ Objetivo: Construir la plataforma para mueblerías & decoración del hogar:
 1. /catalogo/muebles-acabados: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /pedidos/despacho-armado: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/contratos-muebles: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/fabricacion: Panel de administración con métricas clave y cierre diario.`
+4. /admin/fabricacion: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4221,7 +4605,15 @@ Objetivo: Construir la plataforma para tiendas de artículos de fiesta & cotill�
 1. /tematicas/kits-cumpleanos: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /calculador/helio-globos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/caja-rapida: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/stock: Panel de administración con métricas clave y cierre diario.`
+4. /admin/stock: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4303,7 +4695,15 @@ Objetivo: Construir la plataforma para tiendas de electrónica & accesorios móv
 1. /buscador/por-modelo-celular: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /garantias/consulta-imei: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/gadgets: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/inventario: Panel de administración con métricas clave y cierre diario.`
+4. /admin/inventario: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4385,7 +4785,15 @@ Objetivo: Construir la plataforma para tiendas de ropa infantil & bebés:
 1. /baby-shower/lista-regalos: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /catalogo/ajuares-recien-nacido: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/mostrador: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/stock: Panel de administración con métricas clave y cierre diario.`
+4. /admin/stock: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4467,7 +4875,15 @@ Objetivo: Construir la plataforma para licorerías & tiendas de vinos:
 1. /catalogo/vinos-maridaje: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /combos/packs-nocturnos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/mostrador: Módulo de seguimiento y actualización de estados con alertas.
-4. /delivery/despacho: Panel de administración con métricas clave y cierre diario.`
+4. /delivery/despacho: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4557,7 +4973,15 @@ Objetivo: Construir la plataforma para funerarias & servicios exequiales:
 1. /salas/disponibilidad: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /servicios/contrato-nuevo: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /catalogo/ataudes-urnas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/expedientes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/expedientes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4647,7 +5071,15 @@ Objetivo: Construir la plataforma para clínicas veterinarias & mascotas:
 1. /mascota/[id]/historia-clinica: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /grooming/agenda-bano: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /vacunas/recordatorios-whatsapp: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/caja: Panel de administración con métricas clave y cierre diario.`
+4. /admin/caja: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4737,7 +5169,15 @@ Objetivo: Construir la plataforma para barberías & salones de belleza:
 1. /reservas/elegir-barbero: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /barbero/mi-agenda-hoy: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /admin/comisiones-dia: Módulo de seguimiento y actualización de estados con alertas.
-4. /catalogo/cortes-tendencia: Panel de administración con métricas clave y cierre diario.`
+4. /catalogo/cortes-tendencia: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4827,7 +5267,15 @@ Objetivo: Construir la plataforma para talleres mecánicos & car wash:
 1. /ingreso/check-in-fotos: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /taller/ordenes-kanban: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cotizacion/[ordenId]: Módulo de seguimiento y actualización de estados con alertas.
-4. /cliente/estado-reparacion: Panel de administración con métricas clave y cierre diario.`
+4. /cliente/estado-reparacion: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -4917,7 +5365,15 @@ Objetivo: Construir la plataforma para inmobiliarias & alquiler de inmuebles:
 1. /propiedades/catalogo-mapa: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /crm/prospectos-kanban: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /visitas/agendar: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/contratos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/contratos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5007,7 +5463,15 @@ Objetivo: Construir la plataforma para logística & envíos courier:
 1. /tracking/[numeroGuia]: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /almacen/escaner-recepcion: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /motorizado/ruta-entregas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/liquidaciones: Panel de administración con métricas clave y cierre diario.`
+4. /admin/liquidaciones: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5097,7 +5561,15 @@ Objetivo: Construir la plataforma para lavanderías & tintorerías:
 1. /recepcion/ticket-pesaje: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /lavanderia/tablero-lavado: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /entregas/despacho-listo: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/caja-diaria: Panel de administración con métricas clave y cierre diario.`
+4. /admin/caja-diaria: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5187,7 +5659,15 @@ Objetivo: Construir la plataforma para estudios de abogados & asesoría legal:
 1. /expedientes/directorio: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /expedientes/[id]/historia: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /audiencias/calendario-alertas: Módulo de seguimiento y actualización de estados con alertas.
-4. /honorarios/control: Panel de administración con métricas clave y cierre diario.`
+4. /honorarios/control: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5277,7 +5757,15 @@ Objetivo: Construir la plataforma para hoteles boutique & hostales:
 1. /rack/habitaciones-mapa: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /checkin/registro-huesped: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /checkout/[reservaId]: Módulo de seguimiento y actualización de estados con alertas.
-4. /limpieza/camareras-panel: Panel de administración con métricas clave y cierre diario.`
+4. /limpieza/camareras-panel: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5367,7 +5855,15 @@ Objetivo: Construir la plataforma para estudios de fotografía & eventos:
 1. /galerias/[id]/portal-cliente: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /admin/eventos-agenda: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /admin/galerias/crear: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/contratos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/contratos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5457,7 +5953,15 @@ Objetivo: Construir la plataforma para condominios & edificios residenciales:
 1. /residente/mi-cuenta: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /areas-comunes/reservar: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /porteria/visitas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/finanzas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/finanzas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5539,7 +6043,15 @@ Objetivo: Construir la plataforma para agencias creativas & marketing:
 1. /revision/[piezaId]/visor: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /parrilla/contenidos-redes: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /admin/proyectos: Módulo de seguimiento y actualización de estados con alertas.
-4. /kit-marca/recursos: Panel de administración con métricas clave y cierre diario.`
+4. /kit-marca/recursos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5629,7 +6141,15 @@ Objetivo: Construir la plataforma para empresas de seguridad & vigilancia:
 1. /agente/ronda-qr: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /agente/novedad-foto: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /central/monitoreo-vivo: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/puestos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/puestos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5711,7 +6231,15 @@ Objetivo: Construir la plataforma para servicios de mudanzas & fletes:
 1. /cotizador/inventario-bultos: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /camiones/programacion-rutas: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cliente/seguimiento-flete: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/caja: Panel de administración con métricas clave y cierre diario.`
+4. /admin/caja: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5793,7 +6321,15 @@ Objetivo: Construir la plataforma para empresas de limpieza corporativa:
 1. /supervisor/checklist-inspeccion: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /personal/asistencia-gps: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /almacen/insumos-limpieza: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/contratos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/contratos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5875,7 +6411,15 @@ Objetivo: Construir la plataforma para carpinterías & muebles a medida:
 1. /optimizador/corte-melamina: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /despiece/medidas-tapacantos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cotizador/metros-lineales: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/proyectos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/proyectos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -5957,7 +6501,15 @@ Objetivo: Construir la plataforma para imprentas & publicidad gráfica:
 1. /cotizador/imprenta-pliegos: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /taller/cola-impresion-kanban: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /clientes/aprobacion-arte: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/caja: Panel de administración con métricas clave y cierre diario.`
+4. /admin/caja: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6039,7 +6591,15 @@ Objetivo: Construir la plataforma para cerrajerías & duplicado de emergencia:
 1. /emergencias/solicitar-cerrajero: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /mapa/despacho-tecnicos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /pos/duplicado-llaves: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/reportes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/reportes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6121,7 +6681,15 @@ Objetivo: Construir la plataforma para servicios de gasfitería & plomería:
 1. /agendar/visita-tecnica: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /presupuesto/armar-materiales: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /garantia/certificado-digital: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/servicios: Panel de administración con métricas clave y cierre diario.`
+4. /admin/servicios: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6203,7 +6771,15 @@ Objetivo: Construir la plataforma para empresas de aire acondicionado:
 1. /calculadora/btus-ambiente: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /equipos/hoja-de-vida: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /agenda/mantenimiento-rutinario: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/contratos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/contratos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6293,7 +6869,15 @@ Objetivo: Construir la plataforma para canchas sintéticas & alquiler deportivo:
 1. /canchas/grilla-horaria: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /reservas/adelanto-pago: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cantina/pos-bebidas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/cierre-caja: Panel de administración con métricas clave y cierre diario.`
+4. /admin/cierre-caja: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6375,7 +6959,15 @@ Objetivo: Construir la plataforma para academias de natación & clubes:
 1. /piscina/andariveles: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /evaluacion/[alumnoId]: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /padre/progreso-medallas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/quimicos-agua: Panel de administración con métricas clave y cierre diario.`
+4. /admin/quimicos-agua: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6457,7 +7049,15 @@ Objetivo: Construir la plataforma para salas de ensayo & estudios de audio:
 1. /reservas/horarios: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /sala/[id]/alquiler-equipos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cabina/cronometro-vivo: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/reportes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/reportes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6539,7 +7139,15 @@ Objetivo: Construir la plataforma para academias de jiu jitsu, karate & artes ma
 1. /tatami/asistencia-rapida: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /alumno/[id]/cinturon-grados: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /examenes/elegibles-promocion: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/mensualidades: Panel de administración con métricas clave y cierre diario.`
+4. /admin/mensualidades: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6621,7 +7229,15 @@ Objetivo: Construir la plataforma para clubes de pádel & tenis:
 1. /pistas/reserva-vivo: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /partidos/unirse-cuarto-jugador: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /ranking/torneo-americano: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/caja: Panel de administración con métricas clave y cierre diario.`
+4. /admin/caja: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6703,7 +7319,15 @@ Objetivo: Construir la plataforma para boxes de crossfit & entrenamiento:
 1. /wod/pizarra-del-dia: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /atleta/mis-prs-levantamiento: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /clases/reservar-turno: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/atletas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/atletas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6785,7 +7409,15 @@ Objetivo: Construir la plataforma para academias de boxeo & contacto:
 1. /ring/temporizador-rounds-tv: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /sparring/emparejamiento-pesos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /socios/asistencia: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/planes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/planes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6867,7 +7499,15 @@ Objetivo: Construir la plataforma para escuelas de surf & deportes de olas:
 1. /playa/reporte-olas-hoy: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /alquiler/tablas-trajes: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /clases/agenda-instructores: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/ventas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/ventas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -6949,7 +7589,15 @@ Objetivo: Construir la plataforma para gimnasios de escalada & boulder:
 1. /boulder/mapa-rutas-colores: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /atleta/marcar-tops-flashes: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /alquiler/magnesio-zapatillas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/pases: Panel de administración con métricas clave y cierre diario.`
+4. /admin/pases: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7031,7 +7679,15 @@ Objetivo: Construir la plataforma para talleres de ciclismo & rutas guiadas:
 1. /taller/orden-mantenimiento: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /rutas/inscripcion-salidas: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /alquiler/flota-bicis: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/repuestos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/repuestos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7113,7 +7769,15 @@ Objetivo: Construir la plataforma para boleras & centros de bowling:
 1. /pista/marcador-puntajes: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /recepcion/asignar-pistas-zapatos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cantina/pedidos-mesa: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/caja: Panel de administración con métricas clave y cierre diario.`
+4. /admin/caja: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7195,7 +7859,15 @@ Objetivo: Construir la plataforma para pistas de patinaje & roller skate:
 1. /pista/cronometro-pulseras: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /alquiler/patines-protecciones: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /boleteria/pases-hora: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/ventas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/ventas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7277,7 +7949,15 @@ Objetivo: Construir la plataforma para campos de paintball & airsoft:
 1. /reservas/grupos-combate: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /campo/cronometro-partida: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /recargas/bolas-pintura: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/equipamiento: Panel de administración con métricas clave y cierre diario.`
+4. /admin/equipamiento: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7359,7 +8039,15 @@ Objetivo: Construir la plataforma para academias de gimnasia & acrobacia:
 1. /evaluaciones/aparatos: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /alumna/progresion-habilidades: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /asistencia/turnos: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/mensualidades: Panel de administración con métricas clave y cierre diario.`
+4. /admin/mensualidades: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7449,7 +8137,15 @@ Objetivo: Construir la plataforma para academias de danza & baile:
 1. /asistencias/check-in-baile: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /estudiante/mis-clases: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /coreografias/biblioteca-videos: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/recibos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/recibos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7539,7 +8235,15 @@ Objetivo: Construir la plataforma para academias preuniversitarias & cursos:
 1. /simulacros/rendir-examen: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /resultados/ranking-merito: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /aula-virtual/clases-grabadas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/alumnos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/alumnos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7629,7 +8333,15 @@ Objetivo: Construir la plataforma para escuelas de manejo & autoescuelas:
 1. /agenda/horas-practicas-auto: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /simulador/examen-reglas: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /instructor/evaluacion-calle: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/licencias: Panel de administración con métricas clave y cierre diario.`
+4. /admin/licencias: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7711,7 +8423,15 @@ Objetivo: Construir la plataforma para academias de idiomas & inglés:
 1. /test-nivelacion/ingreso: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /club-conversacion/reservar: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /aula/audios-listening: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/certificados: Panel de administración con métricas clave y cierre diario.`
+4. /admin/certificados: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7793,7 +8513,15 @@ Objetivo: Construir la plataforma para escuelas de música, canto & instrumentos
 1. /agenda/clases-individuales: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /partituras/visor-digital: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /recital/programa-audicion: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/pagos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/pagos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7875,7 +8603,15 @@ Objetivo: Construir la plataforma para talleres de gastronomía & repostería:
 1. /talleres/proximas-fechas: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /recetario/paso-a-paso: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /estacion/guia-ingredientes: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/inscripciones: Panel de administración con métricas clave y cierre diario.`
+4. /admin/inscripciones: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -7957,7 +8693,15 @@ Objetivo: Construir la plataforma para guarderías & nidos infantiles:
 1. /sala/reporte-diario-rapido: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /padres/muro-actividades: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /puerta/control-recojo-seguro: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/matriculas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/matriculas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -8039,7 +8783,15 @@ Objetivo: Construir la plataforma para centros de capacitación técnica & ofici
 1. /laboratorio/asistencia-practicas: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /certificados/emision-competencias: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /bolsa-trabajo/ofertas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/cursos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/cursos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -8121,7 +8873,15 @@ Objetivo: Construir la plataforma para escuelas de código & robótica para niñ
 1. /misiones/mapa-de-niveles: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /estudiante/mis-medallas: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /feria/galeria-proyectos: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/alumnos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/alumnos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -8203,7 +8963,15 @@ Objetivo: Construir la plataforma para tutorías universitarias & asesoría de t
 1. /tesis/[id]/capitulos-avance: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /asesoria/agenda-reuniones: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /revision/observaciones-pdf: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/contratos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/contratos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -8285,7 +9053,15 @@ Objetivo: Construir la plataforma para escuelas de maquillaje profesional:
 1. /evaluacion/rubrica-maquillaje: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /portafolio/fotos-modelos: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /agenda/practicas-estudio: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/alumnas: Panel de administración con métricas clave y cierre diario.`
+4. /admin/alumnas: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -8367,7 +9143,15 @@ Objetivo: Construir la plataforma para talleres de cerámica, pintura & arte:
 1. /ceramica/seguimiento-horneado: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /talleres/reserva-torno: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /galeria/piezas-terminadas: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/alumnos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/alumnos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -8449,7 +9233,15 @@ Objetivo: Construir la plataforma para escuelas de fotografía & cine digital:
 1. /almacen/prestamo-camaras-luces: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /rodaje/plan-de-grabacion: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /cortos/festival-evaluacion: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/cursos: Panel de administración con métricas clave y cierre diario.`
+4. /admin/cursos: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   },
 
@@ -8531,7 +9323,15 @@ Objetivo: Construir la plataforma para centros de adiestramiento canino:
 1. /evaluacion/test-conductual: Vista operativa principal con datos en tiempo real y acciones rápidas.
 2. /progreso/comandos-logrados: Gestión interactiva con filtros de búsqueda instantáneos.
 3. /videos/tareas-semanales: Módulo de seguimiento y actualización de estados con alertas.
-4. /admin/paquetes: Panel de administración con métricas clave y cierre diario.`
+4. /admin/paquetes: Panel de administración con métricas clave y cierre diario.
+
+🤖 INSTRUCCIONES PARA EL EQUIPO DE AGENTES:
+1. @ProductManager: Define el alcance del MVP en base a este prompt.
+2. @SoftwareArchitect: Inicializa el proyecto Next.js y la estructura de carpetas.
+3. @SupabaseSpecialist: Ejecuta el esquema SQL adjunto y configura RLS.
+4. @Developer: Construye las 4 pantallas principales conectadas a Supabase.
+5. @QAAgent: Revisa que no haya errores antes de la entrega.
+Usa las Skills preconfiguradas en la carpeta .agents para optimizar el desarrollo.`
     }
   }
 ];
