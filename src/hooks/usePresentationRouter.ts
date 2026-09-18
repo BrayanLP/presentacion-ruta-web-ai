@@ -98,15 +98,15 @@ export function usePresentationRouter() {
 
   // Sync state to URL
   const updateUrl = useCallback((newRoute: RouteState, replace = false) => {
-    let url = '/';
+    let url = '#/';
     if (newRoute.isHub) {
-      url = '/hub';
+      url = '#/hub';
     } else {
       const pres = presentations.find((p) => p.id === newRoute.presentationId) || getDefaultPresentation();
       const sec = pres.sections[newRoute.sectionIndex] || pres.sections[0];
       const slideNum = newRoute.slideIndex + 1;
 
-      url = `/${pres.id}/${sec.id}/${slideNum}`;
+      url = `#/${pres.id}/${sec.id}/${slideNum}`;
       if (newRoute.activeTool) {
         url += `/${newRoute.activeTool}`;
       }

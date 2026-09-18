@@ -294,9 +294,20 @@ export const GenericSlide: React.FC<Props> = ({ slide, onNext, onOpenBrief }) =>
           </div>
         </div>
 
-        <div className="text-xs font-mono text-slate-400 flex items-center justify-between pt-2 border-t border-slate-800/80">
-          <span>{slide.category}</span>
-          <span>~{slide.durationMinutes} min de explicación</span>
+        <div className="flex items-center justify-between pt-4 border-t border-slate-800/80 mt-4">
+          <div className="text-xs font-mono text-slate-400 flex items-center gap-2">
+            <span>{slide.category}</span>
+            <span className="hidden sm:inline">&bull; ~{slide.durationMinutes} min</span>
+          </div>
+          {slide.heroCta && (
+            <button
+              onClick={handleCta}
+              className="group px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-500 via-cyan-500 to-pink-500 hover:opacity-90 text-slate-950 font-bold text-xs transition-all shadow-lg shadow-brand-500/25 flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <span>{slide.heroCta.text}</span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            </button>
+          )}
         </div>
       </div>
     );
