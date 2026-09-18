@@ -2,7 +2,7 @@ import React from 'react';
 import { 
   Sparkles, ArrowRight, CheckCircle2, XCircle, Lightbulb, 
   AlertTriangle, Zap, Quote as QuoteIcon,
-  Terminal, Layers
+  Terminal, Layers, Copy
 } from 'lucide-react';
 import type { SlideData } from '../../types';
 
@@ -270,9 +270,22 @@ export const GenericSlide: React.FC<Props> = ({ slide, onNext, onOpenBrief }) =>
                     <span className="w-2.5 h-2.5 rounded-full bg-green-500/60" />
                   </div>
                 </div>
-                <pre className="p-4 text-xs font-mono text-cyan-300 overflow-x-auto leading-relaxed">
-                  <code>{slide.codeSnippet.code}</code>
-                </pre>
+                <div className="p-4 text-xs font-mono text-cyan-300 overflow-x-auto leading-relaxed space-y-1">
+                  {slide.codeSnippet.code.split('\n').map((line, idx) => (
+                    <div key={idx} className="flex items-center justify-between gap-4 group/line">
+                      <span className="whitespace-pre flex-1">{line || ' '}</span>
+                      {line.trim() && !line.trim().startsWith('#') && (
+                        <button
+                          onClick={() => navigator.clipboard.writeText(line)}
+                          className="opacity-0 group-hover/line:opacity-100 p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-all flex-shrink-0 border border-slate-700 hover:border-slate-600"
+                          title="Copiar línea"
+                        >
+                          <Copy className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
             ) : slide.cards && slide.cards.length > 0 ? (
               <div className="space-y-3">

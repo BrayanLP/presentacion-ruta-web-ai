@@ -95,6 +95,11 @@ const SLIDES: SlideData[] = [
       { text: 'Escribe, refactoriza y analiza código directamente en tus proyectos.' },
       { text: 'Se comunica en lenguaje natural y mediante slash commands (/help).' }
     ],
+    codeSnippet: {
+      language: 'bash',
+      title: 'Instalación de agy',
+      code: 'curl -fsSL https://antigravity.google/install-cli.sh | bash\n\n# Luego inicia la interfaz interactiva con:\nagy'
+    },
     speakerNotes: {
       goal: 'Presentar Antigravity CLI (agy).',
       talkingPoints: ['No es solo un chat, es un agente que actúa en tu terminal.'],
@@ -214,13 +219,14 @@ const SLIDES: SlideData[] = [
     },
     points: [
       { text: 'Hemos preparado un script (setup_ubuntu24.sh) que automatiza todo.' },
-      { text: 'Se encarga de instalar dependencias, configurar el firewall y levantar el servicio.' },
-      { text: 'Una vez finalice, entra a la IP de tu VPS por el puerto 8080.' }
+      { text: 'Primero, crea el archivo en tu servidor (ej. usando nano) y pega el contenido que descargaste.' },
+      { text: 'Guarda los cambios y limpia la pantalla de la terminal.' },
+      { text: 'Finalmente, otórgale permisos de ejecución y córrelo.' }
     ],
     codeSnippet: {
       language: 'bash',
       title: 'Comandos en tu Servidor',
-      code: 'chmod +x setup_ubuntu24.sh\n./setup_ubuntu24.sh'
+      code: 'nano setup_ubuntu24.sh\n# (Pega el código, guarda con Ctrl+O, Enter, y sal con Ctrl+X)\n\nclear\n\nchmod +x setup_ubuntu24.sh\n./setup_ubuntu24.sh'
     },
     speakerNotes: {
       goal: 'Guiar a los alumnos en la instalación.',

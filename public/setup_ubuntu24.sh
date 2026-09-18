@@ -22,6 +22,11 @@ sudo ufw allow 3000/tcp
 echo "💻 3. Instalando Code-Server..."
 curl -fsSL https://code-server.dev/install.sh | sh
 
+echo "🤖 3.5. Instalando Antigravity CLI (agy)..."
+# Instalación de agy vía script oficial
+curl -fsSL https://antigravity.google/install-cli.sh | bash
+
+
 echo "⚙️ 4. Configurando y arrancando Code-Server..."
 # Habilitar e iniciar el servicio (genera el config.yaml automáticamente)
 systemctl --user enable --now code-server
