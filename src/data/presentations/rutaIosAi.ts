@@ -518,14 +518,268 @@ export const CLASE_1_MOBILE_SLIDES: SlideData[] = [
   }
 ];
 
+const CLASE_2_MOBILE_SLIDES: SlideData[] = [
+  {
+    id: 'mobile2-s1',
+    sectionId: 'clase-2-mobile',
+    slideNumber: 1,
+    totalInClass: 5,
+    category: '🤖 CLASE 2 — EQUIPO DE IA',
+    title: 'El Nuevo Paradigma: Eres el Director, no el Programador',
+    subtitle: 'Dejarás de escribir cada línea de código para empezar a orquestar un equipo de expertos virtuales.',
+    durationMinutes: 5,
+    layout: 'split',
+    points: [
+      {
+        title: 'Adiós al "Desde Cero"',
+        text: 'El alumno no crea ni entrena a los agentes desde cero. Te entregamos un ecosistema pre-configurado.',
+        icon: 'Rocket'
+      },
+      {
+        title: 'Kit Profesional Incluido',
+        text: 'Antigravity IDE ya viene cargado con un Kit de Agentes + Skills diseñado específicamente para desarrollo móvil.',
+        icon: 'Tool'
+      },
+      {
+        title: 'Tu Nuevo Rol',
+        text: 'Tu trabajo es tener la visión clara, proporcionar el App Blueprint y revisar los resultados. La IA ejecuta.',
+        icon: 'UserCircle'
+      }
+    ],
+    speakerNotes: {
+      goal: 'Cambiar la mentalidad del alumno de "programador" a "director de producto".',
+      talkingPoints: [
+        'Aquí está una de las partes más importantes de tu metodología.',
+        'La gran barrera siempre ha sido: "no sé programar". Hoy eso ya no es excusa.',
+        'No necesitas programar todo. Necesitas aprender a dirigir a tu equipo de IA.'
+      ]
+    }
+  },
+  {
+    id: 'mobile2-s2',
+    sectionId: 'clase-2-mobile',
+    slideNumber: 2,
+    totalInClass: 5,
+    category: '🧑‍💻 TUS EXPERTOS VIRTUALES',
+    title: 'Conoce a tu Equipo de Agentes de IA',
+    subtitle: 'Cada agente tiene un rol específico, tal como en una empresa de desarrollo de software de Silicon Valley.',
+    durationMinutes: 8,
+    layout: 'grid',
+    cards: [
+      {
+        title: '🎨 Diseño y Arquitectura',
+        desc: 'Los encargados de aterrizar tu idea.',
+        badge: 'Fase 1',
+        list: [
+          'Product Manager',
+          'Mobile UX/UI Designer',
+          'App Architect'
+        ]
+      },
+      {
+        title: '📱 Frontend Móvil (Expo)',
+        desc: 'Construyen la interfaz para iOS y Android.',
+        badge: 'Fase 2',
+        list: [
+          'React Native Developer',
+          'Expo Specialist'
+        ]
+      },
+      {
+        title: '🗄️ Backend y Datos',
+        desc: 'Gestionan la lógica y las bases de datos.',
+        badge: 'Fase 3',
+        list: [
+          'Supabase Specialist',
+          'Database Specialist',
+          'Authentication Specialist'
+        ]
+      },
+      {
+        title: '🚀 Calidad y Lanzamiento',
+        desc: 'Aseguran que la app no falle y llegue a las tiendas.',
+        badge: 'Fase 4',
+        list: [
+          'QA Tester & Debugger',
+          'Security Auditor',
+          'App Store & Release Manager'
+        ]
+      }
+    ],
+    speakerNotes: {
+      goal: 'Mostrar la especialización del equipo de agentes.',
+      talkingPoints: [
+        'Si intentas que una sola IA genérica haga todo, fallará. Necesitas especialistas.',
+        'Al igual que no pones a tu diseñador a configurar la base de datos, en Antigravity cada agente hace lo que mejor sabe hacer.'
+      ]
+    }
+  },
+  {
+    id: 'mobile2-s3',
+    sectionId: 'clase-2-mobile',
+    slideNumber: 3,
+    totalInClass: 5,
+    category: '🛠️ EL CEREBRO TÉCNICO',
+    title: 'Skills: El conocimiento inyectado',
+    subtitle: 'Los agentes no adivinan. Utilizan "Skills" con documentación y patrones de código actualizados.',
+    durationMinutes: 7,
+    layout: 'grid',
+    cards: [
+      {
+        title: 'Interfaz y Experiencia',
+        desc: 'Patrones visuales modernos.',
+        list: ['📱 Mobile UI/UX', '🎨 React Native Paper', '🍎 iOS Design Guidelines']
+      },
+      {
+        title: 'Hardware y Sensores',
+        desc: 'Uso de las capacidades del celular.',
+        list: ['📸 Camera API', '📍 Location & Maps', '🔔 Push Notifications']
+      },
+      {
+        title: 'Infraestructura',
+        desc: 'Servicios en la nube y monetización.',
+        list: ['🗄️ Supabase & 📊 Database', '🔐 Authentication & 👤 User', '💳 Payments (Stripe/Apple)']
+      },
+      {
+        title: 'Mantenimiento',
+        desc: 'Salud a largo plazo de la app.',
+        list: ['🧪 Automated Testing', '🐛 Advanced Debugging', '🚀 App Store Deployment']
+      }
+    ],
+    speakerNotes: {
+      goal: 'Explicar qué son los Skills y por qué garantizan código moderno.',
+      talkingPoints: [
+        'La IA a veces alucina o usa código viejo de 2021.',
+        'Los Skills son inyecciones de conocimiento fresco. Le dicen al agente exactamente cómo usar la última versión de Expo o Supabase.'
+      ]
+    }
+  },
+  {
+    id: 'mobile2-s4',
+    sectionId: 'clase-2-mobile',
+    slideNumber: 4,
+    totalInClass: 5,
+    category: '💎 VENTAJA INJUSTA',
+    title: 'El Superpoder Oficial de Supabase',
+    subtitle: 'El respaldo de las grandes empresas a la metodología de agentes.',
+    durationMinutes: 5,
+    layout: 'split',
+    points: [
+      {
+        title: 'Skills Oficiales',
+        text: 'Supabase actualmente mantiene y actualiza repositorios de "Agent Skills" oficiales.',
+        icon: 'Database'
+      },
+      {
+        title: 'Cero Código Obsoleto',
+        text: 'Tus agentes siempre tendrán acceso a la sintaxis y mejores prácticas dictadas por los propios creadores de Supabase.',
+        icon: 'Code'
+      },
+      {
+        title: 'Ecosistema Aliado',
+        text: 'Ya no luchas contra las herramientas; las herramientas están creando integraciones para que la IA trabaje mejor para ti.',
+        icon: 'Zap'
+      }
+    ],
+    callout: {
+      type: 'gem',
+      title: 'El Futuro es Hoy',
+      text: 'Cuando las empresas de tecnología empiezan a crear manuales específicos para IAs (Agent Skills), sabes que el paradigma ya cambió para siempre.'
+    },
+    speakerNotes: {
+      goal: 'Aumentar la confianza del alumno mostrando que esto es el estándar de la industria.',
+      talkingPoints: [
+        'Este no es un truco temporal. Supabase, una empresa valorada en cientos de millones, está invirtiendo en Agent Skills.',
+        'Con esto, garantizamos que la base de datos de tu app se crea con estándares de clase mundial.'
+      ]
+    }
+  },
+  {
+    id: 'mobile2-s5',
+    sectionId: 'clase-2-mobile',
+    slideNumber: 5,
+    totalInClass: 5,
+    category: '💡 50 IDEAS DE INSPIRACIÓN',
+    title: '¿Qué tipo de Apps podemos crear con Expo?',
+    subtitle: 'Desde el MVP más sencillo hasta aplicaciones complejas para tiendas. Todo con un solo código base.',
+    durationMinutes: 8,
+    layout: 'grid',
+    cards: [
+      {
+        title: '📊 Productividad & Negocios',
+        desc: 'Apps B2B y organización personal.',
+        list: [
+          'Gestor de tareas y pomodoro', 'App de inventario para tiendas',
+          'Agenda de citas para clínicas', 'Control de horas de empleados',
+          'CRM de ventas móvil', 'App de soporte técnico (Tickets)',
+          'Gestión de flotillas / GPS', 'Tracker de viáticos y viajes',
+          'Gestor de documentos OCR', 'App de encuestas en terreno'
+        ]
+      },
+      {
+        title: '🧘 Estilo de Vida & Salud',
+        desc: 'Para el día a día y bienestar.',
+        list: [
+          'Tracker de hábitos y agua', 'App de rutinas de gimnasio',
+          'Diario de gratitud y emociones', 'Recetario con modo "cocinar"',
+          'Guía de meditación guiada', 'App de ayuno intermitente',
+          'Directorio de médicos locales', 'Tracker de ciclo menstrual',
+          'Recordatorio de medicamentos', 'Buscador de adopción de mascotas'
+        ]
+      },
+      {
+        title: '📚 Educación & Finanzas',
+        desc: 'Aprender y administrar el dinero.',
+        list: [
+          'Tracker de gastos personales', 'Calculadora de presupuesto',
+          'División de cuentas (Split bill)', 'Control de suscripciones',
+          'App de flashcards para estudio', 'Plataforma de cursos cortos',
+          'Diccionario de términos técnicos', 'Preparación para exámenes',
+          'Simulador de inversiones', 'App de recompensas para niños'
+        ]
+      },
+      {
+        title: '🎉 Social & Entretenimiento',
+        desc: 'Comunidades y tiempo libre.',
+        list: [
+          'Foro de nicho (ej. ciclistas)', 'App de eventos locales',
+          'Match de compañeros de piso', 'Reseñas de restaurantes',
+          'Tracker de películas vistas', 'Directorio de bandas locales',
+          'App de intercambio de libros', 'Juego de trivia multijugador',
+          'Buscador de parques para perros', 'Club de lectura virtual'
+        ]
+      },
+      {
+        title: '🤖 Utilidades & IA Especializada',
+        desc: 'Solucionando micro-problemas.',
+        list: [
+          'Traductor de voz a texto', 'Generador de rutinas con IA',
+          'Clasificador de fotos (IA vision)', 'Lector de códigos QR/Barcodes',
+          'Buscador de WiFis gratuitos', 'Calculadora de propinas',
+          'Conversor de unidades', 'App de clima hiper-local',
+          'Generador de paletas de color', 'Asistente de compras inteligente'
+        ]
+      }
+    ],
+    speakerNotes: {
+      goal: 'Inspirar a los alumnos con 50 ideas variadas para que vean las infinitas posibilidades que tienen ahora que cuentan con un equipo de IA.',
+      talkingPoints: [
+        'Con Expo y tu equipo de agentes, ahora puedes construir cualquiera de estas 50 ideas.',
+        'La mayoría de las apps exitosas no son redes sociales gigantes, son micro-soluciones a problemas muy específicos.',
+        'Tú decides el problema, la IA escribe el código.'
+      ]
+    }
+  }
+];
+
 export const RUTA_IOS_AI_PRESENTATION: Presentation = {
   id: 'ruta-ios-ai',
   title: 'Ruta: Crear Apps iOS & Android con IA + Expo + Supabase',
   shortTitle: 'Ruta Apps iOS & Android',
   subtitle: 'De una Idea a tu Primera Aplicación iOS & Android en tu Celular con IA, Expo & Supabase',
-  badge: '2 Clases Prácticas',
+  badge: '3 Clases Prácticas',
   icon: 'Smartphone',
-  description: 'Masterclass interactiva de 2 clases para preparar tu entorno de desarrollo móvil (Antigravity IDE, Expo, Expo Go en iPhone/Android, Supabase) y diseñar el App Blueprint y MVP de tu aplicación móvil.',
+  description: 'Masterclass interactiva de 3 clases para preparar tu entorno de desarrollo móvil (Antigravity IDE, Expo, Expo Go en iPhone/Android, Supabase), diseñar el App Blueprint y construir tu app con un equipo de agentes de IA.',
   hasBriefGenerator: false,
   hasSoftwarePlanGenerator: false,
   hasAppBlueprintGenerator: true,
@@ -547,6 +801,15 @@ export const RUTA_IOS_AI_PRESENTATION: Presentation = {
       color: 'cyan',
       description: 'Los 9 pilares del producto móvil, caso de estudio de la App de Gastos Personales (9 pantallas), priorización MVP y Generador de App Blueprint.',
       slides: CLASE_1_MOBILE_SLIDES
+    },
+    {
+      id: 'clase-2-ios',
+      title: 'CLASE 2 — Tu equipo de IA para crear la app',
+      shortTitle: 'Clase 2: Equipo de IA',
+      badge: 'Kit de Agentes & Skills',
+      color: 'violet',
+      description: 'Conoce a tu equipo virtual. No necesitas programar todo, necesitas aprender a dirigir a tu equipo de IA (Product Manager, UX, React Native, Supabase, etc).',
+      slides: CLASE_2_MOBILE_SLIDES
     }
   ]
 };
