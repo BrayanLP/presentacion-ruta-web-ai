@@ -166,11 +166,11 @@ export const Slide1Raffle: React.FC<Props> = ({ onNext }) => {
 
   return (
     <div className="h-full flex flex-col justify-between p-6 md:p-12 relative overflow-hidden select-none">
-      {/* Background ambient glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Background ambient glow with low z-index */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 relative z-10">
         <div className="space-y-1">
           <div className="text-xs font-mono text-amber-400 font-semibold tracking-wider uppercase flex items-center gap-2">
             <Gift className="w-4 h-4 text-amber-400 animate-bounce" />
@@ -201,7 +201,7 @@ export const Slide1Raffle: React.FC<Props> = ({ onNext }) => {
       </div>
 
       {/* Main Center Roulette Arena */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 my-auto items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 my-auto items-stretch relative z-10">
         {/* Left: Interactive Roulette Stage (7 cols) */}
         <div className="lg:col-span-7 glass-panel p-6 md:p-8 rounded-3xl border border-amber-500/40 shadow-2xl flex flex-col justify-between items-center text-center space-y-6 relative overflow-hidden bg-slate-950/80">
           <div className="w-full flex items-center justify-between">

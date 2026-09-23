@@ -31,6 +31,16 @@ import { Slide2CollaborationWorkflow } from './slides/clase2/Slide2Collaboration
 import { Slide2MistakesToAvoid } from './slides/clase2/Slide2MistakesToAvoid';
 import { Slide2AgentKitStation } from './slides/clase2/Slide2AgentKitStation';
 
+// Slide Components Class 4 (Ruta Web - Construye tu Web)
+import { Slide4Hero } from './slides/clase4/Slide4Hero';
+import { Slide4UnderTheHood } from './slides/clase4/Slide4UnderTheHood';
+import { Slide4BlocksAnatomy } from './slides/clase4/Slide4BlocksAnatomy';
+import { Slide4FirstBlocks } from './slides/clase4/Slide4FirstBlocks';
+import { Slide4TrustBlocks } from './slides/clase4/Slide4TrustBlocks';
+import { Slide4MobileFirst } from './slides/clase4/Slide4MobileFirst';
+import { Slide4CleanCodeTests } from './slides/clase4/Slide4CleanCodeTests';
+import { Slide4BuilderStation } from './slides/clase4/Slide4BuilderStation';
+
 // Slide Components (Ruta Software)
 import { SlideSoftwareChecklist } from './slides/software/SlideSoftwareChecklist';
 import { SlideSoftwareIdeaInteractive } from './slides/software/SlideSoftwareIdeaInteractive';
@@ -121,6 +131,24 @@ export const SlideRenderer: React.FC<Props> = ({
         return <Slide2MistakesToAvoid />;
       case 'clase2-kit-station':
         return <Slide2AgentKitStation onOpenBriefModal={onOpenBrief || (() => {})} />;
+
+      // Ruta Web - Clase 4 (Construye tu Web)
+      case 'clase4-hero':
+        return <Slide4Hero onNext={onNext} />;
+      case 'clase4-under-the-hood':
+        return <Slide4UnderTheHood />;
+      case 'clase4-blocks-anatomy':
+        return <Slide4BlocksAnatomy />;
+      case 'clase4-first-blocks':
+        return <Slide4FirstBlocks />;
+      case 'clase4-trust-blocks':
+        return <Slide4TrustBlocks />;
+      case 'clase4-mobile-first':
+        return <Slide4MobileFirst />;
+      case 'clase4-clean-code-tests':
+        return <Slide4CleanCodeTests />;
+      case 'clase4-builder-station':
+        return <Slide4BuilderStation />;
 
       // Ruta Software con IA
       case 'software-idea-interactive':

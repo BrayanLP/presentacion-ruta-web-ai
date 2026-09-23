@@ -8,12 +8,12 @@ interface SlideProps {
 export const Slide0Hero: React.FC<SlideProps> = ({ onNext }) => {
   return (
     <div className="h-full flex flex-col justify-between p-8 md:p-14 relative overflow-hidden">
-      {/* Ambient background glows */}
-      <div className="absolute top-10 left-10 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Ambient background glows with low z-index */}
+      <div className="absolute top-10 left-10 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       {/* Header pill */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 relative z-10">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-sm font-semibold tracking-wide uppercase">
           <span className="w-2 h-2 rounded-full bg-brand-400 animate-ping" />
           Ruta Web con Inteligencia Artificial
@@ -22,7 +22,7 @@ export const Slide0Hero: React.FC<SlideProps> = ({ onNext }) => {
       </div>
 
       {/* Center content */}
-      <div className="max-w-4xl space-y-6 my-auto">
+      <div className="max-w-4xl space-y-6 my-auto relative z-10">
         <div className="space-y-2">
           <h2 className="text-xl sm:text-2xl font-mono text-brand-400 tracking-wider font-semibold">
             🟢 CLASE 0 — LOS CIMIENTOS
@@ -71,7 +71,7 @@ export const Slide0Hero: React.FC<SlideProps> = ({ onNext }) => {
       </div>
 
       {/* Footer action */}
-      <div className="flex items-center justify-between pt-6 border-t border-slate-800/60">
+      <div className="flex items-center justify-between pt-6 border-t border-slate-800/60 relative z-10">
         <div className="flex items-center gap-2 text-xs text-slate-400 font-mono">
           <Zap className="w-4 h-4 text-brand-400" />
           <span>Objetivo: Cero bloqueos técnicos en las clases prácticas</span>

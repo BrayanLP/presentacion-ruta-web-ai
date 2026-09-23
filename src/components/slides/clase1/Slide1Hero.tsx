@@ -8,12 +8,12 @@ interface SlideProps {
 export const Slide1Hero: React.FC<SlideProps> = ({ onNext }) => {
   return (
     <div className="h-full flex flex-col justify-between p-8 md:p-14 relative overflow-hidden">
-      {/* Ambient background glows */}
-      <div className="absolute top-10 right-10 w-96 h-96 bg-violet-600/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-10 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Ambient background glows with low z-index */}
+      <div className="absolute top-10 right-10 w-96 h-96 bg-violet-600/15 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-10 left-10 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       {/* Header Pill */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 relative z-10">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-sm font-semibold tracking-wide uppercase">
           <Brain className="w-4 h-4 text-violet-400" />
           Módulo Estratégico #01
@@ -22,7 +22,7 @@ export const Slide1Hero: React.FC<SlideProps> = ({ onNext }) => {
       </div>
 
       {/* Main Pitch */}
-      <div className="max-w-4xl space-y-6 my-auto">
+      <div className="max-w-4xl space-y-6 my-auto relative z-10">
         <div className="space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-mono font-bold uppercase">
             <Ban className="w-3.5 h-3.5" /> Hoy: Cero Código — 100% Estrategia
@@ -78,7 +78,7 @@ export const Slide1Hero: React.FC<SlideProps> = ({ onNext }) => {
       </div>
 
       {/* Footer action */}
-      <div className="flex items-center justify-between pt-6 border-t border-slate-800/60">
+      <div className="flex items-center justify-between pt-6 border-t border-slate-800/60 relative z-10">
         <span className="text-xs text-slate-400 font-mono">
           🎯 Al terminar esta sesión, sabrás exactamente qué construir en Antigravity.
         </span>

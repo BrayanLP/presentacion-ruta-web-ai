@@ -18,7 +18,8 @@ const SHORTCUTS = [
   { key: 'P / N', desc: 'Abrir / Cerrar Notas del Expositor' },
   { key: 'O', desc: 'Abrir Vista General de Diapositivas (Grid)' },
   { key: 'B', desc: 'Abrir Generador de Brief Web' },
-  { key: '0 / 1', desc: 'Cambiar rápidamente entre Clase 0 y Clase 1' },
+  { key: 'Home', desc: '🏠 Volver rápidamente al Inicio / Catálogo (Hub)' },
+  { key: '0, 1, 2, 4', desc: 'Cambiar de Clase (0: Entorno, 1: Estrategia, 2: Agentes, 4: Construye tu Web)' },
   { key: '?', desc: 'Abrir esta ventana de atajos' },
   { key: 'Esc', desc: 'Cerrar cualquier ventana emergente' },
 ];

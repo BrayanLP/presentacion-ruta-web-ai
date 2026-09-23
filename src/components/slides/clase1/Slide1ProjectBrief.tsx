@@ -18,11 +18,11 @@ export const Slide1ProjectBrief: React.FC<Props> = ({ onOpenBriefModal }) => {
 
   return (
     <div className="h-full flex flex-col justify-between p-8 md:p-14 relative overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-500/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Background glow with low z-index */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       {/* Header */}
-      <div className="space-y-1">
+      <div className="space-y-1 relative z-10">
         <div className="text-xs font-mono text-brand-400 font-semibold tracking-wider uppercase flex items-center gap-2">
           <Target className="w-4 h-4" />
           🎯 PROYECTO PRÁCTICO DE HOY
@@ -36,7 +36,7 @@ export const Slide1ProjectBrief: React.FC<Props> = ({ onOpenBriefModal }) => {
       </div>
 
       {/* Center Callout Box */}
-      <div className="glass-panel p-8 rounded-3xl border border-brand-500/40 my-auto text-center max-w-3xl mx-auto space-y-6 shadow-2xl shadow-brand-950/40 relative overflow-hidden">
+      <div className="glass-panel p-8 rounded-3xl border border-brand-500/40 my-auto text-center max-w-3xl mx-auto space-y-6 shadow-2xl shadow-brand-950/40 relative z-10 overflow-hidden">
         <div className="inline-flex p-3 rounded-2xl bg-brand-500/20 text-brand-400 border border-brand-500/30">
           <Sparkles className="w-8 h-8" />
         </div>

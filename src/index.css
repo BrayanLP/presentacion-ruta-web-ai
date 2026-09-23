@@ -104,20 +104,32 @@ body {
 }
 
 .canvas-light-mode .text-white,
-.canvas-light-mode .text-slate-100 {
+.canvas-light-mode .dark\:text-white,
+.canvas-light-mode .text-white,
+.canvas-light-mode .dark\:text-white,
+.canvas-light-mode .text-slate-100,
+.canvas-light-mode .dark\:text-slate-100 {
   color: #0f172a !important;
 }
 
 .canvas-light-mode .text-slate-200,
-.canvas-light-mode .text-slate-300 {
+.canvas-light-mode .dark\:text-slate-200,
+.canvas-light-mode .text-slate-200,
+.canvas-light-mode .dark\:text-slate-200,
+.canvas-light-mode .text-slate-300,
+.canvas-light-mode .dark\:text-slate-300 {
   color: #334155 !important;
 }
 
-.canvas-light-mode .text-slate-400 {
+.canvas-light-mode .text-slate-400,
+.canvas-light-mode .text-slate-400,
+.canvas-light-mode .dark\:text-slate-400 {
   color: #64748b !important;
 }
 
-.canvas-light-mode .text-slate-500 {
+.canvas-light-mode .text-slate-500,
+.canvas-light-mode .text-slate-500,
+.canvas-light-mode .dark\:text-slate-500 {
   color: #94a3b8 !important;
 }
 
@@ -139,6 +151,12 @@ body {
 }
 
 .canvas-light-mode .bg-slate-950,
+.canvas-light-mode .dark\:bg-slate-950\/70,
+.canvas-light-mode .bg-slate-950,
+.canvas-light-mode .dark\:bg-slate-950\/60,
+.canvas-light-mode .bg-slate-950,
+.canvas-light-mode .bg-slate-950,
+.canvas-light-mode .dark\:bg-slate-950,
 .canvas-light-mode .bg-slate-950\/95,
 .canvas-light-mode .bg-slate-950\/90,
 .canvas-light-mode .bg-slate-950\/80,
@@ -147,6 +165,7 @@ body {
 .canvas-light-mode .bg-slate-950\/50,
 .canvas-light-mode .bg-slate-950\/40,
 .canvas-light-mode .bg-slate-900,
+.canvas-light-mode .dark\:bg-slate-900,
 .canvas-light-mode .bg-slate-900\/90,
 .canvas-light-mode .bg-slate-900\/80,
 .canvas-light-mode .bg-slate-900\/70,
@@ -157,6 +176,10 @@ body {
 }
 
 .canvas-light-mode .bg-slate-800,
+.canvas-light-mode .dark\:bg-slate-800,
+.canvas-light-mode .bg-slate-800,
+.canvas-light-mode .bg-slate-800,
+.canvas-light-mode .dark\:bg-slate-800,
 .canvas-light-mode .bg-slate-800\/80,
 .canvas-light-mode .bg-slate-800\/60 {
   background-color: #e2e8f0 !important;
@@ -165,9 +188,16 @@ body {
 }
 
 .canvas-light-mode .border-slate-800,
+.canvas-light-mode .dark\:border-slate-800,
+.canvas-light-mode .border-slate-800,
+.canvas-light-mode .dark\:border-slate-800\/80,
+.canvas-light-mode .border-slate-800,
+.canvas-light-mode .border-slate-800,
+.canvas-light-mode .dark\:border-slate-800,
 .canvas-light-mode .border-slate-800\/80,
 .canvas-light-mode .border-slate-800\/60,
 .canvas-light-mode .border-slate-700,
+.canvas-light-mode .dark\:border-slate-700,
 .canvas-light-mode .border-slate-700\/80 {
   border-color: #cbd5e1 !important;
 }
@@ -361,10 +391,83 @@ body {
   color: #38bdf8 !important;
 }
 
-.canvas-light-mode .bg-black\/40 {
-  background-color: rgba(15, 23, 42, 0.04) !important;
+.canvas-light-mode .bg-black,
+.canvas-light-mode .dark\:bg-black\/80,
+.canvas-light-mode .bg-black,
+.canvas-light-mode .dark\:bg-black\/60,
+.canvas-light-mode .bg-black,
+.canvas-light-mode .dark\:bg-black,
+.canvas-light-mode .bg-black\/80,
+.canvas-light-mode .bg-black\/60,
+.canvas-light-mode .bg-black\/50,
+.canvas-light-mode .bg-black\/40,
+.canvas-light-mode .bg-black\/30 {
+  background-color: #f1f5f9 !important;
   border-color: #cbd5e1 !important;
   color: #0f172a !important;
+}
+
+/* Light mode form controls */
+.canvas-light-mode input,
+.canvas-light-mode textarea,
+.canvas-light-mode select {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.canvas-light-mode input::placeholder,
+.canvas-light-mode textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+.canvas-light-mode input:focus,
+.canvas-light-mode textarea:focus {
+  border-color: #8b5cf6 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.15) !important;
+}
+
+/* Light mode terminal / prompt code box */
+.canvas-light-mode .code-prompt-box {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #047857 !important;
+}
+
+/* Light mode WhatsApp Card */
+.canvas-light-mode .whatsapp-card-bg {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 60%, #bbf7d0 100%) !important;
+  border-color: #86efac !important;
+}
+
+/* Preserve crisp white text and SVG icons on colored/gradient CTA buttons and badges in light mode */
+.canvas-light-mode button.bg-violet-600,
+.canvas-light-mode button.bg-violet-500,
+.canvas-light-mode button.bg-emerald-600,
+.canvas-light-mode button.bg-emerald-500,
+.canvas-light-mode button.bg-indigo-600,
+.canvas-light-mode button.bg-blue-600,
+.canvas-light-mode button.bg-violet-600 *,
+.canvas-light-mode button.bg-violet-500 *,
+.canvas-light-mode button.bg-emerald-600 *,
+.canvas-light-mode button.bg-emerald-500 *,
+.canvas-light-mode button.bg-indigo-600 *,
+.canvas-light-mode button[type="submit"] *,
+.canvas-light-mode .bg-violet-600.text-white,
+.canvas-light-mode .bg-violet-500.text-white,
+.canvas-light-mode .bg-emerald-500.text-white,
+.canvas-light-mode .text-always-white,
+.canvas-light-mode button.\!text-white,
+.canvas-light-mode [class*="from-violet-"] span,
+.canvas-light-mode [class*="from-violet-"] svg,
+.canvas-light-mode [class*="from-emerald-"] span.text-white,
+.canvas-light-mode [class*="from-emerald-"] svg.text-white,
+.canvas-light-mode .rounded-full.bg-emerald-500 svg,
+.canvas-light-mode .rounded-full.bg-emerald-500 span,
+.canvas-light-mode .rounded-full.bg-violet-500 svg,
+.canvas-light-mode .rounded-full.bg-violet-500 span {
+  color: #ffffff !important;
 }
 
 .canvas-light-mode .bg-gradient-to-r.from-cyan-950\/40,

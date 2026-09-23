@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sliders } from 'lucide-react';
+import { Sliders, Home } from 'lucide-react';
 import type { Presentation, ThemeMode, ContrastRhythm } from '../types';
 import { PresentationSelector } from './PresentationSelector';
 import { SectionSelector } from './SectionSelector';
@@ -74,8 +74,20 @@ export const Navbar: React.FC<Props> = ({
         isNavbarHidden ? '-translate-y-full' : 'translate-y-0'
       }`}
     >
-      {/* Left: Presentation Switcher & Class Dropdown */}
-      <div className="flex items-center gap-2 sm:gap-3">
+      {/* Left: Home Button + Presentation Switcher & Class Dropdown */}
+      <div className="flex items-center gap-2 sm:gap-2.5">
+        {/* Quick Return to Home / Hub Button */}
+        <button
+          onClick={onOpenHub}
+          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-[#0e1424] hover:bg-[#162035] text-slate-300 hover:text-white border border-slate-800 hover:border-cyan-500/50 transition-all shadow-sm group active:scale-95"
+          title="Volver al Inicio (Catálogo de Rutas)"
+        >
+          <Home className="w-3.5 h-3.5 text-cyan-400 group-hover:scale-110 transition-transform" />
+          <span className="text-xs font-mono font-semibold hidden md:inline">Inicio</span>
+        </button>
+
+        <div className="h-4 w-px bg-slate-800" />
+
         {/* Presentation Switcher Dropdown */}
         <PresentationSelector
           presentations={presentations}

@@ -1,5 +1,5 @@
 import type { Presentation } from '../../types';
-import { CLASE_0_SLIDES, CLASE_1_SLIDES, CLASE_2_SLIDES } from '../slidesData';
+import { CLASE_0_SLIDES, CLASE_1_SLIDES, CLASE_2_SLIDES, CLASE_4_SLIDES } from '../slidesData';
 
 // Enrich slides with customComponentKey so the SlideRenderer knows which custom interactive component to render
 const enrichedClase0Slides = CLASE_0_SLIDES.map((slide, idx) => {
@@ -56,14 +56,32 @@ const enrichedClase2Slides = CLASE_2_SLIDES.map((slide, idx) => {
   };
 });
 
+const enrichedClase4Slides = CLASE_4_SLIDES.map((slide, idx) => {
+  const keys = [
+    'clase4-hero',
+    'clase4-under-the-hood',
+    'clase4-blocks-anatomy',
+    'clase4-first-blocks',
+    'clase4-trust-blocks',
+    'clase4-mobile-first',
+    'clase4-clean-code-tests',
+    'clase4-builder-station'
+  ];
+  return {
+    ...slide,
+    layout: 'custom' as const,
+    customComponentKey: keys[idx] || 'clase4-hero'
+  };
+});
+
 export const RUTA_WEB_AI_PRESENTATION: Presentation = {
   id: 'ruta-web-ai',
   title: 'Ruta Web con IA',
   shortTitle: 'Ruta Web con IA',
   subtitle: 'De Cero a tu Primera Web Profesional e Inteligente',
-  badge: '3 Clases Prácticas',
+  badge: '4 Clases Prácticas',
   icon: 'Sparkles',
-  description: 'Masterclass completa de 3 clases para preparar tu entorno, estructurar tu estrategia de conversión y dirigir a tu equipo de agentes con el Kit de Skills en Antigravity.',
+  description: 'Masterclass completa de 4 clases para preparar tu entorno, estructurar tu estrategia, orquestar tus agentes y construir tu primera versión funcional en vivo.',
   hasBriefGenerator: true,
   sections: [
     {
@@ -92,6 +110,15 @@ export const RUTA_WEB_AI_PRESENTATION: Presentation = {
       color: 'cyan',
       description: 'Antigravity como oficina virtual, Kit de 9 Agentes, 11 Skills, dirección como CEO y estación de orquestación.',
       slides: enrichedClase2Slides
+    },
+    {
+      id: 'clase-4',
+      title: 'Clase 4: Construye tu Web (Aquí Empieza la Acción)',
+      shortTitle: 'Clase 4: Construye tu Web',
+      badge: 'Construcción',
+      color: 'amber',
+      description: 'Los 10 bloques esenciales, versión móvil, stack Next.js + Tailwind + Radix + Hook Form, Unit Tests y Web Builder Studio.',
+      slides: enrichedClase4Slides
     }
   ]
 };

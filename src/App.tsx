@@ -300,6 +300,14 @@ export function App() {
         if (currentPresentation.sections.length > 2) {
           handleSelectSection(2);
         }
+      } else if (e.key === '3' || e.key === '4') {
+        e.preventDefault();
+        if (currentPresentation.sections.length > 3) {
+          handleSelectSection(3);
+        }
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        navigateToHub();
       } else if (e.key === '?') {
         e.preventDefault();
         setIsShortcutsOpen((prev) => !prev);
@@ -322,7 +330,8 @@ export function App() {
       <LaserPointer isActive={isLaserActive} />
 
       {/* Top Edge Hover Trigger Zone when Navbar is Hidden */}
-      {isNavbarHidden && (
+      {/* Top Edge Hover Trigger Zone when Navbar is Hidden (Only in presentation mode) */}
+      {!isHub && isNavbarHidden && (
         <div
           onMouseEnter={() => setIsHoveringTop(true)}
           className="fixed top-0 left-0 right-0 h-4 z-40 cursor-pointer flex justify-center group"
@@ -338,52 +347,54 @@ export function App() {
       {/* Background ambient lighting */}
       <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
 
-      {/* Top Navigation Bar with Smooth Reveal on Hover */}
-      <div
-        onMouseLeave={() => isNavbarHidden && setIsHoveringTop(false)}
-        className={`${isNavbarHidden ? 'fixed top-0 left-0 right-0 z-50 transition-transform duration-300' : 'relative z-50'} ${
-          isNavbarHidden && !showNavbar ? '-translate-y-full pointer-events-none' : 'translate-y-0'
-        }`}
-      >
-        <Navbar
-          presentations={presentations}
-          currentPresentation={currentPresentation}
-          onSelectPresentation={handleSelectPresentation}
-          currentSectionIndex={currentSectionIndex}
-          onSelectSection={handleSelectSection}
-          currentSlideIndex={slideIndex}
-          totalSlides={currentSlides.length}
-          onOpenOverview={() => setIsOverviewOpen(true)}
-          onOpenPresenter={() => setIsPresenterOpen(true)}
-          onOpenBrief={() => setIsBriefOpen(true)}
-          onOpenSoftwarePlan={() => setIsSoftwarePlanOpen(true)}
-          onOpenAppBlueprint={() => setIsAppBlueprintOpen(true)}
-          onOpenHub={navigateToHub}
-          onOpenShortcuts={() => setIsShortcutsOpen(true)}
-          isFullscreen={isFullscreen}
-          onToggleFullscreen={toggleFullscreen}
-          currentTheme={currentTheme}
-          onSelectTheme={(t) => setCurrentTheme(t)}
-          contrastRhythm={contrastRhythm}
-          onSelectContrastRhythm={(r) => setContrastRhythm(r)}
-          autoCycle={autoCycle}
-          onToggleAutoCycle={() => setAutoCycle(!autoCycle)}
-          isLaserActive={isLaserActive}
-          onToggleLaser={() => setIsLaserActive(!isLaserActive)}
-          onTriggerWakeUp={triggerWakeUp}
-          isNavbarHidden={isNavbarHidden}
-          onToggleHideNavbar={() => setIsNavbarHidden(!isNavbarHidden)}
-        />
-      </div>
+      {/* Top Navigation Bar with Smooth Reveal on Hover (Hidden on main Hub screen) */}
+      {!isHub && (
+        <div
+          onMouseLeave={() => isNavbarHidden && setIsHoveringTop(false)}
+          className={`${isNavbarHidden ? 'fixed top-0 left-0 right-0 z-50 transition-transform duration-300' : 'relative z-50'} ${
+            isNavbarHidden && !showNavbar ? '-translate-y-full pointer-events-none' : 'translate-y-0'
+          }`}
+        >
+          <Navbar
+            presentations={presentations}
+            currentPresentation={currentPresentation}
+            onSelectPresentation={handleSelectPresentation}
+            currentSectionIndex={currentSectionIndex}
+            onSelectSection={handleSelectSection}
+            currentSlideIndex={slideIndex}
+            totalSlides={currentSlides.length}
+            onOpenOverview={() => setIsOverviewOpen(true)}
+            onOpenPresenter={() => setIsPresenterOpen(true)}
+            onOpenBrief={() => setIsBriefOpen(true)}
+            onOpenSoftwarePlan={() => setIsSoftwarePlanOpen(true)}
+            onOpenAppBlueprint={() => setIsAppBlueprintOpen(true)}
+            onOpenHub={navigateToHub}
+            onOpenShortcuts={() => setIsShortcutsOpen(true)}
+            isFullscreen={isFullscreen}
+            onToggleFullscreen={toggleFullscreen}
+            currentTheme={currentTheme}
+            onSelectTheme={(t) => setCurrentTheme(t)}
+            contrastRhythm={contrastRhythm}
+            onSelectContrastRhythm={(r) => setContrastRhythm(r)}
+            autoCycle={autoCycle}
+            onToggleAutoCycle={() => setAutoCycle(!autoCycle)}
+            isLaserActive={isLaserActive}
+            onToggleLaser={() => setIsLaserActive(!isLaserActive)}
+            onTriggerWakeUp={triggerWakeUp}
+            isNavbarHidden={isNavbarHidden}
+            onToggleHideNavbar={() => setIsNavbarHidden(!isNavbarHidden)}
+          />
+        </div>
+      )}
 
       {/* Main Slide Canvas or Hub */}
       <main className={`flex-1 relative flex items-center justify-center overflow-hidden transition-all duration-300 ${
-        isNavbarHidden ? 'p-2 sm:p-4' : 'p-2 sm:p-4 md:p-6'
+        isNavbarHidden || isHub ? 'p-2 sm:p-4' : 'p-2 sm:p-4 md:p-6'
       }`}>
         <div
           ref={slideRef}
           className={`w-full h-full max-w-7xl rounded-3xl shadow-2xl relative overflow-hidden backdrop-blur-2xl transition-all duration-500 border ${
-            isNavbarHidden ? 'max-h-[96vh]' : 'max-h-[88vh]'
+            isNavbarHidden || isHub ? 'max-h-[96vh]' : 'max-h-[88vh]'
           } ${isHub ? 'bg-slate-950/90 border-slate-800' : getSlideCanvasClass()}`}
         >
           {isHub ? (

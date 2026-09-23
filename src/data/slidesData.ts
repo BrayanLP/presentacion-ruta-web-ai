@@ -519,3 +519,186 @@ export const CLASE_2_SLIDES: SlideData[] = [
   }
 ];
 
+export const CLASE_4_SLIDES: SlideData[] = [
+  {
+    id: 'c4-s1',
+    classId: 4,
+    slideNumber: 1,
+    totalInClass: 8,
+    category: '⚡ CLASE 4 — CONSTRUCCIÓN',
+    title: 'Construye tu Web: ¡Aquí Empieza la Acción!',
+    subtitle: 'De la estrategia al producto vivo: orquestando tus agentes para tener tu primera versión funcional hoy',
+    durationMinutes: 5,
+    speakerNotes: {
+      goal: 'Encender la energía de los alumnos, marcar el hito de pasar de la teoría a la construcción real y fijar el objetivo de la clase.',
+      talkingPoints: [
+        '¡Bienvenidos a la Clase 4! Hoy dejamos los borradores y levantamos la web en vivo.',
+        'Tu rol hoy no es escribir etiquetas HTML ni pelearte con el CSS; tu rol es ser el Director General que supervisa cómo tus agentes levantan cada bloque.',
+        'Al terminar esta sesión tendrás tu primera versión funcional con los 10 bloques esenciales más versión móvil lista para recibir visitas.'
+      ],
+      questionsToAsk: [
+        '¿Quién tiene ya a la mano su Brief y los nombres de sus agentes listos?',
+        '¿Cuál es el primer bloque que creen que juzga un cliente al entrar a su web?'
+      ],
+      liveActivity: 'Pedir que abran Antigravity IDE con su proyecto inicializado y el navegador al lado para ver la magia en vivo.'
+    }
+  },
+  {
+    id: 'c4-s2',
+    classId: 4,
+    slideNumber: 2,
+    totalInClass: 8,
+    category: '🛠️ ARQUITECTURA TÉCNICA',
+    title: 'Bajo el Capó: El Stack Explicado para Directores',
+    subtitle: 'Next.js, Tailwind, Radix, Hook Form, GSAP, Lottie y Font Awesome entendidos en lenguaje de negocios',
+    durationMinutes: 10,
+    speakerNotes: {
+      goal: 'Explicar qué hace cada tecnología del stack sin dar una clase aburrida de código, usando analogías claras para que el alumno sepa qué exigirle al agente.',
+      talkingPoints: [
+        'Next.js es el motor de carreras: carga ultrarrápida, SEO natural y rutas instantáneas.',
+        'Tailwind CSS es el sastre a medida: diseño elegante sin hojas de estilo kilométricas.',
+        'Radix UI son las piezas mecánicas de precisión: acordeones de FAQs accesibles y modales que no fallan en ningún dispositivo.',
+        'React Hook Form es el receptor de leads: captura nombre, email y mensaje a la velocidad de la luz sin recargar la página.',
+        'GSAP & Lottie son los efectos especiales: animaciones suaves que retienen la atención sin ralentizar la web.',
+        'Font Awesome es el lenguaje visual universal de iconos.',
+        'Clean Code y Unit Tests son los inspectores de control de calidad que garantizan que nada se rompa.'
+      ],
+      questionsToAsk: [
+        '¿Por qué creen que a una empresa le importa más que su formulario use React Hook Form antes que un formulario anticuado que recarga la página?'
+      ]
+    }
+  },
+  {
+    id: 'c4-s3',
+    classId: 4,
+    slideNumber: 3,
+    totalInClass: 8,
+    category: '🧱 ANATOMÍA DE ALTA CONVERSIÓN',
+    title: 'La Anatomía de los 10 Bloques Esenciales',
+    subtitle: 'El viaje psicológico del visitante: desde el primer impacto hasta el clic en WhatsApp',
+    durationMinutes: 10,
+    speakerNotes: {
+      goal: 'Mostrar la estructura secuencial de los 10 bloques y explicar por qué cada uno está en ese orden exacto.',
+      talkingPoints: [
+        '1. Navbar: Orientación inmediata y botón de escape directo.',
+        '2. Hero: En 3 segundos responde ¿Qué ofreces? ¿Para quién es? ¿Qué gano yo?.',
+        '3. Servicios: La oferta clara desglosada en tarjetas modulares.',
+        '4. Beneficios: Por qué tú y no la competencia (transformación real).',
+        '5. Sobre Nosotros: Humanización, autoridad y quién está detrás.',
+        '6. Testimonios: Prueba social irrefutable.',
+        '7. FAQs: Derribar las últimas dudas y objeciones antes de comprar.',
+        '8. Contacto: Canal formal para prospectos calificados.',
+        '9. WhatsApp: El botón de cierre inmediato con mensaje prellenado.',
+        '10. Footer: Confianza legal, enlaces rápidos y derechos reservados.'
+      ],
+      liveActivity: 'Recorrer el mapa interactivo de bloques viendo cómo cada uno alimenta el deseo de compra.'
+    }
+  },
+  {
+    id: 'c4-s4',
+    classId: 4,
+    slideNumber: 4,
+    totalInClass: 8,
+    category: '🚀 CONSTRUCCIÓN FASE 1',
+    title: 'Fase 1: Los 4 Bloques de Impacto Inmediato',
+    subtitle: 'Navbar, Hero magnético, Servicios y Beneficios orquestados con el Web Architect y Copywriter',
+    durationMinutes: 12,
+    speakerNotes: {
+      goal: 'Mostrar el proceso de construcción de la mitad superior (Above the Fold) y la oferta central.',
+      talkingPoints: [
+        'El Hero es el 80% del éxito de una landing. Si el titular no engancha, el resto de la web nadie lo verá.',
+        'El Copywriter redacta con fórmula PAS (Problema - Agitación - Solución).',
+        'El Web Developer ensambla los componentes en Next.js con Tailwind y GSAP para la entrada suave.',
+        'Los Servicios deben presentarse como soluciones a dolores concretos, no como listas técnicas aburridas.'
+      ],
+      questionsToAsk: [
+        '¿Su titular actual explica en 5 segundos qué problema resuelven a su cliente?'
+      ]
+    }
+  },
+  {
+    id: 'c4-s5',
+    classId: 4,
+    slideNumber: 5,
+    totalInClass: 8,
+    category: '🤝 CONSTRUCCIÓN FASE 2',
+    title: 'Fase 2: Confianza, Validación y Cierre',
+    subtitle: 'Sobre Nosotros, Testimonios, FAQs con Radix, Contacto con Hook Form y WhatsApp',
+    durationMinutes: 12,
+    speakerNotes: {
+      goal: 'Enseñar la construcción de los bloques que transforman curiosos en prospectos que pagan.',
+      talkingPoints: [
+        'Sobre Nosotros no es tu biografía escolar; es por qué tú eres la persona indicada para ayudar a tu cliente.',
+        'Testimonios creíbles: Foto, nombre, cargo y resultado tangible obtenido.',
+        'FAQs con Radix Accordion: Animación fluida, accesible con teclado (tab/enter) y sin recargar.',
+        'Contacto con React Hook Form: Validación en tiempo real (correo válido, campos requeridos) sin fricción.',
+        'Botón de WhatsApp flotante: El atajo preferido en Latinoamérica y España para cerrar ventas en 60 segundos.'
+      ],
+      liveActivity: 'Probar el acordeón de FAQs interactivo y el envío simulado del formulario de contacto.'
+    }
+  },
+  {
+    id: 'c4-s6',
+    classId: 4,
+    slideNumber: 6,
+    totalInClass: 8,
+    category: '📱 EXPERIENCIA RESPONSIVE',
+    title: 'Prioridad Absoluta: La Versión Móvil (Mobile-First)',
+    subtitle: 'Más del 85% de tus prospectos te visitarán desde el smartphone: diseño para el pulgar y velocidad',
+    durationMinutes: 8,
+    speakerNotes: {
+      goal: 'Fijar el criterio de auditoría móvil indispensable para cualquier director web.',
+      talkingPoints: [
+        'Regla de oro: Si no se ve perfecto en un teléfono con pantalla de 375px, tu web está rota para el 85% de tus clientes.',
+        'Menú hamburguesa accesible con Radix Dialog.',
+        'Zona del pulgar (Thumb Zone): El botón de WhatsApp y los CTAs deben estar al alcance fácil con una sola mano.',
+        'Botones táctiles mínimos de 44x44px para evitar toques accidentales.',
+        'Tipografías legibles sin tener que hacer zoom.'
+      ],
+      questionsToAsk: [
+        '¿Cuándo fue la última vez que compraron un servicio desde su laptop vs desde su teléfono celular?'
+      ]
+    }
+  },
+  {
+    id: 'c4-s7',
+    classId: 4,
+    slideNumber: 7,
+    totalInClass: 8,
+    category: '🛡️ CONTROL DE CALIDAD',
+    title: 'Control de Calidad: Clean Code, Unit Tests & Docs',
+    subtitle: 'Cómo auditar tu web con pruebas automáticas para dormir tranquilo sin depender de programadores',
+    durationMinutes: 10,
+    speakerNotes: {
+      goal: 'Desmitificar los Unit Tests y Clean Code, mostrándolos como la póliza de seguro de la web.',
+      talkingPoints: [
+        '¿Qué es un Unit Test para un CEO? Un robot que prueba cada botón, formulario y enlace automáticamente en 2 segundos.',
+        'Si cambias un color o agregas un servicio, corres `npm test` y sabes si algo se rompió antes de que lo note un cliente.',
+        'Clean Code significa que el código está tan ordenado que cualquier agente o humano puede mejorarlo mañana.',
+        'Documentación automática: Un README claro con instrucciones para que tu web sea un activo transferible y valioso.'
+      ],
+      liveActivity: 'Ejecutar la suite de tests simulada en vivo y ver las 5 pruebas de verificación en verde.'
+    }
+  },
+  {
+    id: 'c4-s8',
+    classId: 4,
+    slideNumber: 8,
+    totalInClass: 8,
+    category: '🎯 ESTACIÓN DE CONSTRUCCIÓN',
+    title: 'Web Builder Studio: Tu Primera Web en Vivo',
+    subtitle: 'Ensamblaje interactivo por bloques, simulador de tests y Prompt Maestro de Clase 4 para Antigravity',
+    durationMinutes: 15,
+    speakerNotes: {
+      goal: 'Permitir al alumno interactuar con el simulador de construcción, probar los 10 bloques, alternar entre desktop/móvil y llevarse el Prompt Maestro.',
+      talkingPoints: [
+        'Aquí tienen la estación de orquestación completa para la Clase 4.',
+        'Pueden activar o desactivar cada bloque para ver cómo se arma la landing page en tiempo real.',
+        'Alternen entre la vista móvil y escritorio para verificar la respuesta fluida.',
+        'Copien el Prompt Maestro de Construcción de Clase 4 directamente a Antigravity IDE para que sus agentes comiencen la ejecución.'
+      ],
+      liveActivity: 'Ensamblar la web completa en el simulador, correr las pruebas unitarias y copiar el prompt maestro.'
+    }
+  }
+];
+
