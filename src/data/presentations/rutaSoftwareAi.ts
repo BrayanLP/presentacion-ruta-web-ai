@@ -614,6 +614,127 @@ export const CLASE_2_SOFTWARE_SLIDES: SlideData[] = [
   }
 ];
 
+export const CLASE_3_SOFTWARE_SLIDES: SlideData[] = [
+  {
+    id: 's3-s1',
+    sectionId: 'clase-3-software',
+    slideNumber: 1,
+    totalInClass: 3,
+    category: '🚀 CLASE 3 — CONSTRUYE TU SOFTWARE',
+    title: 'Construye Tu Propio Producto',
+    subtitle: 'Ahora cada alumno comienza a construir su propio producto.',
+    durationMinutes: 15,
+    layout: 'timeline',
+    timeline: [
+      { step: '1', title: 'Login', desc: 'Acceso al sistema' },
+      { step: '2', title: 'Dashboard', desc: 'Panel principal' },
+      { step: '3', title: 'Clientes', desc: 'Gestión de clientes' },
+      { step: '4', title: 'Crear cliente', desc: 'Nuevo registro' },
+      { step: '5', title: 'Editar cliente', desc: 'Actualizar datos' },
+      { step: '6', title: 'Seguimientos', desc: 'Historial de acciones' },
+      { step: '7', title: 'Reportes', desc: 'Métricas y resultados' }
+    ],
+    callout: {
+      type: 'info',
+      title: 'Metodología Universal',
+      text: 'Y otro alumno podría estar creando un sistema de reservas mientras otro hace un inventario. La metodología es la misma: IDEA → PLAN → DISEÑO → CONSTRUCCIÓN.'
+    },
+    speakerNotes: {
+      goal: 'Motivar a los alumnos a iniciar la construcción de su producto paso a paso siguiendo la metodología unificada.',
+      talkingPoints: [
+        'Cada proyecto es único, pero los bloques fundamentales (como un CRM) siguen un patrón.',
+        'Por ejemplo, si alguien quiere crear un CRM empezamos desde el Login, Dashboard hasta llegar a los Reportes.',
+        'No importa si es un CRM, sistema de reservas o inventario, la secuencia IDEA → PLAN → DISEÑO → CONSTRUCCIÓN es la misma para todos.'
+      ]
+    }
+  },
+  {
+    id: 's3-s2',
+    sectionId: 'clase-3-software',
+    slideNumber: 2,
+    totalInClass: 3,
+    category: '💡 CATÁLOGO DE IDEAS & PROMPTS',
+    title: 'Catálogo: Elige y Copia tu Prompt',
+    subtitle: 'Navega por las 8 arquitecturas y copia el "Prompt Agente" para entregárselo a Antigravity IDE.',
+    durationMinutes: 10,
+    layout: 'custom',
+    customComponentKey: 'software-final-plan',
+    speakerNotes: {
+      goal: 'Mostrar el catálogo de ideas predefinidas para que copien el prompt directamente.',
+      talkingPoints: [
+        'Aquí están las 8 ideas listas.',
+        'Seleccionen su idea, vayan a la pestaña "3. Prompt Agente" y copien el texto.',
+        'Ese texto es el que pegarán en Antigravity IDE para comenzar a construir.'
+      ]
+    }
+  },
+  {
+    id: 's3-s3',
+    sectionId: 'clase-3-software',
+    slideNumber: 3,
+    totalInClass: 3,
+    category: '📝 EJEMPLO: PROMPT MAESTRO',
+    title: 'El Prompt Maestro Consolidado',
+    subtitle: 'Así luce la instrucción final que entregamos reuniendo la Idea, Arquitectura y el Equipo IA',
+    durationMinutes: 10,
+    layout: 'split',
+    points: [
+      {
+        title: 'Contexto y Stack',
+        text: 'Le damos a la IA todo el contexto del negocio (CRM para Gimnasios) y las tecnologías a utilizar (Next.js, Tailwind, Supabase).'
+      },
+      {
+        title: 'Arquitectura y Base de Datos',
+        text: 'Especificamos las 4 pantallas principales y las tablas necesarias con políticas de seguridad.'
+      },
+      {
+        title: 'Roles de los Agentes',
+        text: 'Asignamos tareas específicas a @ProductManager, @SoftwareArchitect, @SupabaseSpecialist, @Developer y @QAAgent.'
+      }
+    ],
+    codeSnippet: {
+      language: 'markdown',
+      title: 'Prompt Maestro para un CRM de Gimnasio',
+      code: `### 🚀 PROMPT MAESTRO PARA ANTIGRAVITY IDE: CRM para Gimnasio
+
+**[CONTEXTO DEL PROYECTO]**
+Proyecto: Sistema de Gestión y Control de Accesos para Gimnasios.
+Problema que resuelve: Pérdida de información por registros manuales en Excel.
+Usuario Objetivo: Dueños del gimnasio (Admin), Recepcionistas (Operador) y Socios (Clientes).
+Alcance del MVP: Módulo operativo principal de recepción, base de datos de socios, panel de control de ingresos y portal web responsivo.
+
+**[STACK TECNOLÓGICO]**
+Frontend: Next.js 14 + Tailwind CSS + Iconos Lucide
+Backend & Base de Datos: Supabase (PostgreSQL + Autenticación)
+
+**[ARQUITECTURA Y PANTALLAS (UI/UX)]**
+1. /recepcion/acceso-qr: Vista operativa principal para escanear ingresos.
+2. /socio/mi-carnet: Portal interactivo para socios.
+3. /clases/agenda: Módulo visual para agendar clases grupales.
+4. /admin/cobranzas: Panel de administración exclusivo para dueños.
+
+**[ESQUEMA DE BASE DE DATOS]**
+Tablas en Supabase: socios, membresias, accesos_qr, clases_grupales, pagos.
+(Habilitar Políticas de Seguridad por Fila - RLS en todas las tablas).
+
+**[INSTRUCCIONES PARA EL EQUIPO DE AGENTES]**
+🤖 @ProductManager: Define el alcance del MVP en base a este prompt.
+🤖 @SoftwareArchitect: Inicializa el proyecto en Next.js.
+🤖 @SupabaseSpecialist: Conéctate a Supabase, ejecuta el esquema SQL y configura RLS.
+🤖 @Developer: Construye las 4 pantallas principales y conéctalas con Supabase.
+🤖 @QAAgent: Revisa que la autenticación funcione y las rutas no tengan errores.`
+    },
+    speakerNotes: {
+      goal: 'Mostrar un ejemplo real de cómo se consolida todo el trabajo de las clases 0, 1 y 2 en un solo Prompt Maestro.',
+      talkingPoints: [
+        'Este es el documento final que se entrega a Antigravity IDE.',
+        'Como pueden ver, no es solo un prompt genérico, contiene la arquitectura exacta, la base de datos y le da tareas específicas a cada agente de IA.',
+        'De esta manera nos aseguramos de que la Inteligencia Artificial construya exactamente el MVP que hemos planificado.'
+      ]
+    }
+  }
+];
+
 export const RUTA_SOFTWARE_AI_PRESENTATION: Presentation = {
   id: 'ruta-software-ai',
   title: 'Ruta Software con IA',
@@ -651,6 +772,15 @@ export const RUTA_SOFTWARE_AI_PRESENTATION: Presentation = {
       color: 'emerald',
       description: 'Presentación del equipo de agentes (Product Manager, Architect, Developer, etc.), entrega de Skills y flujo de trabajo para construir el software.',
       slides: CLASE_2_SOFTWARE_SLIDES
+    },
+    {
+      id: 'clase-3-software',
+      title: 'Clase 3: Construye Tu Software',
+      shortTitle: 'Clase 3: Construcción',
+      badge: 'Ejecución',
+      color: 'blue',
+      description: 'Ahora cada alumno comienza a construir su propio producto aplicando la metodología IDEA → PLAN → DISEÑO → CONSTRUCCIÓN.',
+      slides: CLASE_3_SOFTWARE_SLIDES
     }
   ]
 };
