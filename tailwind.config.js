@@ -33,9 +33,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Outfit', 'Inter', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
-        display: ['Space Grotesk', 'Outfit', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
+        mono: ['Roboto Mono', 'monospace'],
+        display: ['Roboto', 'sans-serif'],
       },
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',

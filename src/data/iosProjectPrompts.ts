@@ -1527,8 +1527,8 @@ export function generateIosAppPrompt(data: AppBlueprintData): string {
 Actúa como un **Agente Desarrollador Mobile Senior especializado en React Native, Expo y Supabase (Multiplataforma iOS & Android)**.
 Vamos a construir una aplicación móvil universal de alto rendimiento utilizando el siguiente stack:
 - **Framework Móvil**: React Native con **Expo (SDK actual)** y **Expo Router** (File-based navigation para iOS y Android).
-- **Estilos & UI**: Tailwind CSS (NativeWind) / StyleSheet optimizado con soporte para Dark Mode, Safe Area Context y Haptics/Vibration.
-- **Backend & Base de Datos**: **Supabase** (PostgreSQL, Row Level Security, Auth con Email / Google / Apple Sign In, Storage y Realtime).
+- **Estilos & UI**: React Native Paper con soporte para Dark Mode, Safe Area Context y Haptics/Vibration.
+- **Backend & Base de Datos**: **Supabase** (PostgreSQL, Row Level Security, Auth con Usuario y Contraseña, Storage y Realtime).
 - **Entorno de Pruebas**: **Expo Go** en dispositivo físico (iPhone o Android) y emuladores.
 
 ---

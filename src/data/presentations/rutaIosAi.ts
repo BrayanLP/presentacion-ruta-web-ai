@@ -168,7 +168,7 @@ export const CLASE_0_MOBILE_SLIDES: SlideData[] = [
       },
       {
         title: '🗄️ Cuenta Supabase (PostgreSQL)',
-        desc: 'El backend completo de tu app: base de datos relacional, login de usuarios (Email/Google/Apple), fotos y notificaciones.',
+        desc: 'El backend completo de tu app: base de datos relacional, login de usuarios (Usuario y Contraseña), fotos y notificaciones.',
         badge: 'Backend en la Nube',
         list: [
           'Cuenta gratuita en supabase.com',
@@ -425,7 +425,7 @@ export const CLASE_1_MOBILE_SLIDES: SlideData[] = [
         desc: 'La base de datos relacional PostgreSQL donde se almacenan usuarios, transacciones y fotos.',
         badge: 'Capa de Datos',
         list: [
-          'Autenticación por Email, Google y Apple Sign In',
+          'Autenticación por Usuario y Contraseña',
           'Tablas relacionales seguras con RLS',
           'Sincronización en tiempo real (Supabase Realtime)'
         ]
@@ -638,7 +638,7 @@ const CLASE_2_MOBILE_SLIDES: SlideData[] = [
       {
         title: 'Infraestructura',
         desc: 'Servicios en la nube y monetización.',
-        list: ['🗄️ Supabase & 📊 Database', '🔐 Authentication & 👤 User', '💳 Payments (Stripe/Apple)']
+        list: ['🗄️ Supabase & 📊 Database', '🔐 Authentication & 👤 User', '💳 Payments (RevenueCat)']
       },
       {
         title: 'Mantenimiento',
@@ -772,6 +772,174 @@ const CLASE_2_MOBILE_SLIDES: SlideData[] = [
   }
 ];
 
+const CLASE_3_MOBILE_SLIDES: SlideData[] = [
+  {
+    id: 'mobile3-s1',
+    sectionId: 'clase-3-ios',
+    slideNumber: 1,
+    totalInClass: 5,
+    category: '🚀 CLASE 3 — PROJECT LAB',
+    title: 'Construimos la Aplicación',
+    subtitle: 'Aquí empieza el Project Lab. Abre Antigravity IDE y comienza a construir tu propia aplicación móvil.',
+    durationMinutes: 5,
+    layout: 'hero',
+    badge: 'PROJECT LAB',
+    heroCta: {
+      text: 'Iniciar Project Lab'
+    },
+    stats: [
+      { value: 'Expo', label: 'Framework', subtext: 'React Native' },
+      { value: 'Supabase', label: 'Backend', subtext: 'Auth & DB' },
+      { value: 'Agentes', label: 'Desarrollo', subtext: 'Antigravity IDE' }
+    ],
+    speakerNotes: {
+      goal: 'Dar inicio oficial a la fase de construcción.',
+      talkingPoints: [
+        'Hemos planificado la idea y preparado el equipo de IA.',
+        'Ahora pasamos a la acción: abrimos Antigravity IDE y empezamos a construir la app real.',
+        'El alumno es el líder del proyecto y los agentes de IA ejecutarán el código.'
+      ]
+    }
+  },
+  {
+    id: 'mobile3-s2',
+    sectionId: 'clase-3-ios',
+    slideNumber: 2,
+    totalInClass: 5,
+    category: '🛠️ BASE TECNOLÓGICA',
+    title: 'Nuestro Stack de Desarrollo Móvil',
+    subtitle: 'Las herramientas oficiales que darán vida a tu aplicación',
+    durationMinutes: 5,
+    layout: 'grid',
+    cards: [
+      {
+        title: '📱 Framework App',
+        desc: 'React Native potenciado por Expo para crear apps multiplataforma rápidas.',
+        badge: 'Expo + React Native'
+      },
+      {
+        title: '🎨 Estilos & UI',
+        desc: 'Componentes de alta calidad listos para usar y altamente personalizables.',
+        badge: 'React Native Paper'
+      },
+      {
+        title: '🗄️ Backend Inmediato',
+        desc: 'Base de datos, Autenticación oficial y Storage nativamente integrados con Expo.',
+        badge: 'Supabase'
+      },
+      {
+        title: '🤖 Desarrollo IA',
+        desc: 'Tu equipo virtual que programa, corrige y optimiza el código de tu app.',
+        badge: 'Antigravity + Agentes'
+      }
+    ],
+    speakerNotes: {
+      goal: 'Asegurar que entiendan las piezas tecnológicas que componen su aplicación.',
+      talkingPoints: [
+        'No usaremos tecnologías experimentales para la app, usamos el estándar de la industria (React Native).',
+        'Supabase tiene integración oficial con Expo/React Native, lo que facilita el auth y la base de datos.',
+        'Antigravity IDE y las Skills son el puente que une todo esto.'
+      ]
+    }
+  },
+  {
+    id: 'mobile3-s3',
+    sectionId: 'clase-3-ios',
+    slideNumber: 3,
+    totalInClass: 5,
+    category: '🗺️ MAPA DE CONSTRUCCIÓN',
+    title: '¿Qué vamos a construir paso a paso?',
+    subtitle: 'El flujo completo desde que el usuario abre la app hasta que la usa',
+    durationMinutes: 8,
+    layout: 'grid',
+    cards: [
+      {
+        title: '1️⃣ Experiencia Inicial',
+        desc: 'El primer contacto visual.',
+        list: ['Pantalla de Splash', 'Onboarding', 'Navegación inicial']
+      },
+      {
+        title: '2️⃣ Seguridad y Accesos',
+        desc: 'Gestión de usuarios con Supabase Auth.',
+        list: ['Login', 'Registro de usuarios', 'Recuperar contraseña']
+      },
+      {
+        title: '3️⃣ Funcionalidad Core',
+        desc: 'El corazón de la aplicación.',
+        list: ['Home y Menú', 'Formularios y Listados', 'Detalles y Perfil', 'Funciones principales']
+      },
+      {
+        title: '4️⃣ Experiencia UX/UI Móvil',
+        desc: 'Los detalles que hacen a una app profesional.',
+        list: ['Estados de carga', 'Estados vacíos', 'Mensajes de error', 'Diseño responsive']
+      }
+    ],
+    speakerNotes: {
+      goal: 'Mostrar la hoja de ruta de los componentes que irán armando con la IA.',
+      talkingPoints: [
+        'Construir una app no es solo la función principal, es todo el ecosistema.',
+        'Empezaremos por el Splash y Onboarding para dar una buena impresión.',
+        'Luego la autenticación segura, las pantallas clave, y finalmente el pulido UX.'
+      ]
+    }
+  },
+  {
+    id: 'mobile3-s4',
+    sectionId: 'clase-3-ios',
+    slideNumber: 4,
+    totalInClass: 5,
+    category: '⚡ ALIANZA OFICIAL',
+    title: 'Supabase + Expo: Integración Nativa',
+    subtitle: 'Autenticación, Base de datos y Almacenamiento optimizados para el móvil',
+    durationMinutes: 4,
+    layout: 'split',
+    points: [
+      {
+        title: '🔐 Supabase Auth',
+        text: 'Manejo seguro de sesiones directamente en React Native, persistencia local y flujos de login.'
+      },
+      {
+        title: '💾 Supabase Database',
+        text: 'PostgreSQL en la nube con lectura/escritura en tiempo real para tus Listados y Detalles.'
+      },
+      {
+        title: '📁 Supabase Storage',
+        text: 'Almacena imágenes de Perfil, documentos y archivos multimedia fácilmente.'
+      }
+    ],
+    speakerNotes: {
+      goal: 'Destacar por qué elegimos Supabase para la base de datos y backend.',
+      talkingPoints: [
+        'Supabase no es un parche, tiene SDKs y guías oficiales exclusivas para React Native y Expo.',
+        'Nos ahorrará semanas de configurar servidores, bases de datos o sistemas de login desde cero.'
+      ]
+    }
+  },
+  {
+    id: 'mobile3-s5',
+    sectionId: 'clase-3-ios',
+    slideNumber: 5,
+    totalInClass: 5,
+    category: '🚀 MANOS A LA OBRA',
+    title: 'Genera el Blueprint de tu App',
+    subtitle: 'Completa los datos de tu negocio o idea para generar el prompt arquitectónico que Antigravity usará para construir tu aplicación.',
+    durationMinutes: 5,
+    layout: 'hero',
+    badge: 'GENERADOR DE PROMPT',
+    heroCta: {
+      text: 'Abrir Formulario',
+      action: 'brief'
+    },
+    speakerNotes: {
+      goal: 'Que el alumno genere su propio prompt con los datos de su negocio o idea.',
+      talkingPoints: [
+        'No tienes que escribir el prompt maestro desde cero.',
+        'Solo completa el formulario con los datos de tu app y obtendrás las instrucciones exactas para la IA.'
+      ]
+    }
+  }
+];
+
 export const RUTA_IOS_AI_PRESENTATION: Presentation = {
   id: 'ruta-ios-ai',
   title: 'Ruta: Crear Apps iOS & Android con IA + Expo + Supabase',
@@ -810,6 +978,15 @@ export const RUTA_IOS_AI_PRESENTATION: Presentation = {
       color: 'violet',
       description: 'Conoce a tu equipo virtual. No necesitas programar todo, necesitas aprender a dirigir a tu equipo de IA (Product Manager, UX, React Native, Supabase, etc).',
       slides: CLASE_2_MOBILE_SLIDES
+    },
+    {
+      id: 'clase-3-ios',
+      title: 'CLASE 3 — Construimos la aplicación',
+      shortTitle: 'Clase 3: Construcción',
+      badge: 'Project Lab',
+      color: 'blue',
+      description: 'Aquí empieza el Project Lab. Abrirás Antigravity y comenzarás a construir tu propia aplicación con Expo, React Native Paper y Supabase.',
+      slides: CLASE_3_MOBILE_SLIDES
     }
   ]
 };
