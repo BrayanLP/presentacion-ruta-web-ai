@@ -1,5 +1,5 @@
 import type { Presentation } from '../../types';
-import { CLASE_0_SLIDES, CLASE_1_SLIDES, CLASE_2_SLIDES, CLASE_4_SLIDES } from '../slidesData';
+import { CLASE_0_SLIDES, CLASE_1_SLIDES, CLASE_2_SLIDES, CLASE_4_SLIDES, CLASE_5_SLIDES } from '../slidesData';
 
 // Enrich slides with customComponentKey so the SlideRenderer knows which custom interactive component to render
 const enrichedClase0Slides = CLASE_0_SLIDES.map((slide, idx) => {
@@ -74,14 +74,30 @@ const enrichedClase4Slides = CLASE_4_SLIDES.map((slide, idx) => {
   };
 });
 
+const enrichedClase5Slides = CLASE_5_SLIDES.map((slide, idx) => {
+  const keys = [
+    'clase5-hero',
+    'clase5-seo',
+    'clase5-geo',
+    'clase5-publication',
+    'clase5-search-console',
+    'clase5-launch-station'
+  ];
+  return {
+    ...slide,
+    layout: 'custom' as const,
+    customComponentKey: keys[idx] || 'clase5-hero'
+  };
+});
+
 export const RUTA_WEB_AI_PRESENTATION: Presentation = {
   id: 'ruta-web-ai',
   title: 'Ruta Web con IA',
   shortTitle: 'Ruta Web con IA',
   subtitle: 'De Cero a tu Primera Web Profesional e Inteligente',
-  badge: '4 Clases Prácticas',
+  badge: '5 Clases Prácticas',
   icon: 'Sparkles',
-  description: 'Masterclass completa de 4 clases para preparar tu entorno, estructurar tu estrategia, orquestar tus agentes y construir tu primera versión funcional en vivo.',
+  description: 'Masterclass completa de 5 clases para preparar tu entorno, estructurar tu estrategia, orquestar tus agentes, construir tu web y publicarla con SEO + GEO.',
   hasBriefGenerator: true,
   sections: [
     {
@@ -113,12 +129,21 @@ export const RUTA_WEB_AI_PRESENTATION: Presentation = {
     },
     {
       id: 'clase-4',
-      title: 'Clase 4: Construye tu Web (Aquí Empieza la Acción)',
-      shortTitle: 'Clase 4: Construye tu Web',
+      title: 'Clase 3: Construye tu Web (Aquí Empieza la Acción)',
+      shortTitle: 'Clase 3: Construye tu Web',
       badge: 'Construcción',
       color: 'amber',
       description: 'Los 10 bloques esenciales, versión móvil, stack Next.js + Tailwind + Radix + Hook Form, Unit Tests y Web Builder Studio.',
       slides: enrichedClase4Slides
+    },
+    {
+      id: 'clase-5',
+      title: 'Clase 4: SEO + GEO + Publicación',
+      shortTitle: 'Clase 4: SEO + GEO',
+      badge: 'SEO & Publicación',
+      color: 'emerald',
+      description: 'SEO para Google, GEO para las IAs, dominio propio, SSL, Analytics y Search Console. Aquí cerramos el ciclo.',
+      slides: enrichedClase5Slides
     }
   ]
 };

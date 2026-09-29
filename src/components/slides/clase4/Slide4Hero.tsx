@@ -16,7 +16,7 @@ export const Slide4Hero: React.FC<SlideProps> = ({ onNext }) => {
       <div className="flex items-center gap-3 relative z-10">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-bold tracking-wider uppercase">
           <Hammer className="w-3.5 h-3.5" />
-          <span>CLASE 4 — CONSTRUYE TU WEB</span>
+          <span>CLASE 3 — CONSTRUYE TU WEB</span>
         </div>
         <span className="text-slate-500 text-xs font-mono hidden sm:inline">• Aquí Empieza la Acción</span>
       </div>

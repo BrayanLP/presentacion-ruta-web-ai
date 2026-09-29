@@ -525,14 +525,14 @@ export const CLASE_4_SLIDES: SlideData[] = [
     classId: 4,
     slideNumber: 1,
     totalInClass: 8,
-    category: '⚡ CLASE 4 — CONSTRUCCIÓN',
+    category: '⚡ CLASE 3 — CONSTRUCCIÓN',
     title: 'Construye tu Web: ¡Aquí Empieza la Acción!',
     subtitle: 'De la estrategia al producto vivo: orquestando tus agentes para tener tu primera versión funcional hoy',
     durationMinutes: 5,
     speakerNotes: {
       goal: 'Encender la energía de los alumnos, marcar el hito de pasar de la teoría a la construcción real y fijar el objetivo de la clase.',
       talkingPoints: [
-        '¡Bienvenidos a la Clase 4! Hoy dejamos los borradores y levantamos la web en vivo.',
+        '¡Bienvenidos a la Clase 3! Hoy dejamos los borradores y levantamos la web en vivo.',
         'Tu rol hoy no es escribir etiquetas HTML ni pelearte con el CSS; tu rol es ser el Director General que supervisa cómo tus agentes levantan cada bloque.',
         'Al terminar esta sesión tendrás tu primera versión funcional con los 10 bloques esenciales más versión móvil lista para recibir visitas.'
       ],
@@ -698,6 +698,147 @@ export const CLASE_4_SLIDES: SlideData[] = [
         'Copien el Prompt Maestro de Construcción de Clase 4 directamente a Antigravity IDE para que sus agentes comiencen la ejecución.'
       ],
       liveActivity: 'Ensamblar la web completa en el simulador, correr las pruebas unitarias y copiar el prompt maestro.'
+    }
+  }
+];
+
+export const CLASE_5_SLIDES: SlideData[] = [
+  {
+    id: 'c5-s1',
+    classId: 5,
+    slideNumber: 1,
+    totalInClass: 6,
+    category: '🌐 CLASE 4 — SEO + GEO + PUBLICACIÓN',
+    title: 'Aquí Cerramos el Ciclo',
+    subtitle: 'SEO para Google, GEO para las IAs y publicación de tu dominio propio en internet',
+    durationMinutes: 5,
+    speakerNotes: {
+      goal: 'Generar expectativa máxima: hoy la web deja de ser un archivo local y pasa a ser un activo digital en internet.',
+      talkingPoints: [
+        'Felicitaciones: ya tienen su web construida con los 10 bloques. Ahora vamos a hacerla visible al mundo.',
+        'Tres pilares hoy: SEO (Google te entiende), GEO (las IAs te citan) y Publicación (tu dominio real).',
+        'Al terminar esta clase, cualquier persona con internet podrá encontrar y visitar su web.'
+      ],
+      questionsToAsk: [
+        '¿Quién ha buscado alguna vez un negocio en Google y entrado a la primera web que apareció?',
+        '¿Qué creen que hace que una web aparezca arriba en Google?'
+      ],
+      liveActivity: 'Pedir a todos que abran su proyecto en Antigravity y tengan listo el Brief de la Clase 1.'
+    }
+  },
+  {
+    id: 'c5-s2',
+    classId: 5,
+    slideNumber: 2,
+    totalInClass: 6,
+    category: '🔎 SEO',
+    title: 'SEO: Que Google Te Entienda',
+    subtitle: '9 factores clave para posicionarte en los primeros resultados de búsqueda',
+    durationMinutes: 20,
+    speakerNotes: {
+      goal: 'Explicar cada factor SEO de forma práctica y accionable, mostrando cómo el Agente SEO Specialist los implementa.',
+      talkingPoints: [
+        'SEO no es magia: es comunicarle a Google, de forma clara, de qué trata tu web y para quién es.',
+        'El 70% del tráfico web viene de búsquedas orgánicas. Una web sin SEO es una web invisible.',
+        'El Schema Markup es el puente entre SEO y GEO: lo que Google entiende, la IA también lo usa.'
+      ],
+      questionsToAsk: [
+        '¿Qué es lo primero que buscan sus clientes en Google antes de contactarlos?',
+        '¿Cuántas páginas de Google suelen revisar antes de hacer clic en algo?'
+      ],
+      liveActivity: 'Toca cada factor en la pantalla y muestra el prompt que usarías con tu Agente SEO en Antigravity.'
+    }
+  },
+  {
+    id: 'c5-s3',
+    classId: 5,
+    slideNumber: 3,
+    totalInClass: 6,
+    category: '🤖 GEO',
+    title: 'GEO: Que las IAs Te Entiendan',
+    subtitle: '7 señales para que ChatGPT, Gemini y Perplexity citen tu negocio',
+    durationMinutes: 15,
+    speakerNotes: {
+      goal: 'Presentar el concepto de GEO (Generative Engine Optimization) como el nuevo SEO para la era de la IA.',
+      talkingPoints: [
+        'Las IAs como ChatGPT responden preguntas citando fuentes. ¿Tu negocio es una fuente para las IAs?',
+        'GEO no es opcional: el 25% de las búsquedas ya se hacen a través de motores de IA. En 2 años será el 60%.',
+        'La clave: datos estructurados completos, contenido semántico profundo e información de negocio verificable.'
+      ],
+      questionsToAsk: [
+        '¿Alguno de ustedes ha preguntado a ChatGPT por una recomendación de negocio?',
+        '¿Qué pasaría si ChatGPT recomendara su negocio la próxima vez que alguien pregunte?'
+      ],
+      liveActivity: 'Demostrar en vivo: preguntar a ChatGPT o Gemini por un tipo de negocio y ver qué negocios cita.'
+    }
+  },
+  {
+    id: 'c5-s4',
+    classId: 5,
+    slideNumber: 4,
+    totalInClass: 6,
+    category: '🚀 PUBLICACIÓN',
+    title: 'Publicación: Tu Web en el Mundo',
+    subtitle: '8 pasos para lanzar tu dominio propio con SSL, Analytics y Search Console',
+    durationMinutes: 20,
+    speakerNotes: {
+      goal: 'Guiar paso a paso el proceso completo de publicación, desde comprar el dominio hasta activar los analytics.',
+      talkingPoints: [
+        'El dominio es tu dirección permanente en internet. Sin él, solo tienes una URL de Vercel temporal.',
+        'Vercel hace el proceso increíblemente simple: 90 segundos de deploy y SSL automático sin configuración.',
+        'Analytics y Search Console son el sistema nervioso de tu web: sin ellos, vas a ciegas.'
+      ],
+      questionsToAsk: [
+        '¿Quiénes ya tienen un dominio pensado de su tarea de la Clase 0?',
+        '¿Cuánto creen que cuesta publicar una web profesional en internet por un año?'
+      ],
+      liveActivity: 'Mostrar en vivo el proceso de deploy en Vercel y la conexión del dominio. Cada alumno hace el suyo.'
+    }
+  },
+  {
+    id: 'c5-s5',
+    classId: 5,
+    slideNumber: 5,
+    totalInClass: 6,
+    category: '📊 SEARCH CONSOLE',
+    title: 'Google Search Console',
+    subtitle: 'Tu panel de control SEO oficial y gratuito directamente de Google',
+    durationMinutes: 15,
+    speakerNotes: {
+      goal: 'Mostrar la importancia de Search Console como el panel de control real del SEO.',
+      talkingPoints: [
+        'Search Console es la única forma de saber exactamente cómo te ve Google.',
+        'No adivines qué busca la gente, Search Console te dice exactamente con qué palabras te encontraron.',
+        'La indexación es el paso crítico: si Google no indexa tu página, no existes. Aquí se gestiona eso.'
+      ],
+      questionsToAsk: [
+        '¿Sabían que Google ofrece una herramienta gratuita para ver cuántas veces aparecieron en búsquedas?',
+        '¿Qué harían si ven que mucha gente los busca por una palabra clave que no usan en su web?'
+      ],
+      liveActivity: 'Mostrar el panel de Search Console en pantalla para que vean los clics e impresiones.'
+    }
+  },
+  {
+    id: 'c5-s6',
+    classId: 5,
+    slideNumber: 6,
+    totalInClass: 6,
+    category: '🎯 RESULTADO FINAL',
+    title: '¡Web Publicada en Internet!',
+    subtitle: 'El Prompt Maestro de Clase 5 y el lanzamiento oficial de tu web al mundo',
+    durationMinutes: 15,
+    speakerNotes: {
+      goal: 'Celebrar el logro, entregar el Prompt Maestro completo y hacer el lanzamiento simbólico con confetti.',
+      talkingPoints: [
+        '¡Felicitaciones! Han completado la Ruta Web con IA: de cero a una web profesional publicada en internet.',
+        'Este Prompt Maestro de Clase 5 le pide al Launch Manager que ejecute las 3 fases completas automáticamente.',
+        'Su web ahora está en internet, es segura (HTTPS), es encontrable (SEO), es citada por IAs (GEO) y está medida (Analytics).'
+      ],
+      questionsToAsk: [
+        '¿Quién tiene ya su URL en vivo para compartirla en el grupo?',
+        '¿Cuál fue el momento más wow de este proceso para cada uno?'
+      ],
+      liveActivity: '¡Presionar el botón de Lanzamiento en pantalla para celebrar juntos con confetti y compartir las URLs!'
     }
   }
 ];

@@ -41,6 +41,14 @@ import { Slide4MobileFirst } from './slides/clase4/Slide4MobileFirst';
 import { Slide4CleanCodeTests } from './slides/clase4/Slide4CleanCodeTests';
 import { Slide4BuilderStation } from './slides/clase4/Slide4BuilderStation';
 
+// Slide Components Class 5 (Ruta Web - SEO + GEO + Publicación)
+import { Slide5Hero } from './slides/clase5/Slide5Hero';
+import { Slide5SEO } from './slides/clase5/Slide5SEO';
+import { Slide5GEO } from './slides/clase5/Slide5GEO';
+import { Slide5Publication } from './slides/clase5/Slide5Publication';
+import { Slide5SearchConsole } from './slides/clase5/Slide5SearchConsole';
+import { Slide5LaunchStation } from './slides/clase5/Slide5LaunchStation';
+
 // Slide Components (Ruta Software)
 import { SlideSoftwareChecklist } from './slides/software/SlideSoftwareChecklist';
 import { SlideSoftwareIdeaInteractive } from './slides/software/SlideSoftwareIdeaInteractive';
@@ -149,6 +157,20 @@ export const SlideRenderer: React.FC<Props> = ({
         return <Slide4CleanCodeTests />;
       case 'clase4-builder-station':
         return <Slide4BuilderStation />;
+
+      // Ruta Web - Clase 5 (SEO + GEO + Publicación)
+      case 'clase5-hero':
+        return <Slide5Hero onNext={onNext} />;
+      case 'clase5-seo':
+        return <Slide5SEO />;
+      case 'clase5-geo':
+        return <Slide5GEO />;
+      case 'clase5-publication':
+        return <Slide5Publication />;
+      case 'clase5-search-console':
+        return <Slide5SearchConsole />;
+      case 'clase5-launch-station':
+        return <Slide5LaunchStation />;
 
       // Ruta Software con IA
       case 'software-idea-interactive':
