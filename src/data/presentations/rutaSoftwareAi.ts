@@ -735,6 +735,188 @@ Tablas en Supabase: socios, membresias, accesos_qr, clases_grupales, pagos.
   }
 ];
 
+export const CLASE_4_SOFTWARE_SLIDES: SlideData[] = [
+  {
+    id: 's4-s1',
+    sectionId: 'clase-4-software',
+    slideNumber: 1,
+    totalInClass: 7,
+    category: '🗄️ CLASE 4 — BASE DE DATOS',
+    title: 'Supabase: El Cerebro y Memoria',
+    subtitle: 'En términos simples: Aquí es donde vamos a guardar la información de tu software',
+    durationMinutes: 5,
+    layout: 'hero',
+    badge: 'SUPABASE COMO BASE',
+    heroCta: { text: 'Conocer Supabase' },
+    stats: [
+      { value: '0', label: 'Conocimiento previo', subtext: 'La IA es tu DBA' },
+      { value: '100%', label: 'Conectividad', subtext: 'Datos estructurados' }
+    ],
+    speakerNotes: {
+      goal: 'Introducir a Supabase de manera práctica, sin abrumar con detalles técnicos.',
+      talkingPoints: [
+        'Hasta ahora hemos visto cómo darle cara a nuestro software. Hoy vamos a hablar de su memoria.',
+        'Imagina que tu aplicación es una tienda. Supabase es el almacén trasero.',
+        'Los agentes se encargarán de la parte técnica.'
+      ]
+    }
+  },
+  {
+    id: 's4-s2',
+    sectionId: 'clase-4-software',
+    slideNumber: 2,
+    totalInClass: 7,
+    category: '📦 ORGANIZACIÓN',
+    title: 'Estructurando tu Información',
+    subtitle: 'Tu software necesita organizar la información en "cajas" lógicas',
+    durationMinutes: 5,
+    layout: 'comparison',
+    comparison: {
+      leftTitle: 'El Miedo Técnico',
+      leftSubtitle: 'No saber de bases de datos',
+      leftBadge: 'Pasado',
+      leftItems: [
+        'Pensar que necesitas saber SQL avanzado.',
+        'Miedo a perder datos o estructurarlos mal.'
+      ],
+      rightTitle: 'La Solución Inteligente',
+      rightSubtitle: 'La Inteligencia Artificial te ayuda',
+      rightBadge: 'Presente',
+      rightItems: [
+        'La IA organiza tus "cajas" lógicas (Tablas).',
+        'Piensa en Supabase como Excel hiper-vitaminado y veloz.'
+      ]
+    },
+    speakerNotes: {
+      goal: 'Tranquilizar a los alumnos sobre la estructuración de datos.',
+      talkingPoints: [
+        'Para que el software funcione, la información debe estar ordenada.',
+        'Veremos ejemplos prácticos dependiendo del software.'
+      ]
+    }
+  },
+  {
+    id: 's4-s3',
+    sectionId: 'clase-4-software',
+    slideNumber: 3,
+    totalInClass: 7,
+    category: '🤝 CASO DE USO',
+    title: 'Ejemplo 1: Si construyes un CRM',
+    subtitle: 'Organizando ventas y clientes',
+    durationMinutes: 5,
+    layout: 'grid',
+    cards: [
+      { title: '👤 Usuarios', desc: 'Los vendedores de tu equipo.', badge: 'Equipo', list: [] },
+      { title: '🏢 Clientes', desc: 'Las empresas a las que les vendes.', badge: 'Ventas', list: [] },
+      { title: '📇 Contactos', desc: 'Las personas clave dentro de esos clientes.', badge: 'Personas', list: [] },
+      { title: '📝 Notas', desc: 'Resúmenes de reuniones o llamadas.', badge: 'Registro', list: [] },
+      { title: '📈 Seguimientos', desc: 'Tareas pendientes y próximos pasos.', badge: 'Acción', list: [] }
+    ],
+    speakerNotes: {
+      goal: 'Mostrar cómo se estructura un CRM.',
+      talkingPoints: [
+        'Supabase guardará quiénes son sus vendedores, lista de clientes y todas las notas.',
+        'Todo perfectamente conectado.'
+      ]
+    }
+  },
+  {
+    id: 's4-s4',
+    sectionId: 'clase-4-software',
+    slideNumber: 4,
+    totalInClass: 7,
+    category: '📦 CASO DE USO',
+    title: 'Ejemplo 2: Sistema de Inventario',
+    subtitle: 'Organizando productos y movimientos',
+    durationMinutes: 5,
+    layout: 'grid',
+    cards: [
+      { title: '👤 Usuarios', desc: 'Administradores del almacén.', badge: 'Personal', list: [] },
+      { title: '🛒 Productos', desc: 'Qué es lo que vendes o guardas.', badge: 'Stock', list: [] },
+      { title: '🏷️ Categorías', desc: 'Ropa, electrónica, alimentos, etc.', badge: 'Clasificación', list: [] },
+      { title: '🚚 Proveedores', desc: 'Quién te surte la mercancía.', badge: 'Suministro', list: [] },
+      { title: '🔄 Movimientos', desc: 'Entradas y salidas (cuánto entró, cuánto se vendió).', badge: 'Historial', list: [] }
+    ],
+    speakerNotes: {
+      goal: 'Mostrar cómo se estructura un Inventario.',
+      talkingPoints: [
+        'Almacena el catálogo, proveedores y el registro de entradas y salidas.'
+      ]
+    }
+  },
+  {
+    id: 's4-s5',
+    sectionId: 'clase-4-software',
+    slideNumber: 5,
+    totalInClass: 7,
+    category: '📅 CASO DE USO',
+    title: 'Ejemplo 3: Sistema de Reservas',
+    subtitle: 'Organizando agenda y clientes',
+    durationMinutes: 5,
+    layout: 'grid',
+    cards: [
+      { title: '👤 Usuarios', desc: 'Tus empleados o especialistas.', badge: 'Staff', list: [] },
+      { title: '👥 Clientes', desc: 'Las personas que reservan.', badge: 'Público', list: [] },
+      { title: '💇 Servicios', desc: 'Corte de pelo, consulta médica, etc.', badge: 'Oferta', list: [] },
+      { title: '⏰ Horarios', desc: 'Disponibilidad de cada especialista.', badge: 'Tiempo', list: [] },
+      { title: '🗓️ Reservas', desc: 'La cita confirmada (quién, con quién y a qué hora).', badge: 'Citas', list: [] }
+    ],
+    speakerNotes: {
+      goal: 'Mostrar cómo se estructura un Sistema de Reservas.',
+      talkingPoints: [
+        'Es el motor de la agenda. Guarda horarios y servicios para que no se crucen las citas.'
+      ]
+    }
+  },
+  {
+    id: 's4-s6',
+    sectionId: 'clase-4-software',
+    slideNumber: 6,
+    totalInClass: 7,
+    category: '🛒 CASO DE USO',
+    title: 'Ejemplo 4: E-commerce (Tienda Online)',
+    subtitle: 'Organizando productos y ventas',
+    durationMinutes: 5,
+    layout: 'grid',
+    cards: [
+      { title: '👤 Usuarios', desc: 'Tus clientes registrados y administradores.', badge: 'Cuentas', list: [] },
+      { title: '📦 Productos', desc: 'Los artículos en venta, precios y stock.', badge: 'Catálogo', list: [] },
+      { title: '🛍️ Pedidos', desc: 'Las compras que realiza cada cliente.', badge: 'Ventas', list: [] },
+      { title: '💳 Pagos', desc: 'El estado de las transacciones (pagado, pendiente).', badge: 'Finanzas', list: [] },
+      { title: '🚚 Envíos', desc: 'El estado de la entrega del paquete.', badge: 'Logística', list: [] }
+    ],
+    speakerNotes: {
+      goal: 'Mostrar cómo se estructura un E-commerce.',
+      talkingPoints: [
+        'Supabase será el corazón de tus ventas, con el historial de pedidos y envíos.'
+      ]
+    }
+  },
+  {
+    id: 's4-s7',
+    sectionId: 'clase-4-software',
+    slideNumber: 7,
+    totalInClass: 7,
+    category: '🚀 CIERRE',
+    title: '¡La IA es tu DBA!',
+    subtitle: 'Tu trabajo es definir las reglas del negocio, la IA hace el resto',
+    durationMinutes: 5,
+    layout: 'split',
+    points: [
+      { title: 'Sin experiencia técnica', text: 'No necesitas ser un experto en PostgreSQL.' },
+      { title: 'Agentes al rescate', text: 'Los Agentes de IA escribirán el código y crearán las tablas.' },
+      { title: 'Tu misión', text: 'Simplemente piensa: "¿Qué necesito que mi aplicación recuerde y guarde?".' }
+    ],
+    speakerNotes: {
+      goal: 'Dar el mensaje final de tranquilidad.',
+      talkingPoints: [
+        'Este no es un curso técnico de bases de datos.',
+        'La IA y Supabase harán la magia.'
+      ]
+    }
+  }
+];
+
 export const RUTA_SOFTWARE_AI_PRESENTATION: Presentation = {
   id: 'ruta-software-ai',
   title: 'Ruta Software con IA',
@@ -781,6 +963,15 @@ export const RUTA_SOFTWARE_AI_PRESENTATION: Presentation = {
       color: 'blue',
       description: 'Ahora cada alumno comienza a construir su propio producto aplicando la metodología IDEA → PLAN → DISEÑO → CONSTRUCCIÓN.',
       slides: CLASE_3_SOFTWARE_SLIDES
+    },
+    {
+      id: 'clase-4-software',
+      title: 'Clase 4: Supabase como Base de Datos',
+      shortTitle: 'Clase 4: Supabase',
+      badge: 'Base de Datos',
+      color: 'green',
+      description: 'Aprende a estructurar la información de tu software utilizando Supabase de forma práctica y sin complicaciones técnicas.',
+      slides: CLASE_4_SOFTWARE_SLIDES
     }
   ]
 };
