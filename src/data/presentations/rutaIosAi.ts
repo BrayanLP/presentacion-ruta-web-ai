@@ -1120,7 +1120,7 @@ export const RUTA_IOS_AI_PRESENTATION: Presentation = {
       title: 'CLASE 4 — Supabase + Usuarios + Datos',
       shortTitle: 'Clase 4: Datos',
       badge: 'Base de Datos',
-      color: 'green',
+      color: 'emerald',
       description: 'La aplicación deja de ser solamente una interfaz. Aprende cómo gestionar usuarios, datos, CRUD, y seguridad con RLS de manera sencilla.',
       slides: CLASE_4_MOBILE_SLIDES
     }

@@ -969,7 +969,7 @@ export const RUTA_SOFTWARE_AI_PRESENTATION: Presentation = {
       title: 'Clase 4: Supabase como Base de Datos',
       shortTitle: 'Clase 4: Supabase',
       badge: 'Base de Datos',
-      color: 'green',
+      color: 'emerald',
       description: 'Aprende a estructurar la información de tu software utilizando Supabase de forma práctica y sin complicaciones técnicas.',
       slides: CLASE_4_SOFTWARE_SLIDES
     }
