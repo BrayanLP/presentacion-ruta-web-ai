@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Sparkles, ArrowRight, CheckCircle2, XCircle, Lightbulb, 
   AlertTriangle, Zap, Quote as QuoteIcon,
@@ -13,7 +13,16 @@ interface Props {
 }
 
 export const GenericSlide: React.FC<Props> = ({ slide, onNext, onOpenBrief }) => {
+  const [copied, setCopied] = useState(false);
   const layout = slide.layout || 'grid';
+
+  const handleCopyCode = () => {
+    if (slide.codeSnippet) {
+      navigator.clipboard.writeText(slide.codeSnippet.code);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
 
   const handleCta = () => {
     if (slide.heroCta?.action === 'brief' && onOpenBrief) {
@@ -264,10 +273,19 @@ export const GenericSlide: React.FC<Props> = ({ slide, onNext, onOpenBrief }) =>
                     <Terminal className="w-3.5 h-3.5 text-brand-400" />
                     <span>{slide.codeSnippet.title || slide.codeSnippet.language}</span>
                   </div>
-                  <div className="flex gap-1.5">
-                    <span className="w-2.5 h-2.5 rounded-full bg-red-500/60" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/60" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-green-500/60" />
+                  <div className="flex items-center gap-3">
+                    <button
+                      onClick={handleCopyCode}
+                      className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors border border-slate-700 hover:border-slate-600"
+                    >
+                      <Copy className="w-3.5 h-3.5" />
+                      <span>{copied ? '¡Copiado!' : 'Copiar todo'}</span>
+                    </button>
+                    <div className="flex gap-1.5 opacity-50 hidden sm:flex">
+                      <span className="w-2.5 h-2.5 rounded-full bg-red-500" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-green-500" />
+                    </div>
                   </div>
                 </div>
                 <div className="p-4 text-xs font-mono text-cyan-300 overflow-x-auto leading-relaxed space-y-1">

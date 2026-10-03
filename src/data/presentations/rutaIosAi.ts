@@ -940,6 +940,133 @@ const CLASE_3_MOBILE_SLIDES: SlideData[] = [
   }
 ];
 
+const CLASE_4_MOBILE_SLIDES: SlideData[] = [
+  {
+    id: 'mobile4-s1',
+    sectionId: 'clase-4-ios',
+    slideNumber: 1,
+    totalInClass: 5,
+    category: '🗄️ CLASE 4 — BASE DE DATOS',
+    title: 'Supabase + Usuarios + Datos',
+    subtitle: 'La aplicación deja de ser solamente una interfaz gráfica',
+    durationMinutes: 5,
+    layout: 'hero',
+    badge: 'SUPABASE COMO BASE',
+    heroCta: { text: 'Conocer Supabase' },
+    stats: [
+      { value: 'Memoria', label: 'El lugar donde vive', subtext: 'la información de tu app' },
+      { value: 'Backend', label: 'Potencia real', subtext: 'App viva y dinámica' }
+    ],
+    speakerNotes: {
+      goal: 'Explicar Supabase de manera sencilla como el hogar de los datos.',
+      talkingPoints: [
+        'Esta clase es importante porque la aplicación deja de ser solamente una interfaz.',
+        '"Supabase es el lugar donde vive la información de tu aplicación."'
+      ]
+    }
+  },
+  {
+    id: 'mobile4-s2',
+    sectionId: 'clase-4-ios',
+    slideNumber: 2,
+    totalInClass: 5,
+    category: '🏗️ ESTRUCTURA',
+    title: 'Ejemplo: Estructura de una App',
+    subtitle: 'Cómo organizar la información para una App de Menú QR',
+    durationMinutes: 5,
+    layout: 'grid',
+    cards: [
+      { title: '👤 Usuarios', desc: 'Los dueños de restaurantes y meseros.', badge: 'Personas', list: [] },
+      { title: '🍽️ Categorías', desc: 'Entradas, Platos de Fondo, Bebidas, etc.', badge: 'Menú', list: [] },
+      { title: '🍔 Productos', desc: 'Nombre, precio, descripción e imagen.', badge: 'Platos', list: [] },
+      { title: '🏢 Restaurante', desc: 'Información, logo y mesas para el QR.', badge: 'Local', list: [] }
+    ],
+    speakerNotes: {
+      goal: 'Enseñar cómo pensar en la estructura de datos para que la IA la construya.',
+      talkingPoints: [
+        'El alumno aprenderá a pedirle a la IA que construya esta estructura.',
+        'La IA se encargará de crear las tablas y conectar la aplicación.'
+      ]
+    }
+  },
+  {
+    id: 'mobile4-s3',
+    sectionId: 'clase-4-ios',
+    slideNumber: 3,
+    totalInClass: 5,
+    category: '⚙️ FUNCIONALIDADES',
+    title: 'El Ciclo Completo de los Datos',
+    subtitle: 'Lo que aprenderemos a implementar y conectar con la IA',
+    durationMinutes: 8,
+    layout: 'grid',
+    cards: [
+      { title: '🔐 Autenticación', desc: 'Registro de usuarios y Login seguro.', badge: 'Acceso', list: [] },
+      { title: '📝 Gestión (CRUD)', desc: 'Crear, Editar, Eliminar y Consultar.', badge: 'Datos', list: [] },
+      { title: '📁 Storage', desc: 'Almacenamiento de archivos e imágenes.', badge: 'Archivos', list: [] },
+      { title: '🔗 Relaciones', desc: 'Conectar datos (ej: un restaurante tiene muchos productos).', badge: 'Estructura', list: [] }
+    ],
+    speakerNotes: {
+      goal: 'Mostrar todo lo que abarca el manejo de datos en una aplicación real.',
+      talkingPoints: [
+        'Vamos a trabajar: Registro de usuarios, Login, Datos por usuario, Crear, Editar, Eliminar y Consultar.',
+        'Además, Storage y las relaciones entre los datos.'
+      ]
+    }
+  },
+  {
+    id: 'mobile4-s4',
+    sectionId: 'clase-4-ios',
+    slideNumber: 4,
+    totalInClass: 5,
+    category: '🛡️ SEGURIDAD (RLS)',
+    title: 'Row Level Security (RLS)',
+    subtitle: 'Seguridad nativa recomendada por Supabase',
+    durationMinutes: 5,
+    layout: 'split',
+    points: [
+      { title: 'Privacidad Absoluta', text: '"Cada usuario debe poder ver solamente la información que le corresponde."' },
+      { title: 'Control Total', text: 'Supabase recomienda RLS para proteger los datos y controlar qué puede consultar cada usuario.' },
+      { title: 'Sin saber SQL', text: 'Enseñaremos el concepto y la IA se encargará de aplicarlo al código.' }
+    ],
+    speakerNotes: {
+      goal: 'Enseñar el concepto de RLS sin convertirlo en una clase técnica de SQL.',
+      talkingPoints: [
+        '"Cada usuario debe poder ver solamente la información que le corresponde."',
+        'Supabase recomienda RLS para proteger los datos y controlar qué puede consultar cada usuario.'
+      ]
+    }
+  },
+  {
+    id: 'mobile4-s5',
+    sectionId: 'clase-4-ios',
+    slideNumber: 5,
+    totalInClass: 5,
+    category: '📝 PROMPT ENGINEERING',
+    title: 'Generando tu Base de Datos',
+    subtitle: 'El Prompt perfecto para que la IA diseñe la estructura de tu proyecto',
+    durationMinutes: 8,
+    layout: 'split',
+    points: [
+      { title: 'Define la Necesidad', text: 'Explica en lenguaje natural qué información debe guardar la app (ej: restaurantes y platos).' },
+      { title: 'Establece Relaciones', text: 'Indica cómo se conectan los datos (ej: "Cada producto pertenece a una categoría").' },
+      { title: 'Reglas de Seguridad', text: 'Añade instrucciones de RLS (ej: "El dueño solo edita su propio menú").' }
+    ],
+    codeSnippet: {
+      language: 'markdown',
+      title: 'Ejemplo de Prompt',
+      code: 'Actúa como un Database Specialist para Supabase.\nNecesito crear la base de datos para una plataforma de Menú QR construida con Expo 57.\n\nRequerimientos:\n- Tabla de Restaurantes (nombre, logo)\n- Tabla de Categorías (vinculada al restaurante)\n- Tabla de Productos (nombre, precio, vinculada a categoría)\n\nSeguridad:\n- Aplica políticas RLS: cada restaurante solo puede editar sus propios datos, pero cualquiera puede leer el menú.'
+    },
+    speakerNotes: {
+      goal: 'Mostrar cómo formular un prompt estructurado para que la IA cree el esquema en Supabase.',
+      talkingPoints: [
+        'No necesitas escribir código SQL para crear tus tablas.',
+        'Solo debes describir en español lo que necesita tu sistema y las reglas de privacidad.',
+        'La Inteligencia Artificial traducirá esa necesidad en la estructura técnica perfecta para Supabase.'
+      ]
+    }
+  }
+];
+
 export const RUTA_IOS_AI_PRESENTATION: Presentation = {
   id: 'ruta-ios-ai',
   title: 'Ruta: Crear Apps iOS & Android con IA + Expo + Supabase',
@@ -987,6 +1114,15 @@ export const RUTA_IOS_AI_PRESENTATION: Presentation = {
       color: 'blue',
       description: 'Aquí empieza el Project Lab. Abrirás Antigravity y comenzarás a construir tu propia aplicación con Expo, React Native Paper y Supabase.',
       slides: CLASE_3_MOBILE_SLIDES
+    },
+    {
+      id: 'clase-4-ios',
+      title: 'CLASE 4 — Supabase + Usuarios + Datos',
+      shortTitle: 'Clase 4: Datos',
+      badge: 'Base de Datos',
+      color: 'green',
+      description: 'La aplicación deja de ser solamente una interfaz. Aprende cómo gestionar usuarios, datos, CRUD, y seguridad con RLS de manera sencilla.',
+      slides: CLASE_4_MOBILE_SLIDES
     }
   ]
 };
