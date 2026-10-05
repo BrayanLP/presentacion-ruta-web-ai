@@ -60,7 +60,7 @@ export const PresentationSelector: React.FC<Props> = ({
           <PresentationIcon className="w-4 h-4 text-slate-950" />
         </div>
 
-        <div className="text-left hidden sm:block">
+        <div className="text-left hidden lg:block">
           <div className="text-xs font-bold text-white tracking-tight flex items-center gap-1.5 leading-none">
             <span className="font-display truncate max-w-[150px] lg:max-w-[200px]">
               {currentPresentation.shortTitle || currentPresentation.title}
@@ -72,7 +72,7 @@ export const PresentationSelector: React.FC<Props> = ({
           </span>
         </div>
 
-        <ChevronDown className="w-3.5 h-3.5 text-slate-400 sm:hidden" />
+        <ChevronDown className="w-3.5 h-3.5 text-slate-400 lg:hidden" />
       </button>
 
       {/* Dropdown Menu - 100% Solid Opaque Background */}

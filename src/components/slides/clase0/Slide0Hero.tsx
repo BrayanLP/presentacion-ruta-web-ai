@@ -7,7 +7,7 @@ interface SlideProps {
 
 export const Slide0Hero: React.FC<SlideProps> = ({ onNext }) => {
   return (
-    <div className="h-full flex flex-col justify-between p-8 md:p-14 relative overflow-hidden">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden">
       {/* Ambient background glows with low z-index */}
       <div className="absolute top-10 left-10 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10" />

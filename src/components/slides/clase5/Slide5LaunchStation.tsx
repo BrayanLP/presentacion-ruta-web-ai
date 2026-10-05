@@ -90,7 +90,7 @@ export const Slide5LaunchStation: React.FC = () => {
   };
 
   return (
-    <div className="h-full flex flex-col p-6 sm:p-8 relative overflow-hidden gap-4">
+    <div className="h-full flex flex-col p-6 sm:p-8 relative overflow-y-auto overflow-x-hidden gap-4">
       {/* Ambient glows */}
       <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-500/8 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-10 left-10 w-80 h-80 bg-violet-500/8 rounded-full blur-3xl pointer-events-none -z-10" />

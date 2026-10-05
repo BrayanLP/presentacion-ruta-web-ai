@@ -243,7 +243,7 @@ export const Slide2AgentsKit: React.FC<Props> = ({ onOpenBriefModal }) => {
   };
 
   return (
-    <div className="h-full flex flex-col justify-between p-5 sm:p-8 md:p-10 relative overflow-hidden select-none">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden select-none">
       {/* Header */}
       <div>
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
@@ -294,7 +294,7 @@ export const Slide2AgentsKit: React.FC<Props> = ({ onOpenBriefModal }) => {
               <button
                 key={agent.id}
                 onClick={() => setSelectedAgentId(agent.id)}
-                className={`p-2.5 rounded-2xl border transition-all flex flex-col items-center text-center justify-between gap-1.5 cursor-pointer group relative overflow-hidden ${
+                className={`p-2.5 rounded-2xl border transition-all flex flex-col items-center text-center justify-between gap-1.5 cursor-pointer group relative overflow-y-auto overflow-x-hidden ${
                   isSelected
                     ? 'bg-slate-900 border-cyan-400 shadow-lg shadow-cyan-500/20 ring-2 ring-cyan-400/40 -translate-y-0.5'
                     : 'bg-slate-950/60 hover:bg-slate-900/60 border-slate-800 text-slate-400 hover:text-white'

@@ -71,7 +71,7 @@ export const Slide0InteractiveChecklist: React.FC<Props> = ({ onGoToClass1 }) =>
   };
 
   return (
-    <div className="h-full flex flex-col justify-between p-6 md:p-12 relative overflow-hidden">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden">
       {/* Header with progress */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>

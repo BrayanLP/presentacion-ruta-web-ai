@@ -63,7 +63,7 @@ export const SlideSoftwareFinalPlan: React.FC<Props> = ({ onOpenPlanModal }) => 
   };
 
   return (
-    <div className="h-full max-h-full flex flex-col justify-between p-2 sm:p-3 md:p-3.5 pb-8 relative z-10 overflow-hidden select-none">
+    <div className="h-full max-h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-6 md:p-10.5 pb-8 relative z-10 overflow-hidden select-none">
       
       {/* Top Header Banner */}
       <div className="shrink-0 mb-1">

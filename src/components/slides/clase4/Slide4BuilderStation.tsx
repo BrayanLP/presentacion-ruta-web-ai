@@ -461,7 +461,7 @@ ${activeBlocks.map(b => {
   const isBlockEnabled = (id: string) => blocks.find(b => b.id === id)?.enabled ?? true;
 
   return (
-    <div className="h-full flex flex-col justify-between p-6 sm:p-10 relative overflow-hidden select-none">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-6 sm:p-10 relative overflow-y-auto overflow-x-hidden select-none">
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800/80 pb-3">
         <div>

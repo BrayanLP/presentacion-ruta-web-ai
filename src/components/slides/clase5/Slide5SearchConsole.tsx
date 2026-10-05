@@ -49,7 +49,7 @@ export const Slide5SearchConsole: React.FC = () => {
   const [selected, setSelected] = useState<GscFeature>(GSC_FEATURES[0]);
 
   return (
-    <div className="h-full flex flex-col p-6 sm:p-8 relative overflow-hidden gap-4">
+    <div className="h-full flex flex-col p-6 sm:p-8 relative overflow-y-auto overflow-x-hidden gap-4">
       {/* Ambient glow */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-blue-500/8 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-0 left-0 w-60 h-60 bg-emerald-500/6 rounded-full blur-3xl pointer-events-none -z-10" />

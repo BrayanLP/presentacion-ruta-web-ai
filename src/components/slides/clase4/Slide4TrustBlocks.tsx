@@ -54,7 +54,7 @@ export const Slide4TrustBlocks: React.FC = () => {
   };
 
   return (
-    <div className="h-full flex flex-col justify-between p-6 sm:p-10 relative overflow-hidden select-none">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-6 sm:p-10 relative overflow-y-auto overflow-x-hidden select-none">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-slate-800/80 pb-3">
         <div>

@@ -120,7 +120,7 @@ export const Slide4UnderTheHood: React.FC = () => {
   const [selectedTech, setSelectedTech] = useState<TechItem>(TECH_STACK[0]);
 
   return (
-    <div className="h-full flex flex-col justify-between p-6 sm:p-10 relative overflow-hidden">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-6 sm:p-10 relative overflow-y-auto overflow-x-hidden">
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-4">
         <div>

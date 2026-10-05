@@ -5,7 +5,7 @@ export const Slide1WebVsSocial: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'matrix' | 'synergy'>('matrix');
 
   return (
-    <div className="h-full flex flex-col justify-between p-8 md:p-14 relative overflow-hidden">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="space-y-1">

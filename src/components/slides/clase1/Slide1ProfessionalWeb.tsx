@@ -41,7 +41,7 @@ const PILLARS = [
 
 export const Slide1ProfessionalWeb: React.FC = () => {
   return (
-    <div className="h-full flex flex-col justify-between p-8 md:p-14 relative overflow-hidden">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden">
       {/* Header */}
       <div className="space-y-1">
         <div className="text-xs font-mono text-yellow-400 font-semibold tracking-wider uppercase">

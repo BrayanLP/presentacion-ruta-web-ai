@@ -83,7 +83,7 @@ export const Navbar: React.FC<Props> = ({
           title="Volver al Inicio (Catálogo de Rutas)"
         >
           <Home className="w-3.5 h-3.5 text-cyan-400 group-hover:scale-110 transition-transform" />
-          <span className="text-xs font-mono font-semibold hidden md:inline">Inicio</span>
+          <span className="text-xs font-mono font-semibold hidden lg:inline">Inicio</span>
         </button>
 
         <div className="h-4 w-px bg-slate-800" />
@@ -96,14 +96,16 @@ export const Navbar: React.FC<Props> = ({
           onOpenHub={onOpenHub}
         />
 
-        <div className="h-4 w-px bg-slate-800 hidden sm:block" />
+        <div className="h-4 w-px bg-slate-800 hidden lg:block" />
 
         {/* Section / Class Selection Dropdown */}
-        <SectionSelector
-          sections={currentPresentation.sections}
-          currentSectionIndex={currentSectionIndex}
-          onSelectSection={onSelectSection}
-        />
+        <div className="hidden lg:block">
+          <SectionSelector
+            sections={currentPresentation.sections}
+            currentSectionIndex={currentSectionIndex}
+            onSelectSection={onSelectSection}
+          />
+        </div>
       </div>
 
       {/* Center: Progress & Slide Counter */}
@@ -129,10 +131,10 @@ export const Navbar: React.FC<Props> = ({
           <div className="p-1 rounded-lg bg-cyan-500/20 text-cyan-400 group-hover:scale-110 transition-transform">
             <Sliders className="w-3.5 h-3.5" />
           </div>
-          <span className="font-bold">Herramientas</span>
-          <div className="flex items-center gap-1.5 pl-1.5 border-l border-slate-800">
+          <span className="font-bold hidden lg:inline">Herramientas</span>
+          <div className="hidden lg:flex items-center gap-1.5 pl-1.5 border-l border-slate-800">
             <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${activeThemeObj.colorPill}`} />
-            <span className="text-[10px] text-slate-400 font-mono hidden md:inline">
+            <span className="text-[10px] text-slate-400 font-mono">
               {contrastRhythm === 'alternating' ? 'Intercalado' : contrastRhythm === 'all-light' ? 'Luz' : contrastRhythm === 'vibrant-warm' ? 'Cálido' : 'Oscuro'}
             </span>
           </div>

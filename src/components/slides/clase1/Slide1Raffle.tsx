@@ -165,7 +165,7 @@ export const Slide1Raffle: React.FC<Props> = ({ onNext }) => {
   };
 
   return (
-    <div className="h-full flex flex-col justify-between p-6 md:p-12 relative overflow-hidden select-none">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden select-none">
       {/* Background ambient glow with low z-index */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
@@ -203,7 +203,7 @@ export const Slide1Raffle: React.FC<Props> = ({ onNext }) => {
       {/* Main Center Roulette Arena */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 my-auto items-stretch relative z-10">
         {/* Left: Interactive Roulette Stage (7 cols) */}
-        <div className="lg:col-span-7 glass-panel p-6 md:p-8 rounded-3xl border border-amber-500/40 shadow-2xl flex flex-col justify-between items-center text-center space-y-6 relative overflow-hidden bg-slate-950/80">
+        <div className="lg:col-span-7 glass-panel p-4 sm:p-6 md:p-10 rounded-3xl border border-amber-500/40 shadow-2xl flex flex-col justify-between items-center text-center space-y-6 relative overflow-y-auto overflow-x-hidden bg-slate-950/80">
           <div className="w-full flex items-center justify-between">
             <span className="text-xs font-mono text-amber-400 font-bold uppercase tracking-wider flex items-center gap-1.5">
               <Sparkles className="w-4 h-4" /> Tómbola Digital
@@ -216,7 +216,7 @@ export const Slide1Raffle: React.FC<Props> = ({ onNext }) => {
           </div>
 
           {/* Slot Machine Display Screen */}
-          <div className="w-full py-8 md:py-12 px-6 rounded-2xl bg-slate-900/90 border-2 border-amber-500/50 shadow-inner flex flex-col items-center justify-center relative overflow-hidden">
+          <div className="w-full py-8 md:py-12 px-6 rounded-2xl bg-slate-900/90 border-2 border-amber-500/50 shadow-inner flex flex-col items-center justify-center relative overflow-y-auto overflow-x-hidden">
             {winner ? (
               <div className="space-y-3 animate-fadeIn">
                 <div className="inline-flex p-3 rounded-2xl bg-gradient-to-tr from-amber-400 to-yellow-500 text-slate-950 shadow-xl shadow-amber-500/30 animate-bounce">

@@ -178,7 +178,7 @@ export const Slide2SkillsKit: React.FC = () => {
   const selectedSkill = SKILLS_LIST.find((s) => s.id === selectedSkillId) || SKILLS_LIST[0];
 
   return (
-    <div className="h-full flex flex-col justify-between p-5 sm:p-8 md:p-10 relative overflow-hidden select-none">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden select-none">
       {/* Header */}
       <div>
         <div className="flex items-center gap-2.5">

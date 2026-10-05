@@ -61,7 +61,7 @@ export const Slide4FirstBlocks: React.FC = () => {
       techKey: 'Tailwind Typography + GSAP FadeUp + Lottie Vector',
       promptExample: 'Genera el componente HeroSection con titular magnético con fórmula PAS, subtítulo explicativo de 2 líneas, botón CTA primario y badge de prueba social.',
       visualPreview: (
-        <div className="w-full p-6 rounded-xl bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 border border-slate-800 text-center space-y-3 relative overflow-hidden">
+        <div className="w-full p-6 rounded-xl bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 border border-slate-800 text-center space-y-3 relative overflow-y-auto overflow-x-hidden">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-[11px] font-mono font-semibold">
             ✨ Más de 120 clientes satisfechos
           </div>
@@ -164,7 +164,7 @@ export const Slide4FirstBlocks: React.FC = () => {
   };
 
   return (
-    <div className="h-full flex flex-col justify-between p-6 sm:p-10 relative overflow-hidden">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-6 sm:p-10 relative overflow-y-auto overflow-x-hidden">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-3">
         <div>

@@ -9,7 +9,7 @@ export const Slide4MobileFirst: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="h-full flex flex-col justify-between p-6 sm:p-10 relative overflow-hidden">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-6 sm:p-10 relative overflow-y-auto overflow-x-hidden">
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-slate-800/80 pb-3">
         <div>
@@ -54,7 +54,7 @@ export const Slide4MobileFirst: React.FC = () => {
         <div className="lg:col-span-5 flex justify-center">
           {deviceMode === 'mobile' ? (
             /* Smartphone Frame */
-            <div className="w-[280px] sm:w-[300px] h-[440px] rounded-[36px] bg-slate-100 dark:bg-slate-950 border-4 border-slate-300 dark:border-slate-700/80 shadow-2xl shadow-cyan-500/20 dark:shadow-cyan-950/40 p-3 flex flex-col justify-between relative overflow-hidden">
+            <div className="w-[280px] sm:w-[300px] h-[440px] rounded-[36px] bg-slate-100 dark:bg-slate-950 border-4 border-slate-300 dark:border-slate-700/80 shadow-2xl shadow-cyan-500/20 dark:shadow-cyan-950/40 p-3 flex flex-col justify-between relative overflow-y-auto overflow-x-hidden">
               {/* Top Notch / Speaker */}
               <div className="w-24 h-4 bg-slate-200 dark:bg-slate-800 rounded-full mx-auto mb-2 shrink-0 flex items-center justify-center">
                 <div className="w-2 h-2 rounded-full bg-slate-100 dark:bg-slate-950 mr-2" />

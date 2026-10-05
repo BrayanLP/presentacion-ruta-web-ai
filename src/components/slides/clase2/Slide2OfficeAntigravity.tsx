@@ -141,7 +141,7 @@ export const Slide2OfficeAntigravity: React.FC = () => {
   const currentZone = OFFICE_ZONES.find((z) => z.id === activeZone) || OFFICE_ZONES[0];
 
   return (
-    <div className="h-full flex flex-col justify-between p-5 sm:p-8 md:p-10 relative overflow-hidden select-none">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden select-none">
       {/* Header */}
       <div>
         <div className="flex items-center gap-2.5">
@@ -196,7 +196,7 @@ export const Slide2OfficeAntigravity: React.FC = () => {
         </div>
 
         {/* Right Column: Zone Preview & Capabilities */}
-        <div className="lg:col-span-7 glass-card p-5 sm:p-6 rounded-3xl border border-slate-700/80 bg-slate-950/80 flex flex-col justify-between relative overflow-hidden shadow-2xl">
+        <div className="lg:col-span-7 glass-card p-5 sm:p-6 rounded-3xl border border-slate-700/80 bg-slate-950/80 flex flex-col justify-between relative overflow-y-auto overflow-x-hidden shadow-2xl">
           <div className="space-y-3.5">
             {/* Zone header */}
             <div className="flex items-center justify-between border-b border-slate-800/80 pb-2.5">

@@ -97,7 +97,7 @@ export const Slide5GEO: React.FC = () => {
   const [selected, setSelected] = useState<GeoItem>(GEO_ITEMS[0]);
 
   return (
-    <div className="h-full flex flex-col p-6 sm:p-8 relative overflow-hidden gap-4">
+    <div className="h-full flex flex-col p-6 sm:p-8 relative overflow-y-auto overflow-x-hidden gap-4">
       {/* Ambient glow */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-violet-500/8 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-0 left-0 w-60 h-60 bg-cyan-500/6 rounded-full blur-3xl pointer-events-none -z-10" />

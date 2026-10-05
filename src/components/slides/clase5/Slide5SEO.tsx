@@ -119,7 +119,7 @@ export const Slide5SEO: React.FC = () => {
   const [selected, setSelected] = useState<SeoItem>(SEO_ITEMS[0]);
 
   return (
-    <div className="h-full flex flex-col p-6 sm:p-8 relative overflow-hidden gap-4">
+    <div className="h-full flex flex-col p-6 sm:p-8 relative overflow-y-auto overflow-x-hidden gap-4">
       {/* Ambient glow */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/8 rounded-full blur-3xl pointer-events-none -z-10" />
 

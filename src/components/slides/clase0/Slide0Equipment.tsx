@@ -3,7 +3,7 @@ import { Laptop, Wifi, HardDrive, CheckCircle2, AlertCircle } from 'lucide-react
 
 export const Slide0Equipment: React.FC = () => {
   return (
-    <div className="h-full flex flex-col justify-between p-8 md:p-14 relative overflow-hidden">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden">
       {/* Header */}
       <div className="space-y-1">
         <div className="text-xs font-mono text-emerald-400 font-semibold tracking-wider uppercase">
@@ -20,7 +20,7 @@ export const Slide0Equipment: React.FC = () => {
       {/* 3 Interactive Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-auto">
         {/* Card 1: Laptop */}
-        <div className="glass-card p-6 md:p-8 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all flex flex-col justify-between group hover:-translate-y-1">
+        <div className="glass-card p-4 sm:p-6 md:p-10 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all flex flex-col justify-between group hover:-translate-y-1">
           <div className="space-y-4">
             <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
               <Laptop className="w-7 h-7" />
@@ -39,7 +39,7 @@ export const Slide0Equipment: React.FC = () => {
         </div>
 
         {/* Card 2: Internet */}
-        <div className="glass-card p-6 md:p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition-all flex flex-col justify-between group hover:-translate-y-1">
+        <div className="glass-card p-4 sm:p-6 md:p-10 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition-all flex flex-col justify-between group hover:-translate-y-1">
           <div className="space-y-4">
             <div className="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
               <Wifi className="w-7 h-7" />
@@ -58,7 +58,7 @@ export const Slide0Equipment: React.FC = () => {
         </div>
 
         {/* Card 3: Storage */}
-        <div className="glass-card p-6 md:p-8 rounded-2xl border border-slate-800 hover:border-violet-500/40 transition-all flex flex-col justify-between group hover:-translate-y-1">
+        <div className="glass-card p-4 sm:p-6 md:p-10 rounded-2xl border border-slate-800 hover:border-violet-500/40 transition-all flex flex-col justify-between group hover:-translate-y-1">
           <div className="space-y-4">
             <div className="w-14 h-14 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-400 group-hover:scale-110 transition-transform">
               <HardDrive className="w-7 h-7" />

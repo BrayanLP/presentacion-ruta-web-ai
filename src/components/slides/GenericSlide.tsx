@@ -37,7 +37,7 @@ export const GenericSlide: React.FC<Props> = ({ slide, onNext, onOpenBrief }) =>
   // 1. HERO LAYOUT
   if (layout === 'hero') {
     return (
-      <div className="h-full flex flex-col justify-between p-6 sm:p-10 md:p-14 relative z-10 overflow-y-auto">
+      <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-6 md:p-10 relative z-10 overflow-y-auto">
         <div className="flex items-center justify-between">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-300 font-mono text-xs">
             <Sparkles className="w-3.5 h-3.5 text-brand-400 animate-pulse" />
@@ -111,7 +111,7 @@ export const GenericSlide: React.FC<Props> = ({ slide, onNext, onOpenBrief }) =>
   if (layout === 'comparison' && slide.comparison) {
     const { comparison } = slide;
     return (
-      <div className="h-full flex flex-col p-6 sm:p-8 md:p-10 relative z-10 overflow-y-auto justify-between">
+      <div className="h-full flex flex-col p-4 sm:p-6 md:p-10 relative z-10 overflow-y-auto justify-between">
         {/* Header */}
         <div>
           <div className="flex items-center justify-between mb-2">
@@ -209,7 +209,7 @@ export const GenericSlide: React.FC<Props> = ({ slide, onNext, onOpenBrief }) =>
   // 3. SPLIT LAYOUT (Left Points, Right Visual/Code/Card)
   if (layout === 'split') {
     return (
-      <div className="h-full flex flex-col p-6 sm:p-8 md:p-10 relative z-10 overflow-y-auto justify-between">
+      <div className="h-full flex flex-col p-4 sm:p-6 md:p-10 relative z-10 overflow-y-auto justify-between">
         <div>
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
@@ -347,7 +347,7 @@ export const GenericSlide: React.FC<Props> = ({ slide, onNext, onOpenBrief }) =>
   // 4. TIMELINE LAYOUT
   if (layout === 'timeline' && slide.timeline) {
     return (
-      <div className="h-full flex flex-col p-6 sm:p-8 md:p-10 relative z-10 overflow-y-auto justify-between">
+      <div className="h-full flex flex-col p-4 sm:p-6 md:p-10 relative z-10 overflow-y-auto justify-between">
         <div>
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
@@ -403,7 +403,7 @@ export const GenericSlide: React.FC<Props> = ({ slide, onNext, onOpenBrief }) =>
   // 5. QUOTE LAYOUT
   if (layout === 'quote' && slide.quote) {
     return (
-      <div className="h-full flex flex-col p-6 sm:p-10 md:p-14 relative z-10 overflow-y-auto justify-between">
+      <div className="h-full flex flex-col p-4 sm:p-6 md:p-10 relative z-10 overflow-y-auto justify-between">
         <div className="flex items-center justify-between">
           <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
             {slide.category}
@@ -439,7 +439,7 @@ export const GenericSlide: React.FC<Props> = ({ slide, onNext, onOpenBrief }) =>
 
   // 6. DEFAULT / GRID LAYOUT
   return (
-    <div className="h-full flex flex-col p-6 sm:p-8 md:p-10 relative z-10 overflow-y-auto justify-between">
+    <div className="h-full flex flex-col p-4 sm:p-6 md:p-10 relative z-10 overflow-y-auto justify-between">
       {/* Header */}
       <div>
         <div className="flex items-center justify-between mb-2">

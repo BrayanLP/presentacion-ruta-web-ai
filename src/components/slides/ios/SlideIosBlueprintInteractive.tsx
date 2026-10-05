@@ -21,7 +21,7 @@ export const SlideIosBlueprintInteractive: React.FC<Props> = ({ onOpenBlueprintM
   };
 
   return (
-    <div className="h-full flex flex-col p-4 sm:p-6 md:p-8 relative z-10 overflow-y-auto justify-between select-none">
+    <div className="h-full flex flex-col p-4 sm:p-6 md:p-10 relative z-10 overflow-y-auto justify-between select-none">
       {/* Top Header */}
       <div>
         <div className="flex items-center justify-between mb-2">
@@ -44,7 +44,7 @@ export const SlideIosBlueprintInteractive: React.FC<Props> = ({ onOpenBlueprintM
 
       {/* Main Blueprint Card */}
       <div className="my-auto py-2">
-        <div className="glass-card p-6 sm:p-8 rounded-3xl border border-cyan-500/40 bg-gradient-to-r from-slate-900/95 via-slate-950/95 to-cyan-950/30 shadow-2xl relative overflow-hidden group">
+        <div className="glass-card p-6 sm:p-8 rounded-3xl border border-cyan-500/40 bg-gradient-to-r from-slate-900/95 via-slate-950/95 to-cyan-950/30 shadow-2xl relative overflow-y-auto overflow-x-hidden group">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="space-y-4 max-w-xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono text-xs">

@@ -139,7 +139,7 @@ export const Slide5Publication: React.FC = () => {
   const progress = Math.round((completedSteps.size / PUBLICATION_STEPS.length) * 100);
 
   return (
-    <div className="h-full flex flex-col p-6 sm:p-8 relative overflow-hidden gap-4">
+    <div className="h-full flex flex-col p-6 sm:p-8 relative overflow-y-auto overflow-x-hidden gap-4">
       {/* Ambient glow */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl pointer-events-none -z-10" />
 

@@ -7,7 +7,7 @@ interface SlideProps {
 
 export const Slide2Hero: React.FC<SlideProps> = ({ onNext }) => {
   return (
-    <div className="h-full flex flex-col justify-between p-6 sm:p-10 md:p-12 relative select-none">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-6 md:p-10 relative select-none">
       {/* Header */}
       <div className="flex items-center gap-3">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold tracking-wide uppercase">

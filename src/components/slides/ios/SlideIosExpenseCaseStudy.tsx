@@ -165,7 +165,7 @@ export const SlideIosExpenseCaseStudy: React.FC = () => {
   const selectedScreen = SCREENS_DATA.find((s) => s.id === selectedScreenId) || SCREENS_DATA[3];
 
   return (
-    <div className="h-full flex flex-col p-4 sm:p-6 md:p-8 relative z-10 overflow-y-auto justify-between select-none">
+    <div className="h-full flex flex-col p-4 sm:p-6 md:p-10 relative z-10 overflow-y-auto justify-between select-none">
       {/* Top Header */}
       <div>
         <div className="flex items-center justify-between mb-2">

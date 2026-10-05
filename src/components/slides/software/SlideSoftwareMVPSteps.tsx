@@ -71,7 +71,7 @@ export const SlideSoftwareMVPSteps: React.FC<Props> = ({ onOpenPlanModal }) => {
   const [selectedStep, setSelectedStep] = useState<number>(0);
 
   return (
-    <div className="h-full flex flex-col p-6 sm:p-8 md:p-10 relative z-10 overflow-y-auto justify-between select-none">
+    <div className="h-full flex flex-col p-4 sm:p-6 md:p-10 relative z-10 overflow-y-auto justify-between select-none">
       {/* Header */}
       <div>
         <div className="flex items-center justify-between mb-2">

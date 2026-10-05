@@ -322,7 +322,7 @@ export function App() {
 
   return (
     <div
-      className={`flex flex-col h-screen w-screen text-slate-100 overflow-hidden relative font-sans transition-all duration-700 theme-${currentTheme} ${
+      className={`flex flex-col h-[100dvh] w-full text-slate-100 overflow-hidden relative font-sans transition-all duration-700 theme-${currentTheme} ${
         isWakingUp ? 'wake-up-shake' : ''
       }`}
     >
@@ -388,13 +388,13 @@ export function App() {
       )}
 
       {/* Main Slide Canvas or Hub */}
-      <main className={`flex-1 relative flex items-center justify-center overflow-hidden transition-all duration-300 ${
+      <main className={`flex-1 min-h-0 relative flex items-center justify-center overflow-hidden transition-all duration-300 ${
         isNavbarHidden || isHub ? 'p-2 sm:p-4' : 'p-2 sm:p-4 md:p-6'
       }`}>
         <div
           ref={slideRef}
-          className={`w-full h-full max-w-7xl rounded-3xl shadow-2xl relative overflow-hidden backdrop-blur-2xl transition-all duration-500 border ${
-            isNavbarHidden || isHub ? 'max-h-[96vh]' : 'max-h-[88vh]'
+          className={`w-full h-full max-w-7xl rounded-3xl shadow-2xl relative overflow-hidden backdrop-blur-2xl transition-all duration-500 border flex flex-col min-h-0 ${
+            isNavbarHidden || isHub ? 'max-h-[96dvh]' : 'max-h-[88dvh]'
           } ${isHub ? 'bg-slate-950/90 border-slate-800' : getSlideCanvasClass()}`}
         >
           {isHub ? (

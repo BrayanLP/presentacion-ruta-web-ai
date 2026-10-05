@@ -17,7 +17,7 @@ export const Slide1ProjectBrief: React.FC<Props> = ({ onOpenBriefModal }) => {
   };
 
   return (
-    <div className="h-full flex flex-col justify-between p-8 md:p-14 relative overflow-hidden">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden">
       {/* Background glow with low z-index */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
 

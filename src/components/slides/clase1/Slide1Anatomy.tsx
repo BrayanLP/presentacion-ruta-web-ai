@@ -58,7 +58,7 @@ export const Slide1Anatomy: React.FC = () => {
   const activeSection = SECTIONS.find((s) => s.id === selectedId) || SECTIONS[0];
 
   return (
-    <div className="h-full flex flex-col justify-between p-8 md:p-14 relative overflow-hidden">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden">
       {/* Header */}
       <div className="space-y-1">
         <div className="text-xs font-mono text-cyan-400 font-semibold tracking-wider uppercase">

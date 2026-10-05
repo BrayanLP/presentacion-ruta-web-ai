@@ -289,7 +289,7 @@ Colores: ${brief.brandColors}
   };
 
   return (
-    <div className="h-full flex flex-col justify-between p-6 sm:p-10 md:p-12 relative overflow-hidden select-none">
+    <div className="h-full flex flex-col justify-between overflow-y-auto p-4 sm:p-6 md:p-10 relative overflow-y-auto overflow-x-hidden select-none">
       {/* Header & Brief Integration Bar */}
       <div>
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">

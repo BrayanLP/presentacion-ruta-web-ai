@@ -60,7 +60,7 @@ export const PresentationHub: React.FC<Props> = ({
   };
 
   return (
-    <div className="h-full w-full flex flex-col p-6 sm:p-10 md:p-14 relative z-10 overflow-y-auto justify-between bg-slate-950/80 backdrop-blur-xl">
+    <div className="h-full w-full flex flex-col p-4 sm:p-8 md:p-10 relative z-10 overflow-y-auto justify-between bg-slate-950/80 backdrop-blur-xl">
       {/* Top Header */}
       <div>
         <div className="flex items-center justify-between mb-4">

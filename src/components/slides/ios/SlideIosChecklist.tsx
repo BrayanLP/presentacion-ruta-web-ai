@@ -145,7 +145,7 @@ export const SlideIosChecklist: React.FC<Props> = ({ onGoToClass1 }) => {
   const isComplete = progress === 100;
 
   return (
-    <div className="h-full flex flex-col p-4 sm:p-6 md:p-8 relative z-10 overflow-y-auto justify-between select-none">
+    <div className="h-full flex flex-col p-4 sm:p-6 md:p-10 relative z-10 overflow-y-auto justify-between select-none">
       {/* Header */}
       <div>
         <div className="flex items-center justify-between mb-2">
