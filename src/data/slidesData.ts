@@ -843,3 +843,41 @@ export const CLASE_5_SLIDES: SlideData[] = [
   }
 ];
 
+
+export const CLASE_6_SLIDES: SlideData[] = [
+  {
+    id: 'c6-s1',
+    classId: 6,
+    slideNumber: 1,
+    totalInClass: 2,
+    category: '💻 CLASE 5 — FULL PROYECTOS',
+    title: 'A Partir de Aquí: Aprender Haciendo',
+    subtitle: 'No más teoría larga. Selecciona tu primer proyecto web real con Next.js.',
+    durationMinutes: 10,
+    speakerNotes: {
+      goal: 'Pasar a la acción inmediata. Que el alumno elija su proyecto final.',
+      talkingPoints: [
+        'Hemos visto estrategia, SEO, y cómo orquestar agentes.',
+        'Ahora es momento de ensuciarse las manos y construir algo real.',
+        'Elige un proyecto y generemos los prompts maestros.'
+      ]
+    },
+  },
+  {
+    id: 'c6-s2',
+    classId: 6,
+    slideNumber: 2,
+    totalInClass: 2,
+    category: '🎯 SELECCIÓN DE PROYECTO',
+    title: 'Elige tu Proyecto Next.js',
+    subtitle: 'Selecciona una de las opciones para obtener tu Prompt Maestro',
+    durationMinutes: 15,
+    speakerNotes: {
+      goal: 'Que el usuario interactúe y seleccione su proyecto.',
+      talkingPoints: [
+        'Selecciona una opción en la pantalla interactiva.',
+        'Copiaremos el prompt para generar la web en Antigravity.'
+      ]
+    }
+  }
+];

@@ -49,6 +49,10 @@ import { Slide5Publication } from './slides/clase5/Slide5Publication';
 import { Slide5SearchConsole } from './slides/clase5/Slide5SearchConsole';
 import { Slide5LaunchStation } from './slides/clase5/Slide5LaunchStation';
 
+// Slide Components Class 6 (Ruta Web - Full Proyectos)
+import { Slide6Hero } from './slides/clase6/Slide6Hero';
+import { Slide6ProjectsInteractive } from './slides/clase6/Slide6ProjectsInteractive';
+
 // Slide Components (Ruta Software)
 import { SlideSoftwareChecklist } from './slides/software/SlideSoftwareChecklist';
 import { SlideSoftwareIdeaInteractive } from './slides/software/SlideSoftwareIdeaInteractive';
@@ -171,6 +175,12 @@ export const SlideRenderer: React.FC<Props> = ({
         return <Slide5SearchConsole />;
       case 'clase5-launch-station':
         return <Slide5LaunchStation />;
+
+      // Ruta Web - Clase 6 (Full Proyectos)
+      case 'clase6-hero':
+        return <Slide6Hero onNext={onNext} />;
+      case 'clase6-projects-interactive':
+        return <Slide6ProjectsInteractive onNext={onNext} />;
 
       // Ruta Software con IA
       case 'software-idea-interactive':

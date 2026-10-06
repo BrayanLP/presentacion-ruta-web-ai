@@ -1,5 +1,5 @@
 import type { Presentation } from '../../types';
-import { CLASE_0_SLIDES, CLASE_1_SLIDES, CLASE_2_SLIDES, CLASE_4_SLIDES, CLASE_5_SLIDES } from '../slidesData';
+import { CLASE_0_SLIDES, CLASE_1_SLIDES, CLASE_2_SLIDES, CLASE_4_SLIDES, CLASE_5_SLIDES, CLASE_6_SLIDES } from '../slidesData';
 
 // Enrich slides with customComponentKey so the SlideRenderer knows which custom interactive component to render
 const enrichedClase0Slides = CLASE_0_SLIDES.map((slide, idx) => {
@@ -90,6 +90,18 @@ const enrichedClase5Slides = CLASE_5_SLIDES.map((slide, idx) => {
   };
 });
 
+const enrichedClase6Slides = CLASE_6_SLIDES.map((slide, idx) => {
+  const keys = [
+    'clase6-hero',
+    'clase6-projects-interactive'
+  ];
+  return {
+    ...slide,
+    layout: 'custom' as const,
+    customComponentKey: keys[idx] || 'clase6-hero'
+  };
+});
+
 export const RUTA_WEB_AI_PRESENTATION: Presentation = {
   id: 'ruta-web-ai',
   title: 'Ruta Web con IA',
@@ -144,6 +156,15 @@ export const RUTA_WEB_AI_PRESENTATION: Presentation = {
       color: 'emerald',
       description: 'SEO para Google, GEO para las IAs, dominio propio, SSL, Analytics y Search Console. Aquí cerramos el ciclo.',
       slides: enrichedClase5Slides
+    },
+    {
+      id: 'clase-6',
+      title: 'Clase 5: FULL PROYECTOS (Aprender Haciendo)',
+      shortTitle: 'Clase 5: Proyectos',
+      badge: 'Práctica',
+      color: 'blue',
+      description: 'A partir de aquí: Full Proyectos. No más teoría larga. Selecciona un proyecto y generemos el prompt maestro para Next.js.',
+      slides: enrichedClase6Slides
     }
   ]
 };
