@@ -15,7 +15,11 @@ export const Slide6ProjectsInteractive: React.FC<SlideProps> = ({ onNext }) => {
       title: 'Portafolio Personal',
       icon: <Briefcase className="w-8 h-8 text-blue-400" />,
       description: 'Ideal para mostrar tu trabajo y presentarte al mundo.',
-      color: 'blue',
+      colorClasses: {
+        border: 'border-blue-500',
+        shadow: 'shadow-[0_0_20px_rgba(59,130,246,0.2)]',
+        bg: 'bg-blue-500/20'
+      },
       prompt: `Actúa como un desarrollador Frontend Senior experto en React y Next.js (App Router). Genera el código para un portafolio personal moderno y premium. 
 
 Requisitos técnicos:
@@ -36,7 +40,11 @@ Estilo visual: Implementa un modo oscuro elegante (bg-slate-950) con detalles en
       title: 'Landing Page de Negocio',
       icon: <Coffee className="w-8 h-8 text-amber-400" />,
       description: 'Página de ventas o presentación para una cafetería, gimnasio, etc.',
-      color: 'amber',
+      colorClasses: {
+        border: 'border-amber-500',
+        shadow: 'shadow-[0_0_20px_rgba(245,158,11,0.2)]',
+        bg: 'bg-amber-500/20'
+      },
       prompt: `Actúa como un desarrollador Frontend Senior experto en React y Next.js. Genera el código para una Landing Page de un negocio (ej. Cafetería de Especialidad) moderna y premium.
 
 Requisitos técnicos:
@@ -57,7 +65,11 @@ Estilo visual: Paleta de colores cálidos y premium. Tipografía moderna como 'I
       title: 'Interfaz de Web App',
       icon: <CheckSquare className="w-8 h-8 text-emerald-400" />,
       description: 'Aplicación interactiva como una lista de tareas (To-Do list) con Glassmorphism.',
-      color: 'emerald',
+      colorClasses: {
+        border: 'border-emerald-500',
+        shadow: 'shadow-[0_0_20px_rgba(16,185,129,0.2)]',
+        bg: 'bg-emerald-500/20'
+      },
       prompt: `Actúa como un desarrollador Frontend y diseñador UI/UX. Genera la interfaz (React + Next.js + Tailwind CSS) de una aplicación de Lista de Tareas (To-Do List) al estilo Glassmorphism.
 
 Requisitos técnicos:
@@ -114,16 +126,16 @@ Estilo visual:
               onClick={() => setSelectedProject(project.id)}
               className={`flex flex-col items-start p-5 rounded-2xl border text-left transition-all group ${
                 selectedProject === project.id 
-                  ? `bg-slate-800 border-${project.color}-500 shadow-[0_0_20px_rgba(var(--${project.color}-500),0.2)]` 
+                  ? `bg-slate-800 ${project.colorClasses.border} ${project.colorClasses.shadow}` 
                   : 'glass-card bg-slate-900/60 border-slate-800 hover:border-slate-600'
               }`}
             >
               <div className="flex items-center gap-4 mb-3">
-                <div className={`p-3 rounded-xl ${
+                <div className={`p-3 rounded-xl transition-colors ${
                   selectedProject === project.id 
-                    ? `bg-${project.color}-500/20` 
+                    ? project.colorClasses.bg 
                     : 'bg-slate-800 group-hover:bg-slate-700'
-                } transition-colors`}>
+                }`}>
                   {project.icon}
                 </div>
                 <h3 className="text-lg font-bold text-white leading-tight">{project.title}</h3>
