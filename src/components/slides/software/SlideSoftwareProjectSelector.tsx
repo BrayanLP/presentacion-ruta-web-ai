@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Copy, Check, ChevronRight, Terminal } from 'lucide-react';
 
 const ROULETTE_PROJECTS = [
