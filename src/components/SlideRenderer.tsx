@@ -58,6 +58,7 @@ import { SlideSoftwareChecklist } from './slides/software/SlideSoftwareChecklist
 import { SlideSoftwareIdeaInteractive } from './slides/software/SlideSoftwareIdeaInteractive';
 import { SlideSoftwareMVPSteps } from './slides/software/SlideSoftwareMVPSteps';
 import { SlideSoftwareFinalPlan } from './slides/software/SlideSoftwareFinalPlan';
+import SlideSoftwareProjectSelector from './slides/software/SlideSoftwareProjectSelector';
 
 // Slide Components (Ruta Apps iOS)
 import { SlideIosIdeaInteractive } from './slides/ios/SlideIosIdeaInteractive';
@@ -191,6 +192,8 @@ export const SlideRenderer: React.FC<Props> = ({
         return <SlideSoftwareMVPSteps onOpenPlanModal={onOpenSoftwarePlan || (() => {})} />;
       case 'software-final-plan':
         return <SlideSoftwareFinalPlan onOpenPlanModal={onOpenSoftwarePlan || (() => {})} />;
+      case 'software-project-selector':
+        return <SlideSoftwareProjectSelector />;
 
       // Ruta Apps iOS con IA
       case 'ios-idea-interactive':

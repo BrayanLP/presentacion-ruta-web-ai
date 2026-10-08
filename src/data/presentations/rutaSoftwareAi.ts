@@ -917,6 +917,99 @@ export const CLASE_4_SOFTWARE_SLIDES: SlideData[] = [
   }
 ];
 
+
+export const CLASE_5_SOFTWARE_SLIDES: SlideData[] = [
+  {
+    id: 's5-s1',
+    sectionId: 'clase-5-software',
+    slideNumber: 1,
+    totalInClass: 3,
+    category: '🌐 CLASE 5 — DESPLIEGUE & PROYECTOS',
+    title: 'Tu Software Funcionando en Internet',
+    subtitle: '🔥 DESPUÉS DE LAS 4 CLASES: Es hora de elegir, construir y lanzar tu primer proyecto al mundo real',
+    durationMinutes: 5,
+    layout: 'hero',
+    badge: 'LANZAMIENTO PÚBLICO',
+    heroCta: { text: '¡A construir!' },
+    stats: [
+      { value: '1', label: 'Primer Proyecto', subtext: 'En producción' },
+      { value: '100%', label: 'Desplegado en Vercel', subtext: 'URL pública y funcional' }
+    ],
+    speakerNotes: {
+      goal: 'Motivar a los alumnos a dar el paso final de publicar su primer proyecto en internet.',
+      talkingPoints: [
+        'Hemos planificado, hemos entendido la base de datos y a los agentes.',
+        'Ahora toca ensuciarse las manos y publicar algo en internet hoy mismo.',
+        'No tiene que ser perfecto, tiene que ser público.'
+      ]
+    }
+  },
+  {
+    id: 's5-s2',
+    sectionId: 'clase-5-software',
+    slideNumber: 2,
+    totalInClass: 3,
+    category: '🎡 RULETA DE PROYECTOS',
+    title: 'Ruleta: Elige tu Primer Desafío',
+    subtitle: 'Proyectos sencillos pero impactantes para validar tus conocimientos de la Ruta Software',
+    durationMinutes: 10,
+    layout: 'grid',
+    cards: [
+      {
+        title: '🌳 1. "Link-in-Bio" Premium',
+        desc: 'Una página personal elegante con todos tus enlaces y redes sociales. Ideal para tu perfil de Instagram/LinkedIn.',
+        badge: 'Nivel: Inicial',
+        list: ['Diseño Glassmorphism', 'Botones con hover', '100% responsivo']
+      },
+      {
+        title: '🍅 2. Reloj Pomodoro Zen',
+        desc: 'Aplicación de productividad con temporizador 25/5 y diseño minimalista.',
+        badge: 'Nivel: Intermedio',
+        list: ['Lógica de tiempo', 'Manejo de estado', 'Alertas visuales']
+      },
+      {
+        title: '💰 3. Rastreador de Gastos',
+        desc: 'Aplicación para sumar ingresos y gastos diarios, guardando los datos en el navegador.',
+        badge: 'Nivel: Intermedio',
+        list: ['LocalStorage', 'Cálculos matemáticos', 'Formularios interactivos']
+      },
+      {
+        title: '✨ 4. Generador de Frases',
+        desc: 'Aplicación de un solo botón que muestra citas inspiradoras consumiendo datos aleatorios.',
+        badge: 'Nivel: Inicial',
+        list: ['Uso de Arrays/APIs', 'Manipulación del DOM', 'Animaciones de texto']
+      }
+    ],
+    speakerNotes: {
+      goal: 'Presentar opciones de proyectos abordables para la primera experiencia.',
+      talkingPoints: [
+        'Elige solo uno. El que más te divierta o te sirva en tu día a día.',
+        'Estos proyectos no requieren backend complejo, se pueden hacer muy rápido con los agentes.'
+      ]
+    }
+  },
+  {
+    id: 's5-s3',
+    sectionId: 'clase-5-software',
+    slideNumber: 3,
+    totalInClass: 3,
+    category: '🚀 INICIO RÁPIDO',
+    title: 'Tu Primer Prompt Maestro',
+    subtitle: 'Aplica la misma estructura profesional de la Ruta Software para lanzar tu primer MVP',
+    durationMinutes: 10,
+    layout: 'custom',
+    customComponentKey: 'software-project-selector',
+    speakerNotes: {
+      goal: 'Mostrarles que la estructura del Prompt Maestro sirve para cualquier proyecto, desde uno simple hasta un CRM.',
+      talkingPoints: [
+        'Como ven, no le estamos diciendo a la IA "Hazme una app de gastos".',
+        'Le estamos dando el Contexto, el Stack, la Arquitectura y las instrucciones a cada agente.',
+        'Esta es la diferencia entre un amateur y un Creador de Software.'
+      ]
+    }
+  }
+];
+
 export const RUTA_SOFTWARE_AI_PRESENTATION: Presentation = {
   id: 'ruta-software-ai',
   title: 'Ruta Software con IA',
@@ -972,6 +1065,15 @@ export const RUTA_SOFTWARE_AI_PRESENTATION: Presentation = {
       color: 'emerald',
       description: 'Aprende a estructurar la información de tu software utilizando Supabase de forma práctica y sin complicaciones técnicas.',
       slides: CLASE_4_SOFTWARE_SLIDES
+    },
+    {
+      id: 'clase-5-software',
+      title: 'Clase 5: Tu Software en Internet',
+      shortTitle: 'Clase 5: Proyectos',
+      badge: 'Proyectos',
+      color: 'blue',
+      description: 'Ruleta de proyectos prácticos y prompts iniciales para desplegar tu primer software funcionando en internet.',
+      slides: CLASE_5_SOFTWARE_SLIDES
     }
   ]
 };
