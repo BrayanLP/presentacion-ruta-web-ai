@@ -849,17 +849,17 @@ export const CLASE_6_SLIDES: SlideData[] = [
     id: 'c6-s1',
     classId: 6,
     slideNumber: 1,
-    totalInClass: 2,
-    category: '💻 CLASE 5 — FULL PROYECTOS',
+    totalInClass: 3,
+    category: '💻 CLASE 6 — FULL PROYECTOS & RULETA',
     title: 'A Partir de Aquí: Aprender Haciendo',
-    subtitle: 'No más teoría larga. Selecciona tu primer proyecto web real con Next.js.',
+    subtitle: 'No más teoría larga. Sortea las ideas de los chicos y genera el Prompt Maestro en Next.js.',
     durationMinutes: 10,
     speakerNotes: {
-      goal: 'Pasar a la acción inmediata. Que el alumno elija su proyecto final.',
+      goal: 'Pasar a la acción inmediata. Explicar la dinámica de la ruleta y generación de prompts.',
       talkingPoints: [
-        'Hemos visto estrategia, SEO, y cómo orquestar agentes.',
-        'Ahora es momento de ensuciarse las manos y construir algo real.',
-        'Elige un proyecto y generemos los prompts maestros.'
+        'Hemos cubierto entorno, estrategia, agentes, construcción y SEO.',
+        'Hoy la clase construye proyectos reales elegidos por los propios alumnos.',
+        'Agregaremos las ideas a la Ruleta y generaremos los Prompts Maestros para Next.js.'
       ]
     },
   },
@@ -867,16 +867,35 @@ export const CLASE_6_SLIDES: SlideData[] = [
     id: 'c6-s2',
     classId: 6,
     slideNumber: 2,
-    totalInClass: 2,
-    category: '🎯 SELECCIÓN DE PROYECTO',
-    title: 'Elige tu Proyecto Next.js',
-    subtitle: 'Selecciona una de las opciones para obtener tu Prompt Maestro',
-    durationMinutes: 15,
+    totalInClass: 3,
+    category: '🎡 RULETA DE PROYECTOS WEB',
+    title: 'Ruleta de Proyectos Web',
+    subtitle: 'Ingresa las ideas de los chicos, gira la ruleta y descubre el proyecto a crear hoy.',
+    durationMinutes: 20,
     speakerNotes: {
-      goal: 'Que el usuario interactúe y seleccione su proyecto.',
+      goal: 'Girar la ruleta con los nombres e ideas de los alumnos y celebrar al ganador.',
       talkingPoints: [
-        'Selecciona una opción en la pantalla interactiva.',
-        'Copiaremos el prompt para generar la web en Antigravity.'
+        'Pide al chat sus ideas de páginas web (landing, portafolio, negocio local, e-commerce).',
+        'Ingrésalas una a una o pégalas en bloque usando el botón de carga masiva.',
+        'Gira la ruleta y envía el proyecto ganador directo al Generador de Prompts.'
+      ]
+    }
+  },
+  {
+    id: 'c6-s3',
+    classId: 6,
+    slideNumber: 3,
+    totalInClass: 3,
+    category: '⚡ GENERADOR NEXT.JS + TAILWIND',
+    title: 'Generador de Prompt Maestro (Next.js + Tailwind)',
+    subtitle: 'Convierte la idea seleccionada en un Prompt Maestro estructurado para Antigravity IDE.',
+    durationMinutes: 25,
+    speakerNotes: {
+      goal: 'Personalizar y copiar el Prompt Maestro para comenzar a programar en Antigravity IDE.',
+      talkingPoints: [
+        'El proyecto ganador de la Ruleta se precarga automáticamente.',
+        'Elige el estilo visual, los bloques clave y las reglas técnicas.',
+        'Copia el Prompt Maestro con 1 clic y ejecútalo con tus agentes de IA.'
       ]
     }
   }

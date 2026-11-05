@@ -1067,6 +1067,28 @@ const CLASE_4_MOBILE_SLIDES: SlideData[] = [
   }
 ];
 
+export const CLASE_5_MOBILE_SLIDES: SlideData[] = [
+  {
+    id: 'ios-project-roulette',
+    customComponentKey: 'ios-project-roulette',
+    sectionId: 'clase-5-ios',
+    slideNumber: 1,
+    totalInClass: 1,
+    category: '📱 CLASE 5 — FULL PROYECTOS',
+    title: 'Ruta App con IA',
+    subtitle: 'Agrega las ideas de la clase y gira la ruleta para decidir el proyecto a desarrollar',
+    durationMinutes: 15,
+    speakerNotes: {
+      goal: 'Decidir dinámicamente el proyecto de la clase mediante una ruleta interactiva.',
+      talkingPoints: [
+        'Es hora de aplicar todo lo aprendido.',
+        'Vamos a agregar las ideas de la audiencia a la ruleta.',
+        'La suerte decidirá qué aplicación construiremos en vivo.'
+      ]
+    }
+  }
+];
+
 export const RUTA_IOS_AI_PRESENTATION: Presentation = {
   id: 'ruta-ios-ai',
   title: 'Ruta: Crear Apps iOS & Android con IA + Expo + Supabase',
@@ -1123,6 +1145,15 @@ export const RUTA_IOS_AI_PRESENTATION: Presentation = {
       color: 'emerald',
       description: 'La aplicación deja de ser solamente una interfaz. Aprende cómo gestionar usuarios, datos, CRUD, y seguridad con RLS de manera sencilla.',
       slides: CLASE_4_MOBILE_SLIDES
+    },
+    {
+      id: 'clase-5-ios',
+      title: 'CLASE 5 — FULL PROYECTOS (Aprender Haciendo)',
+      shortTitle: 'Clase 5: Proyectos',
+      badge: 'Ruleta de Proyectos',
+      color: 'pink',
+      description: 'Construyamos proyectos reales juntos eligiéndolos en la ruleta.',
+      slides: CLASE_5_MOBILE_SLIDES
     }
   ]
 };

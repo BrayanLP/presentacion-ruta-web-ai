@@ -49,8 +49,9 @@ import { Slide5Publication } from './slides/clase5/Slide5Publication';
 import { Slide5SearchConsole } from './slides/clase5/Slide5SearchConsole';
 import { Slide5LaunchStation } from './slides/clase5/Slide5LaunchStation';
 
-// Slide Components Class 6 (Ruta Web - Full Proyectos)
+// Slide Components Class 6 (Ruta Web - Full Proyectos & Ruleta)
 import { Slide6Hero } from './slides/clase6/Slide6Hero';
+import { Slide6Roulette } from './slides/clase6/Slide6Roulette';
 import { Slide6ProjectsInteractive } from './slides/clase6/Slide6ProjectsInteractive';
 
 // Slide Components (Ruta Software)
@@ -65,6 +66,7 @@ import { SlideIosIdeaInteractive } from './slides/ios/SlideIosIdeaInteractive';
 import { SlideIosChecklist } from './slides/ios/SlideIosChecklist';
 import { SlideIosExpenseCaseStudy } from './slides/ios/SlideIosExpenseCaseStudy';
 import { SlideIosBlueprintInteractive } from './slides/ios/SlideIosBlueprintInteractive';
+import { SlideIosProjectRoulette } from './slides/ios/SlideIosProjectRoulette';
 
 // Generic Slide for Dynamic Presentations
 import { GenericSlide } from './slides/GenericSlide';
@@ -177,10 +179,13 @@ export const SlideRenderer: React.FC<Props> = ({
       case 'clase5-launch-station':
         return <Slide5LaunchStation />;
 
-      // Ruta Web - Clase 6 (Full Proyectos)
+      // Ruta Web - Clase 6 (Full Proyectos & Ruleta)
       case 'clase6-hero':
         return <Slide6Hero onNext={onNext} />;
+      case 'clase6-roulette':
+        return <Slide6Roulette onNext={onNext} />;
       case 'clase6-projects-interactive':
+      case 'clase6-prompt-generator':
         return <Slide6ProjectsInteractive onNext={onNext} />;
 
       // Ruta Software con IA
@@ -204,6 +209,8 @@ export const SlideRenderer: React.FC<Props> = ({
         return <SlideIosExpenseCaseStudy />;
       case 'ios-blueprint-interactive':
         return <SlideIosBlueprintInteractive onOpenBlueprintModal={onOpenAppBlueprint || (() => {})} />;
+      case 'ios-project-roulette':
+        return <SlideIosProjectRoulette onNext={onNext} />;
 
       default:
         return <GenericSlide slide={slide} onNext={onNext} onOpenBrief={handleOpenTool} />;

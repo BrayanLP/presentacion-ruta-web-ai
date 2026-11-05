@@ -93,6 +93,7 @@ const enrichedClase5Slides = CLASE_5_SLIDES.map((slide, idx) => {
 const enrichedClase6Slides = CLASE_6_SLIDES.map((slide, idx) => {
   const keys = [
     'clase6-hero',
+    'clase6-roulette',
     'clase6-projects-interactive'
   ];
   return {
@@ -107,9 +108,9 @@ export const RUTA_WEB_AI_PRESENTATION: Presentation = {
   title: 'Ruta Web con IA',
   shortTitle: 'Ruta Web con IA',
   subtitle: 'De Cero a tu Primera Web Profesional e Inteligente',
-  badge: '5 Clases Prácticas',
+  badge: '6 Clases Prácticas',
   icon: 'Sparkles',
-  description: 'Masterclass completa de 5 clases para preparar tu entorno, estructurar tu estrategia, orquestar tus agentes, construir tu web y publicarla con SEO + GEO.',
+  description: 'Masterclass completa de 6 clases para preparar tu entorno, estructurar tu estrategia, orquestar tus agentes, construir tu web, publicarla con SEO + GEO y taller en vivo con ruleta de proyectos.',
   hasBriefGenerator: true,
   sections: [
     {
@@ -159,11 +160,11 @@ export const RUTA_WEB_AI_PRESENTATION: Presentation = {
     },
     {
       id: 'clase-6',
-      title: 'Clase 5: FULL PROYECTOS (Aprender Haciendo)',
-      shortTitle: 'Clase 5: Proyectos',
-      badge: 'Práctica',
+      title: 'Clase 6: Ruleta de Proyectos Web & Prompts con IA',
+      shortTitle: 'Clase 6: Ruleta & Prompts',
+      badge: 'Ruleta & Next.js',
       color: 'blue',
-      description: 'A partir de aquí: Full Proyectos. No más teoría larga. Selecciona un proyecto y generemos el prompt maestro para Next.js.',
+      description: 'A partir de aquí: Full Proyectos. Sortea las ideas de páginas web de los chicos con la ruleta y genera el Prompt Maestro en Next.js.',
       slides: enrichedClase6Slides
     }
   ]
